@@ -107,7 +107,7 @@ const About = () => {
                   </Col>
                   <Col lg={2} md={3} sm={4} xs={6}>
                     <div className="skills-cards after-lg-mt">
-                      <Image src={JsLogo} height={40} width={36} />
+                      <Image src={JsLogo} height={40} width={36} alt="img" />
                       <span className="skill-txt">JavaScript</span>
                     </div>
                   </Col>
