@@ -568,13 +568,13 @@ body {
   }
 
   .gradient-bg-1{
-    background-color: #165e71;
-    background: #165e71;
+    background-color: #165e71 !important;
+    background: #165e71 !important;
   }
 
   .gradient-bg-2, .gradient-bg-3{
-    background: #105667;
-    background-color: #105667;
+    background: #105667 !important;
+    background-color: #105667 !important;
   }
 }
 
@@ -603,13 +603,13 @@ body {
 
 @media (min-width: 769px) {
   .gradient-bg-1{
-    background-color: #165e71;
-    background: #165e71;
+    background-color: #165e71 !important;
+    background: #165e71 !important;
   }
 
   .gradient-bg-2, .gradient-bg-3{
-    background: #105667;
-    background-color: #105667;
+    background: #105667 !important;
+    background-color: #105667 !important;
   }
 
 }
