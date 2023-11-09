@@ -120,6 +120,7 @@ body {
   padding-bottom: 0px;
   position: relative;
   scroll-snap-align: start;
+ 
   /* background-image: url("../../public/high_txt_img.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -147,6 +148,8 @@ body {
   opacity: 0;
   transition: all 1s;
   background-color: #0093ff;
+  position: relative;
+  z-index: 1;
 }
 
 .portfolio-image-sec .portfolio-user-img {
@@ -379,7 +382,7 @@ body {
 }
 
 .skills-section .skills-cards {
-  background-color: #121b2ab8;
+  background-color: #121b2a66;
   padding: 26px;
   border: 1px solid #3f3f3f78;
   text-align: center;
@@ -437,7 +440,7 @@ body {
 }
 
 .work-sec .experience-cards {
-  background-color: #121b2ab8;
+  background-color: #121b2a66;
   padding: 25px 20px;
   border-radius: 10px;
   border: 1px solid #3f3f3f78;
@@ -514,6 +517,7 @@ body {
 
   .intro-left-sec .intro-inner-sec .para-txt {
     font-size: 16px;
+    line-height: 24px;
   }
 
   .work-sec {
