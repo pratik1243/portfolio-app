@@ -321,7 +321,7 @@ body {
   margin-top: 90px;
   padding: 27px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
   scroll-snap-align: start;
 }
@@ -350,7 +350,7 @@ body {
   font-size: 45px;
   color: #fff;
   margin-bottom: 35px;
-  border-bottom: 1px dashed #555353;
+  border-bottom: 0.2px solid #1275be;
   padding-bottom: 9px;
 }
 
@@ -432,7 +432,7 @@ body {
   font-size: 45px;
   color: #fff;
   margin-bottom: 41px;
-  border-bottom: 1px dashed #555353;
+  border-bottom: 0.2px solid #1275be;
   padding-bottom: 12px;
 }
 
@@ -556,6 +556,15 @@ body {
   .intro-left-sec .intro-inner-sec .head-txt2{
     font-size: 23px;
   }
+
+  .work-sec .work-head-txt, .about-sec .about-head-txt{
+    font-size: 31px;
+  }
+
+  .about-sec {
+    margin-top: 50px;
+  }
+
 }
 
 @media (max-width: 768px) {
