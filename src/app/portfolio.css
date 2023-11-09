@@ -546,9 +546,9 @@ body {
     left: -70px;
   }
 
-  .gradient-bg-3{
+  /* .gradient-bg-3{
     transform: translateX(74px);
-  }
+  } */
 }
 
 @media (max-width: 480px) {
