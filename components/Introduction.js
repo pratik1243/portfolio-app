@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import portfolioImage from '../public/portfolio_img.jpg';
 import { Container, Row, Col } from "react-bootstrap";
 
 const Introduction = () => {

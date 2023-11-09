@@ -395,7 +395,8 @@ body {
   font-size: 17px;
   display: block;
   color: rgb(214, 213, 213);
-  margin-top: 15px;
+  margin-top: 16px;
+  cursor: default;
 }
 
 .next-logo-bg {
@@ -486,6 +487,10 @@ body {
   z-index: -2;
 }
 
+.lg-mt{
+  margin-top: 1.5rem;
+}
+
 @media (max-width: 576px) {
   .menu-icon-btn svg {
     display: block;
@@ -542,15 +547,19 @@ body {
 }
 
 @media (max-width: 768px) {
-  .after-sm-mt {
+  .after-md-mt {
     margin-top: 1.5rem;
+  }
+
+  .after-lg-mt {
+    margin-top: 0;
   }
 }
 
 @media (max-width: 991px) {
   .portfolio-image-sec {
     margin: auto;
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
   .gradient-bg-3 {
@@ -561,7 +570,12 @@ body {
     margin-top: 60px;
   }
 
-  .after-md-mt {
+  .after-lg-mt {
+    margin-top: 1.5rem;
+  }
+
+  .lg-mt{
     margin-top: 1.5rem;
   }
 }
+

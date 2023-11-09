@@ -14,22 +14,16 @@ const Work = () => {
     if (window.pageYOffset > elementPosition) setTrigger(true);
   };
 
-  const registerEvent = () => {
-    document.addEventListener("scroll", handleScrollEvent1);
-  };
-
-  const unRegisterEvent = () => {
-    document.removeEventListener("scroll", handleScrollEvent1);
-  };
-
   useEffect(() => {
     if (trigger) {
       setAnimateTrigger(true);
     }
 
-    registerEvent();
+    document.addEventListener("scroll", handleScrollEvent1);
 
-    return unRegisterEvent;
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
   }, [trigger]);
   
   return (

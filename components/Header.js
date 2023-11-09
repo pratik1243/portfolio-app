@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Header = () => {
@@ -7,8 +6,6 @@ const Header = () => {
     e.preventDefault();
 
     let node = document.getElementById(id);
-
-console.log('node', node.offsetTop);
 
     const scrollOptions = {
       top: node.offsetTop - 80,
