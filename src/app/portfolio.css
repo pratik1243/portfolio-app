@@ -120,7 +120,7 @@ body {
   padding-bottom: 0px;
   position: relative;
   scroll-snap-align: start;
- 
+
   /* background-image: url("../../public/high_txt_img.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -537,12 +537,12 @@ body {
     height: auto;
   }
 
-  .gradient-bg-1{
+  .gradient-bg-1 {
     right: 0px;
     top: -10px;
   }
 
-  .gradient-bg-2{
+  .gradient-bg-2 {
     left: -70px;
   }
 
@@ -562,26 +562,32 @@ body {
     width: 90%;
   }
 
-  .skills-section .skills-cards{
+  .skills-section .skills-cards {
     padding: 26px 20px;
   }
 
-  .intro-left-sec .intro-inner-sec .head-txt1{
+  .intro-left-sec .intro-inner-sec .head-txt1 {
     font-size: 37px;
   }
 
-  .intro-left-sec .intro-inner-sec .head-txt2{
+  .intro-left-sec .intro-inner-sec .head-txt2 {
     font-size: 23px;
   }
 
-  .work-sec .work-head-txt, .about-sec .about-head-txt{
+  .work-sec .work-head-txt,
+  .about-sec .about-head-txt {
     font-size: 31px;
   }
 
   .about-sec {
     margin-top: 50px;
   }
+}
 
+@media (max-width: 380px) {
+  .portfolio-image-sec {
+    height: 287px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -592,7 +598,6 @@ body {
   .after-lg-mt {
     margin-top: 0;
   }
-
 }
 
 @media (max-width: 991px) {
