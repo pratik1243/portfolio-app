@@ -1,22 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Header = () => {
+const Header = ({ navBg, openSidebar }) => {
+
   const scrollSection = (e, id) => {
     e.preventDefault();
 
     let node = document.getElementById(id);
 
     const scrollOptions = {
-      top: node.offsetTop - 80,
+      top: node.offsetTop - 100,
       behavior: "smooth", // You can use 'auto' for an instant scroll
     };
 
     window.scrollTo(scrollOptions);
   };
 
+
   return (
-    <div className="nav-sec">
+    <div className={`nav-sec ${navBg ? 'add-nav-bg': ''}`}>
       <Container className="container-sec">
         <Row>
           <Col lg={7} md={5} sm={4} xs={5}>
@@ -52,6 +54,7 @@ const Header = () => {
                 fill="currentColor"
                 className="bi bi-list"
                 viewBox="0 0 16 16"
+                onClick={openSidebar}
               >
                 <path
                   fill-rule="evenodd"
@@ -61,7 +64,7 @@ const Header = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Container>      
     </div>
   );
 };

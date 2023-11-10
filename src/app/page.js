@@ -9,8 +9,10 @@ export default function Home() {
   const [loader, setLoader] = useState(true);
   const [trigger, setTrigger] = useState(false);
   const [trigger1, setTrigger1] = useState(false);
+  const [navBg, setNavBg] = useState(false);
   const [animateTrigger, setAnimateTrigger] = useState(false);
   const [animateTrigger1, setAnimateTrigger1] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleScrollEvent1 = () => {
     const element = document.getElementById("about-sec");
@@ -35,6 +37,7 @@ export default function Home() {
 
     if (trigger1) {
       setAnimateTrigger1(true);
+      console.log("pppppppppp");
     }
 
     document.addEventListener("scroll", handleScrollEvent1);
@@ -44,11 +47,29 @@ export default function Home() {
     };
   }, [trigger, trigger1]);
 
+  const handleScrollNav = () => {
+    if (window.pageYOffset > 70) {
+      setNavBg(true);
+    } else {
+      setNavBg(false);
+    }
+  };
+
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
     }, 2000);
+
+    document.addEventListener("scroll", handleScrollNav);
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollNav);
+    };
   }, []);
+
+  const openSidebar = () => {
+    setOpen(!open);
+  };
 
   return (
     <>
@@ -56,7 +77,13 @@ export default function Home() {
         <div className="loader-sec">
           <div className="loader-inner-sec">
             <h1 className="loader-txt">P</h1>
-            <svg height="200" width="200" className="loader-icon">
+          
+            <svg
+              height="200"
+              width="200"
+              className="loader-icon"
+              
+            >
               <circle
                 class="circle"
                 cx="100"
@@ -67,14 +94,18 @@ export default function Home() {
                 fill-opacity="0"
               />
             </svg>
+           
           </div>
         </div>
       ) : (
-        <div className="main-sec">
-          <Header />
-          <Introduction />
-          <About animateTrigger={animateTrigger} />
-          <Work animateTrigger={animateTrigger1} />
+        <div>
+          <div className={`main-sec ${open ? 'opacity-bg': ''}`}>
+            <Header navBg={navBg} openSidebar={openSidebar} />
+            <Introduction />
+            <About animateTrigger={animateTrigger} />
+            <Work animateTrigger1={animateTrigger1} />
+          </div>
+          <div className={`side-bar ${open ? "side-bar-open" : ""}`}></div>
         </div>
       )}
     </>

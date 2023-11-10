@@ -2,10 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Work = ({ animateTrigger }) => {  
+const Work = ({ animateTrigger1 }) => {  
   return (
     <div id="works-sec" 
-    className={`work-sec ${animateTrigger ? "animate-about-sec" : ""}`}
+    className={`work-sec ${animateTrigger1 ? "animate-about-sec" : ""}`}
     >
       <Container className="container-sec">
         <Row>
