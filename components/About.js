@@ -13,33 +13,12 @@ import jqueryLogo from "../public/jquery-logo.svg";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
 
-const About = () => {
-  const [trigger, setTrigger] = useState(false);
-  const [animateTrigger, setAnimateTrigger] = useState(false);
-
-  const handleScrollEvent = async () => {
-    const element = await document.getElementById("about-sec");
-    const elementPosition = await element.getBoundingClientRect().top;
-
-    if (window.pageYOffset > elementPosition) setTrigger(true);
-  };
-
-  useEffect(() => {
-    if (trigger) {
-      setAnimateTrigger(true);
-    }
-
-    document.addEventListener("scroll", handleScrollEvent);
-
-    return () => {
-      document.removeEventListener("scroll", handleScrollEvent);
-    };
-  }, [trigger]);
-
+const About = ({ animateTrigger }) => {
   return (
     <div
       id="about-sec"
       className={`about-sec ${animateTrigger ? "animate-about-sec" : ""}`}
+      //className="about-sec"
     >
       <Container className="container-sec">
         <Row>

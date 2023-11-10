@@ -2,32 +2,11 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Work = () => {
-
-  const [trigger, setTrigger] = useState(false);
-  const [animateTrigger, setAnimateTrigger] = useState(false);
-
-  const handleScrollEvent1 = async () => {
-    const element = await document.getElementById("works-sec");
-    const elementPosition = await element.getBoundingClientRect().top;
-
-    if (window.pageYOffset > elementPosition) setTrigger(true);
-  };
-
-  useEffect(() => {
-    if (trigger) {
-      setAnimateTrigger(true);
-    }
-
-    document.addEventListener("scroll", handleScrollEvent1);
-
-    return () => {
-      document.removeEventListener("scroll", handleScrollEvent1);
-    };
-  }, [trigger]);
-  
+const Work = ({ animateTrigger }) => {  
   return (
-    <div id="works-sec" className={`work-sec ${animateTrigger ? "animate-about-sec" : ""}`}>
+    <div id="works-sec" 
+    className={`work-sec ${animateTrigger ? "animate-about-sec" : ""}`}
+    >
       <Container className="container-sec">
         <Row>
           <Col lg={12} md={12} sm={12} xs={12}>

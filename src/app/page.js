@@ -7,6 +7,42 @@ import Work from "../../components/Work";
 
 export default function Home() {
   const [loader, setLoader] = useState(true);
+  const [trigger, setTrigger] = useState(false);
+  const [trigger1, setTrigger1] = useState(false);
+  const [animateTrigger, setAnimateTrigger] = useState(false);
+  const [animateTrigger1, setAnimateTrigger1] = useState(false);
+
+  const handleScrollEvent1 = () => {
+    const element = document.getElementById("about-sec");
+    const elementPosition = element.getBoundingClientRect().top;
+
+    const element1 = document.getElementById("works-sec");
+    const elementPosition1 = element1.getBoundingClientRect().top;
+
+    if (window.pageYOffset > elementPosition) {
+      setTrigger(true);
+    }
+
+    if (window.pageYOffset > elementPosition1) {
+      setTrigger1(true);
+    }
+  };
+
+  useEffect(() => {
+    if (trigger) {
+      setAnimateTrigger(true);
+    }
+
+    if (trigger1) {
+      setAnimateTrigger1(true);
+    }
+
+    document.addEventListener("scroll", handleScrollEvent1);
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger, trigger1]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -37,10 +73,8 @@ export default function Home() {
         <div className="main-sec">
           <Header />
           <Introduction />
-          <About />
-          <Work />
-
-
+          <About animateTrigger={animateTrigger} />
+          <Work animateTrigger={animateTrigger1} />
         </div>
       )}
     </>
