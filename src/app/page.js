@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Introduction from "../../components/Introduction";
 import About from "../../components/About";
 import Work from "../../components/Work";
+import Sidebar from "../../components/Sidebar";
 
 export default function Home() {
   const [loader, setLoader] = useState(true);
@@ -37,7 +38,6 @@ export default function Home() {
 
     if (trigger1) {
       setAnimateTrigger1(true);
-      console.log("pppppppppp");
     }
 
     document.addEventListener("scroll", handleScrollEvent1);
@@ -55,20 +55,48 @@ export default function Home() {
     }
   };
 
+  const resetOnResize = () => {
+    if (window.innerWidth > 576) {
+      setOpen(false);
+      document.body.style.overflow = "auto";
+    }
+  };
+
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
     }, 2000);
 
     document.addEventListener("scroll", handleScrollNav);
+    window.addEventListener("resize", resetOnResize);
 
     return () => {
       document.removeEventListener("scroll", handleScrollNav);
+      window.removeEventListener("resize", resetOnResize);
     };
   }, []);
 
+  const closeSidebar = () => {
+    setOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
   const openSidebar = () => {
     setOpen(!open);
+    document.body.style.overflow = "hidden";
+  };
+
+  const scrollSection = (e, id) => {
+    e.preventDefault();
+
+    let node = document.getElementById(id);
+
+    const scrollOptions = {
+      top: node.offsetTop - 100,
+      behavior: "smooth",
+    };
+
+    window.scrollTo(scrollOptions);
   };
 
   return (
@@ -77,13 +105,8 @@ export default function Home() {
         <div className="loader-sec">
           <div className="loader-inner-sec">
             <h1 className="loader-txt">P</h1>
-          
-            <svg
-              height="200"
-              width="200"
-              className="loader-icon"
-              
-            >
+
+            <svg height="200" width="200" className="loader-icon">
               <circle
                 class="circle"
                 cx="100"
@@ -94,18 +117,25 @@ export default function Home() {
                 fill-opacity="0"
               />
             </svg>
-           
           </div>
         </div>
       ) : (
         <div>
-          <div className={`main-sec ${open ? 'opacity-bg': ''}`}>
-            <Header navBg={navBg} openSidebar={openSidebar} />
+          <div className="main-sec">
+            <Header
+              navBg={navBg}
+              openSidebar={openSidebar}
+              scrollSection={scrollSection}
+            />
             <Introduction />
             <About animateTrigger={animateTrigger} />
             <Work animateTrigger1={animateTrigger1} />
+            <Sidebar
+              open={open}
+              closeSidebar={closeSidebar}
+              scrollSection={scrollSection}
+            />
           </div>
-          <div className={`side-bar ${open ? "side-bar-open" : ""}`}></div>
         </div>
       )}
     </>

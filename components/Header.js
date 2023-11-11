@@ -1,21 +1,7 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Header = ({ navBg, openSidebar }) => {
-
-  const scrollSection = (e, id) => {
-    e.preventDefault();
-
-    let node = document.getElementById(id);
-
-    const scrollOptions = {
-      top: node.offsetTop - 100,
-      behavior: "smooth", // You can use 'auto' for an instant scroll
-    };
-
-    window.scrollTo(scrollOptions);
-  };
-
+const Header = ({ navBg, openSidebar, scrollSection }) => {
 
   return (
     <div className={`nav-sec ${navBg ? 'add-nav-bg': ''}`}>

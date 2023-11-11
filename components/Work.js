@@ -55,24 +55,6 @@ const Work = ({ animateTrigger1 }) => {
               </ul>
             </div>
           </Col>
-          {/* <Col lg={4}>
-            <div className="experience-cards">
-              <h4>Safexpay (Front End Developer Intern)</h4>
-              <span>25 Oct 2021 - 3 July 2022</span>
-
-              <ul className="roles-list">
-                <li>Started working on structure of HTML and CSS</li>
-                <li>Worked with javascript including jquery</li>
-                <li>
-                  Learned react, next js structure and material UI framework
-                </li>
-                <li>
-                  Worked on form builder demo project where i learned form
-                  creation and validation and mobile responsiveness
-                </li>
-              </ul>
-            </div>
-          </Col> */}
         </Row>
       </Container>
       
