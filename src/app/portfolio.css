@@ -460,7 +460,7 @@ body {
 }
 
 .work-sec {
-  margin-top: 100px;
+  margin-top: 83px;
   padding: 27px;
   position: relative;
   z-index: 2;
@@ -617,6 +617,10 @@ body {
 
   .about-sec {
     margin-top: 50px;
+  }
+
+  .portfolio-image-sec{
+    height: 295px;
   }
 }
 

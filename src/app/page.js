@@ -18,15 +18,14 @@ export default function Home() {
   const handleScrollEvent1 = () => {
     const element = document.getElementById("about-sec");
     const elementPosition = element.getBoundingClientRect().top;
-
     const element1 = document.getElementById("works-sec");
     const elementPosition1 = element1.getBoundingClientRect().top;
 
-    if (window.pageYOffset > elementPosition) {
+    if (window.innerHeight - elementPosition > 20) {
       setTrigger(true);
     }
 
-    if (window.pageYOffset > elementPosition1) {
+    if (window.innerHeight - elementPosition1 > 80) {
       setTrigger1(true);
     }
   };
