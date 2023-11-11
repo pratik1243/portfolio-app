@@ -4,7 +4,7 @@ const Sidebar = ({ open, closeSidebar, scrollSection }) => {
   return (
     <>
       <div className={`side-bar ${open ? "side-bar-open" : ""}`}>
-        <div className="menu-close-sec">
+        <div className={`menu-close-sec ${open ? "fade-show-menu": "fade-hide-menu"}`}>
         <h1>P</h1>
 
           <div className="menu-close-btn" onClick={closeSidebar}>
@@ -20,7 +20,7 @@ const Sidebar = ({ open, closeSidebar, scrollSection }) => {
             </svg>
           </div>
         </div>
-        <ul className="responsive-menu-list">
+        <ul className={`responsive-menu-list ${open ? "fade-show-menu": "fade-hide-menu"}`}>
           <li className="menu-list-btn">
             <a
               href="#"

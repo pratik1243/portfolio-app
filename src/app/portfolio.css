@@ -103,11 +103,53 @@ body {
   display: none;
 }
 
+.side-bar {
+  width: 0px;
+  background-color: #061124;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+  z-index: 1500;
+  display: none;
+  overflow: hidden;
+}
+
+.side-bar-bg {
+  top: 0;
+  width: 100%;
+  content: "";
+  background-color: #cdcfd433;
+  height: 100%;
+  position: fixed;
+  z-index: 1400;
+  bottom: 0;
+  display: none;
+}
+
+.side-bar-open {
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+  width: 270px;
+  box-shadow: 0px 0px 23px 7px #232425c9;
+}
+
+.opacity-bg {
+  opacity: 0.6;
+}
+
+.overflow-hide {
+  overflow: hidden;
+}
+
 .menu-close-sec {
   padding: 17px 23px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 1s ease-in-out;
 }
 
 .menu-close-sec h1 {
@@ -128,48 +170,11 @@ body {
   margin-top: -4px;
 }
 
-.side-bar {
-  width: 0px;
-  background-color: #061124;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  transition: all 0.3s;
-  z-index: 1500;
-  display: none;
-  overflow: hidden;
-}
-
-.side-bar-bg {
-  top: 0;
-  width: 100%;
-  content: "";
-  background-color: #cdcfd433;
-  height: 100%;
-  position: fixed;
-  z-index: 1400;
-  bottom: 0;
-  display: none;
-}
-
-.side-bar-open {
-  width: 270px;
-  box-shadow: 0px 0px 23px 7px #232425c9;
-}
-
-.opacity-bg {
-  opacity: 0.6;
-}
-
-.overflow-hide {
-  overflow: hidden;
-}
-
 .responsive-menu-list {
   list-style: none;
   margin-top: 20px;
   margin-left: -6px;
+  transition: all 1s ease-in-out;  
 }
 
 .responsive-menu-list .menu-list-btn {
@@ -182,6 +187,14 @@ body {
   font-size: 16px;
   transition: 1s;
   letter-spacing: 0.9px;
+}
+
+.fade-show-menu {
+  opacity: 1;
+}
+
+.fade-hide-menu {
+  opacity: 0;
 }
 
 .introduction-sec {
@@ -460,7 +473,7 @@ body {
 }
 
 .work-sec {
-  margin-top: 83px;
+  margin-top: 90px;
   padding: 27px;
   position: relative;
   z-index: 2;
@@ -619,7 +632,7 @@ body {
     margin-top: 50px;
   }
 
-  .portfolio-image-sec{
+  .portfolio-image-sec {
     height: 295px;
   }
 }
