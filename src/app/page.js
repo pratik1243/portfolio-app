@@ -5,14 +5,17 @@ import Introduction from "../../components/Introduction";
 import About from "../../components/About";
 import Work from "../../components/Work";
 import Sidebar from "../../components/Sidebar";
+import Projects from "../../components/Projects";
 
 export default function Home() {
   const [loader, setLoader] = useState(true);
   const [trigger, setTrigger] = useState(false);
   const [trigger1, setTrigger1] = useState(false);
+  const [trigger2, setTrigger2] = useState(false);
   const [navBg, setNavBg] = useState(false);
   const [animateTrigger, setAnimateTrigger] = useState(false);
   const [animateTrigger1, setAnimateTrigger1] = useState(false);
+  const [animateTrigger2, setAnimateTrigger2] = useState(false);
   const [open, setOpen] = useState(false);
 
   const handleScrollEvent1 = () => {
@@ -20,13 +23,19 @@ export default function Home() {
     const elementPosition = element.getBoundingClientRect().top;
     const element1 = document.getElementById("works-sec");
     const elementPosition1 = element1.getBoundingClientRect().top;
+    const element2 = document.getElementById("projects-sec");
+    const elementPosition2 = element2.getBoundingClientRect().top;
 
-    if (window.innerHeight - elementPosition > 20) {
+    if (window.innerHeight - elementPosition > 40) {
       setTrigger(true);
     }
 
     if (window.innerHeight - elementPosition1 > 80) {
       setTrigger1(true);
+    }
+
+    if (window.innerHeight - elementPosition2 > 80) {
+      setTrigger2(true);
     }
   };
 
@@ -39,12 +48,16 @@ export default function Home() {
       setAnimateTrigger1(true);
     }
 
+    if (trigger2) {
+      setAnimateTrigger2(true);
+    }
+
     document.addEventListener("scroll", handleScrollEvent1);
 
     return () => {
       document.removeEventListener("scroll", handleScrollEvent1);
     };
-  }, [trigger, trigger1]);
+  }, [trigger, trigger1, trigger2]);
 
   const handleScrollNav = () => {
     if (window.pageYOffset > 70) {
@@ -129,6 +142,7 @@ export default function Home() {
             <Introduction />
             <About animateTrigger={animateTrigger} />
             <Work animateTrigger1={animateTrigger1} />
+            <Projects animateTrigger2={animateTrigger2} />
             <Sidebar
               open={open}
               closeSidebar={closeSidebar}

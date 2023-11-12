@@ -2,14 +2,19 @@ import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Header = ({ navBg, openSidebar, scrollSection }) => {
-
   return (
-    <div className={`nav-sec ${navBg ? 'add-nav-bg': ''}`}>
+    <div className={`nav-sec ${navBg ? "add-nav-bg" : ""}`}>
       <Container className="container-sec">
         <Row>
           <Col lg={7} md={5} sm={4} xs={5}>
             <div className="logo-sec">
-              <h1>P</h1>
+              <h1
+                onClick={() => {
+                  window.location.reload();
+                }}
+              >
+                P
+              </h1>
             </div>
           </Col>
           <Col lg={5} md={7} sm={8} xs={7}>
@@ -25,7 +30,9 @@ const Header = ({ navBg, openSidebar, scrollSection }) => {
                 </a>
               </li>
               <li>
-                <a href="#">Projects</a>
+                <a href="#" onClick={(e) => scrollSection(e, "projects-sec")}>
+                  Projects
+                </a>
               </li>
               <li>
                 <a href="#">Resume</a>
@@ -50,7 +57,7 @@ const Header = ({ navBg, openSidebar, scrollSection }) => {
             </div>
           </Col>
         </Row>
-      </Container>      
+      </Container>
     </div>
   );
 };

@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import portfolioImage from "../public/portfolio-img-sec-2.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Introduction = () => {
@@ -12,15 +14,26 @@ const Introduction = () => {
                 <h1 className="head-txt1">I’m Pratik Thakur</h1>
                 <h1 className="head-txt2">Front End Web Developer</h1>
                 <p className="para-txt">
-                Skilled in developing highly
-                responsive website with elegant and efficient code
+                  Skilled in developing highly responsive website with elegant
+                  and efficient code
                 </p>
               </div>
             </div>
           </Col>
           <Col lg={5}>
             <div className="portfolio-image-sec">
-           <div className="portfolio-user-img"></div>
+              {/* <div className="portfolio-user-img"></div> */}
+              <div className="portfolio-user-img">
+                <Image
+                  src={portfolioImage}
+                  alt="portfolio-logo"
+                  layout="fill"
+                  objectFit="cover"
+                  quality={100}
+                  unoptimized
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </div>
             </div>
           </Col>
         </Row>
