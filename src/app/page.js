@@ -6,6 +6,7 @@ import About from "../../components/About";
 import Work from "../../components/Work";
 import Sidebar from "../../components/Sidebar";
 import Projects from "../../components/Projects";
+import Resume from "../../components/Resume";
 
 export default function Home() {
   const [loader, setLoader] = useState(true);
@@ -139,15 +140,16 @@ export default function Home() {
               openSidebar={openSidebar}
               scrollSection={scrollSection}
             />
-            <Introduction />
-            <About animateTrigger={animateTrigger} />
-            <Work animateTrigger1={animateTrigger1} />
-            <Projects animateTrigger2={animateTrigger2} />
             <Sidebar
               open={open}
               closeSidebar={closeSidebar}
               scrollSection={scrollSection}
             />
+            <Introduction />
+            <About animateTrigger={animateTrigger} />
+            <Work animateTrigger1={animateTrigger1} />
+            <Projects animateTrigger2={animateTrigger2} />
+            <Resume />
           </div>
         </div>
       )}

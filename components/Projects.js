@@ -58,7 +58,7 @@ const Projects = ({ animateTrigger2 }) => {
                         src={projectImg2}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "125%", width: "105%" }}
+                        style={{ height: "128%", width: "105%" }}
                       />
                     </div>{" "}
                   </a>
@@ -118,7 +118,7 @@ const Projects = ({ animateTrigger2 }) => {
                         src={projectImg5}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "100%", width: "140%" }}
+                        style={{ height: "100%", width: "130%" }}
                       />
                     </div>{" "}
                   </a>

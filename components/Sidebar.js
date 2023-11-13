@@ -45,7 +45,12 @@ const Sidebar = ({ open, closeSidebar, scrollSection }) => {
           </li>
           <li className="menu-list-btn">
             {" "}
-            <a href="#">Projects</a>
+            <a href="#" 
+            onClick={(e) => {
+              scrollSection(e, "projects-sec");
+              closeSidebar();
+            }}
+            >Projects</a>
           </li>
           <li className="menu-list-btn">
             <a href="#">Resume</a>
