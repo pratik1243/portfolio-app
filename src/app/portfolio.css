@@ -241,7 +241,7 @@ body {
 
 .portfolio-image-sec {
   height: 365px;
-  width: 360px;
+  max-width: 360px;
   overflow: hidden;
   border-radius: 27% 73% 60% 40% / 30% 38% 62% 70%;
   animation: 0.9s headTxtanim linear infinite;
@@ -418,7 +418,7 @@ body {
 }
 
 .about-sec {
-  margin-top: 90px;
+  margin-top: 100px;
   padding: 27px;
   position: relative;
   z-index: 3;
@@ -451,6 +451,11 @@ body {
   margin-bottom: 35px;
   border-bottom: 0.2px solid #1275be;
   padding-bottom: 9px;
+}
+
+.vector-portfolio-img {
+  border-radius: 8px;
+  margin-right: 30px;
 }
 
 .skills-section {
@@ -496,7 +501,7 @@ body {
 }
 
 .user-detail-sec .para-txt1 {
-  font-size: 17px;
+  font-size: 16.4px;
   color: #b6b3b3;
   margin-bottom: 21px;
 }
@@ -571,7 +576,6 @@ body {
   padding: 27px;
   position: relative;
   z-index: 2;
-  padding-bottom: 100px;
   opacity: 0;
 }
 
@@ -597,6 +601,10 @@ body {
   opacity: 0;
   transition: all 0.5s;
 }
+
+/* .projects-cards-sec a .projects-card:hover{
+box-shadow: 0px 6px 8px 7px #105766;
+} */
 
 .projects-cards-sec a .projects-card img {
   transition: all 0.7s;
@@ -650,7 +658,99 @@ body {
   animation-delay: 1.6s;
 }
 
-@media (max-width: 576px) {
+.contact-sec {
+  /* margin-top: 110px; */
+  /* margin-bottom: 80px; */
+  /* padding: 27px; */
+  position: relative;
+  margin-top: 100px;
+  padding: 27px;
+  background-color: #0093ff0a;
+}
+
+.contact-sec .contact-head-txt {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 50px;
+  border-bottom: 0.2px solid #1275be;
+  padding-bottom: 12px;
+}
+
+.contact-list-sec .contact-list-head {
+  font-size: 33px;
+  color: #fff;
+  margin-bottom: 37px;
+}
+
+.inner-contact-list {
+  margin-bottom: 21px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-svg-div {
+  border: 1px solid #0093ff;
+  margin-right: 13px;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  display: grid;
+  place-items: center;
+  margin-top: 3px;
+}
+
+.contact-svg-div svg {
+  color: #0093ff;
+}
+
+.inner-contact-list .contact-txt-sec span {
+  display: block;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.inner-contact-list .contact-txt-sec a {
+  text-decoration: none;
+  color: #bbb7b7f0;
+  font-size: 14px;
+  transition: 1s;
+  letter-spacing: 0.9px;
+}
+
+.inner-contact-list .contact-txt-sec p {
+  text-decoration: none;
+  color: #bbb7b7f0;
+  font-size: 14px;
+  transition: 1s;
+  letter-spacing: 0.9px;
+  line-height: 23px;
+  max-width: 380px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.social-media-section {
+  margin-top: 10px;
+}
+
+.social-media-section h4 {
+  font-size: 29px;
+  color: #0093ff;
+  margin-bottom: 30px;
+}
+
+.social-media-section a {
+  display: inline-block;
+  margin-right: 27px;
+}
+
+.social-media-section a:last-child {
+  background-color: white;
+  border-radius: 50%;
+  outline: 1px solid white;
+}
+
+@media (max-width: 575px) {
   .menu-icon-btn svg {
     display: block;
   }
@@ -726,13 +826,18 @@ body {
   .project-sec {
     margin-top: 10px;
   }
+
+  .inner-contact-list .contact-txt-sec span {
+    margin-top: 6px;
+  }
 }
 
 @media (max-width: 480px) {
   .work-sec,
   .about-sec,
   .introduction-sec,
-  .project-sec {
+  .project-sec,
+  .contact-sec {
     padding: 15px;
   }
 
@@ -754,12 +859,34 @@ body {
 
   .work-sec .work-head-txt,
   .about-sec .about-head-txt,
-  .project-sec .project-head-txt {
+  .project-sec .project-head-txt,
+  .contact-sec .contact-head-txt {
     font-size: 31px;
   }
 
   .about-sec {
     margin-top: 50px;
+  }
+
+  .inner-contact-list {
+    flex-direction: column;
+  }
+
+  .contact-sec .contact-head-txt {
+    margin-bottom: 35px;
+  }
+
+  .social-logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .social-media-section a {
+    margin-right: 18px;
+  }
+
+  .social-media-section h4 {
+    margin-bottom: 20px;
   }
 }
 
@@ -776,6 +903,10 @@ body {
 
   .after-lg-mt {
     margin-top: 0;
+  }
+
+  .social-media-section {
+    margin-top: 40px;
   }
 }
 
@@ -799,5 +930,14 @@ body {
 
   .lg-mt {
     margin-top: 1.5rem;
+  }
+
+  .intro-left-sec .intro-inner-sec .para-txt {
+    max-width: 100%;
+  }
+
+  .social-logo {
+    height: 37px;
+    width: 37px;
   }
 }

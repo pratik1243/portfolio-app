@@ -7,6 +7,7 @@ import Work from "../../components/Work";
 import Sidebar from "../../components/Sidebar";
 import Projects from "../../components/Projects";
 import Resume from "../../components/Resume";
+import Contact from "../../components/Contact";
 
 export default function Home() {
   const [loader, setLoader] = useState(true);
@@ -149,6 +150,7 @@ export default function Home() {
             <About animateTrigger={animateTrigger} />
             <Work animateTrigger1={animateTrigger1} />
             <Projects animateTrigger2={animateTrigger2} />
+            <Contact />
             {/* <Resume /> */}
           </div>
         </div>

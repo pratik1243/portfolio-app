@@ -34,8 +34,9 @@ const Header = ({ navBg, openSidebar, scrollSection }) => {
                   Projects
                 </a>
               </li>
+             
               <li>
-                <a href="#">Resume</a>
+                <a href="#" onClick={(e) => scrollSection(e, "contacts-sec")}>Contact</a>
               </li>
             </ul>
 
