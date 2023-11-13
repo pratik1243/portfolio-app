@@ -149,7 +149,7 @@ export default function Home() {
             <About animateTrigger={animateTrigger} />
             <Work animateTrigger1={animateTrigger1} />
             <Projects animateTrigger2={animateTrigger2} />
-            <Resume />
+            {/* <Resume /> */}
           </div>
         </div>
       )}
