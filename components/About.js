@@ -9,7 +9,7 @@ import nextJsLogo from "../public/next-js-logo.svg";
 import reduxLogo from "../public/redux-logo.svg";
 import muiLogo from "../public/material-ui-logo.svg";
 import bootStrapLogo from "../public/bootstrap-logo.svg";
-import vectorAboutLogo from "../public/portfolio-vector-img2.jpg";
+import vectorAboutLogo from "../public/portfolio-vector-img3.svg";
 import jqueryLogo from "../public/jquery-logo.svg";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
@@ -26,7 +26,7 @@ const About = ({ animateTrigger }) => {
           <Col lg={12} md={12} sm={12} xs={12}>
             <h1 className="about-head-txt">About Me</h1>
           </Col>
-          <Col lg={7}>
+          <Col lg={6}>
             <div className="user-detail-sec">
               <p className="para-txt1">
                 Hello, I'm Pratik, a passionate and innovative front-end
@@ -34,11 +34,13 @@ const About = ({ animateTrigger }) => {
                 experiences.
               </p>
 
+              <span className="sub-txt">What I Do</span>
               <p className="para-txt1">
                 I specialize in front-end web development, where I turn design
                 concepts into responsive and interactive websites.
               </p>
 
+              <span className="sub-txt">My Journey</span>
               <p className="para-txt1">
                 My journey in front-end web development started back in
                 pandemic. Taking YouTube as my source, started off with learning
@@ -50,10 +52,10 @@ const About = ({ animateTrigger }) => {
             </div>
           </Col>
 
-          <Col lg={5}>
-            {/* <div className="text-end mt-3">
-              <Image src={vectorAboutLogo} className="vector-portfolio-img" height={250} width={290} />
-            </div> */}
+          <Col lg={6}>
+            <div className="vector-portfolio-imgsec">
+              <Image src={vectorAboutLogo} objectFit="cover" height={285} width={285} />
+            </div>
           </Col>
 
           <Col lg={12} md={12} sm={12} xs={12}>

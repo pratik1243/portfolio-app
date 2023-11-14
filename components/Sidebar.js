@@ -1,11 +1,15 @@
 import React from "react";
 
-const Sidebar = ({ open, closeSidebar, scrollSection }) => {
+const Sidebar = ({ open, closeSidebar, scrollSection, activeSection }) => {
   return (
     <>
       <div className={`side-bar ${open ? "side-bar-open" : ""}`}>
-        <div className={`menu-close-sec ${open ? "fade-show-menu": "fade-hide-menu"}`}>
-        <h1>P</h1>
+        <div
+          className={`menu-close-sec ${
+            open ? "fade-show-menu" : "fade-hide-menu"
+          }`}
+        >
+          <h1>P</h1>
 
           <div className="menu-close-btn" onClick={closeSidebar}>
             <svg
@@ -20,10 +24,15 @@ const Sidebar = ({ open, closeSidebar, scrollSection }) => {
             </svg>
           </div>
         </div>
-        <ul className={`responsive-menu-list ${open ? "fade-show-menu": "fade-hide-menu"}`}>
+        <ul
+          className={`responsive-menu-list ${
+            open ? "fade-show-menu" : "fade-hide-menu"
+          }`}
+        >
           <li className="menu-list-btn">
             <a
               href="#"
+              className={`${activeSection == 1 ? 'active-section' :''}`}
               onClick={(e) => {
                 scrollSection(e, "about-sec");
                 closeSidebar();
@@ -35,6 +44,7 @@ const Sidebar = ({ open, closeSidebar, scrollSection }) => {
           <li className="menu-list-btn">
             <a
               href="#"
+              className={`${activeSection == 2 ? 'active-section' :''}`}
               onClick={(e) => {
                 scrollSection(e, "works-sec");
                 closeSidebar();
@@ -45,15 +55,39 @@ const Sidebar = ({ open, closeSidebar, scrollSection }) => {
           </li>
           <li className="menu-list-btn">
             {" "}
-            <a href="#" 
-            onClick={(e) => {
-              scrollSection(e, "projects-sec");
-              closeSidebar();
-            }}
-            >Projects</a>
+            <a
+              href="#"
+              className={`${activeSection == 3 ? 'active-section' :''}`}
+              onClick={(e) => {
+                scrollSection(e, "projects-sec");
+                closeSidebar();
+              }}
+            >
+              Projects
+            </a>
           </li>
           <li className="menu-list-btn">
-            <a href="#">Resume</a>
+            <a
+              href="#"
+              onClick={(e) => {
+                scrollSection(e, "contacts-sec");
+                closeSidebar();
+              }}
+            >
+              Resume
+            </a>
+          </li>
+          <li className="menu-list-btn">
+            <a
+              href="#"
+              className={`${activeSection == 5 ? 'active-section' :''}`}
+              onClick={(e) => {
+                scrollSection(e, "contacts-sec");
+                closeSidebar();
+              }}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>

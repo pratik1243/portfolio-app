@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+// import portfolioImage from "../public/portfolio_img.jpg";
 import portfolioImage from "../public/portfolio-img-sec-2.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Introduction = () => {
   return (
-    <div className="introduction-sec">
+    <div id="intro-sec" className="introduction-sec">
       <Container className="container-sec">
         <Row>
           <Col lg={7}>
@@ -30,7 +31,6 @@ const Introduction = () => {
                   layout="fill"
                   objectFit="cover"
                   quality={100}
-                  unoptimized
                   style={{ width: "100%", height: "100%" }}
                 />
               </div>

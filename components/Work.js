@@ -46,11 +46,11 @@ const Work = ({ animateTrigger1 }) => {
                 <li>Started working on structure of HTML and CSS</li>
                 <li>Worked with javascript including jquery</li>
                 <li>
-                  Learned react, next js structure and material UI framework
-                </li>
-                <li>
                   Worked on form builder demo project where i learned form
                   creation and validation and mobile responsiveness
+                </li>
+                <li>
+                  Learned react, next js structure and material UI framework
                 </li>
               </ul>
             </div>

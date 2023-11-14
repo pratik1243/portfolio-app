@@ -18,26 +18,37 @@ export default function Home() {
   const [animateTrigger, setAnimateTrigger] = useState(false);
   const [animateTrigger1, setAnimateTrigger1] = useState(false);
   const [animateTrigger2, setAnimateTrigger2] = useState(false);
+  const [activeSection, setActiveSection] = useState(0);
   const [open, setOpen] = useState(false);
 
   const handleScrollEvent1 = () => {
+    
     const element = document.getElementById("about-sec");
     const elementPosition = element.getBoundingClientRect().top;
     const element1 = document.getElementById("works-sec");
     const elementPosition1 = element1.getBoundingClientRect().top;
     const element2 = document.getElementById("projects-sec");
     const elementPosition2 = element2.getBoundingClientRect().top;
+    const element3 = document.getElementById("contacts-sec");
+    const elementPosition3 = element3.getBoundingClientRect().top;
 
     if (window.innerHeight - elementPosition > 40) {
       setTrigger(true);
+      setActiveSection(1);
     }
 
     if (window.innerHeight - elementPosition1 > 80) {
       setTrigger1(true);
+      setActiveSection(2);
     }
 
     if (window.innerHeight - elementPosition2 > 80) {
       setTrigger2(true);
+      setActiveSection(3);
+    }
+
+    if (window.innerHeight - elementPosition3 > 40) {
+      setActiveSection(5);
     }
   };
 
@@ -138,11 +149,13 @@ export default function Home() {
           <div className="main-sec">
             <Header
               navBg={navBg}
+              activeSection={activeSection}
               openSidebar={openSidebar}
               scrollSection={scrollSection}
             />
             <Sidebar
               open={open}
+              activeSection={activeSection}
               closeSidebar={closeSidebar}
               scrollSection={scrollSection}
             />
