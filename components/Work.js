@@ -13,7 +13,7 @@ const Work = ({ animateTrigger1 }) => {
             <h1 className="work-head-txt">Work Experience</h1>
           </Col>
           <Col lg={6} md={6} sm={6} xs={12}>
-            <div className="experience-cards">
+            <div className={`experience-cards ${animateTrigger1 ? "animate-work-cards" : ""}`}>
               <h4>Safexpay (Junior Front End Developer)</h4>
               <span>4 July 2022 - Present</span>
 
@@ -38,7 +38,7 @@ const Work = ({ animateTrigger1 }) => {
             </div>
           </Col>
           <Col lg={6} md={6} sm={6} xs={12}>
-            <div className="experience-cards">
+            <div className={`experience-cards expe-card2 ${animateTrigger1 ? "animate-work-cards" : ""}`}>
               <h4>Safexpay (Front End Developer Intern)</h4>
               <span>25 Oct 2021 - 3 July 2022</span>
 

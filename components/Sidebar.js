@@ -66,7 +66,7 @@ const Sidebar = ({ open, closeSidebar, scrollSection, activeSection }) => {
               Projects
             </a>
           </li>
-          <li className="menu-list-btn">
+          {/* <li className="menu-list-btn">
             <a
               href="#"
               onClick={(e) => {
@@ -76,7 +76,7 @@ const Sidebar = ({ open, closeSidebar, scrollSection, activeSection }) => {
             >
               Resume
             </a>
-          </li>
+          </li> */}
           <li className="menu-list-btn">
             <a
               href="#"

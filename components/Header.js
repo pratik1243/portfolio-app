@@ -34,11 +34,11 @@ const Header = ({ navBg, openSidebar, scrollSection, activeSection }) => {
                   Projects
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" onClick={(e) => scrollSection(e, "projects-sec")}>
                   Resume
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#" className={`${activeSection == 5 ? 'active-section' :''}`} onClick={(e) => scrollSection(e, "contacts-sec")}>Contact</a>
               </li>

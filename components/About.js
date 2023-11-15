@@ -53,7 +53,7 @@ const About = ({ animateTrigger }) => {
           </Col>
 
           <Col lg={6}>
-            <div className="vector-portfolio-imgsec">
+            <div className={`vector-portfolio-imgsec ${animateTrigger ? "animate-vector-img" : ""}`}>
               <Image src={vectorAboutLogo} objectFit="cover" height={285} width={285} />
             </div>
           </Col>

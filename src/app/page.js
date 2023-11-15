@@ -6,7 +6,6 @@ import About from "../../components/About";
 import Work from "../../components/Work";
 import Sidebar from "../../components/Sidebar";
 import Projects from "../../components/Projects";
-import Resume from "../../components/Resume";
 import Contact from "../../components/Contact";
 
 export default function Home() {
@@ -32,9 +31,12 @@ export default function Home() {
     const element3 = document.getElementById("contacts-sec");
     const elementPosition3 = element3.getBoundingClientRect().top;
 
-    if (window.innerHeight - elementPosition > 40) {
+    if (window.innerHeight - elementPosition > 60) {
       setTrigger(true);
       setActiveSection(1);
+    }else{
+      setTrigger(false);
+      setActiveSection(0);
     }
 
     if (window.innerHeight - elementPosition1 > 80) {
@@ -73,7 +75,7 @@ export default function Home() {
   }, [trigger, trigger1, trigger2]);
 
   const handleScrollNav = () => {
-    if (window.pageYOffset > 70) {
+    if (window.pageYOffset > 60) {
       setNavBg(true);
     } else {
       setNavBg(false);
@@ -164,8 +166,7 @@ export default function Home() {
             <Work animateTrigger1={animateTrigger1} />
             <Projects animateTrigger2={animateTrigger2} />
             <Contact />
-            {/* <Resume /> */}
-          </div>
+            </div>
         </div>
       )}
     </>
