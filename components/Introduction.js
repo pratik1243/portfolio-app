@@ -18,7 +18,7 @@ const Introduction = () => {
                   Skilled in developing highly responsive website with elegant
                   and efficient code
                 </p>
-                <button className="cv-download-btn">
+                {/* <button className="cv-download-btn">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -34,7 +34,8 @@ const Introduction = () => {
 
 
                     <span className="btn-gradient"></span>
-                </button>
+                </button> */}
+
               </div>
             </div>
           </Col>

@@ -13,10 +13,12 @@ export default function Home() {
   const [trigger, setTrigger] = useState(false);
   const [trigger1, setTrigger1] = useState(false);
   const [trigger2, setTrigger2] = useState(false);
+  const [trigger3, setTrigger3] = useState(false);
   const [navBg, setNavBg] = useState(false);
   const [animateTrigger, setAnimateTrigger] = useState(false);
   const [animateTrigger1, setAnimateTrigger1] = useState(false);
   const [animateTrigger2, setAnimateTrigger2] = useState(false);
+  const [animateTrigger3, setAnimateTrigger3] = useState(false);
   const [activeSection, setActiveSection] = useState(0);
   const [open, setOpen] = useState(false);
 
@@ -28,6 +30,9 @@ export default function Home() {
     const elementPosition1 = element1.getBoundingClientRect().top;
     const element2 = document.getElementById("projects-sec");
     const elementPosition2 = element2.getBoundingClientRect().top;
+    const element4 = document.getElementById("personal-projects-sec");
+    const elementPosition4 = element4.getBoundingClientRect().top;
+   
     const element3 = document.getElementById("contacts-sec");
     const elementPosition3 = element3.getBoundingClientRect().top;
 
@@ -52,6 +57,10 @@ export default function Home() {
     if (window.innerHeight - elementPosition3 > 40) {
       setActiveSection(5);
     }
+
+    if (window.innerHeight - elementPosition4 > 30) {
+      setTrigger3(true);
+    }
   };
 
   useEffect(() => {
@@ -67,12 +76,16 @@ export default function Home() {
       setAnimateTrigger2(true);
     }
 
+    if (trigger3) {
+      setAnimateTrigger3(true);
+    }
+
     document.addEventListener("scroll", handleScrollEvent1);
 
     return () => {
       document.removeEventListener("scroll", handleScrollEvent1);
     };
-  }, [trigger, trigger1, trigger2]);
+  }, [trigger, trigger1, trigger2, trigger3]);
 
   const handleScrollNav = () => {
     if (window.pageYOffset > 60) {
@@ -164,7 +177,7 @@ export default function Home() {
             <Introduction />
             <About animateTrigger={animateTrigger} />
             <Work animateTrigger1={animateTrigger1} />
-            <Projects animateTrigger2={animateTrigger2} />
+            <Projects animateTrigger2={animateTrigger2} animateTrigger3={animateTrigger3} />
             <Contact />
             </div>
         </div>

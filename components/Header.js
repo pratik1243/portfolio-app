@@ -20,17 +20,38 @@ const Header = ({ navBg, openSidebar, scrollSection, activeSection }) => {
           <Col lg={5} md={7} sm={9} xs={7}>
             <ul className="menu-items-sec">
               <li>
-                <a href="#" className={`${activeSection == 1 ? 'active-section' :''}`} onClick={(e) => scrollSection(e, "about-sec")}>
+                <a
+                  href="../Pratik-Thakur-CV.pdf"
+                  type="application/pdf"
+                  target="_blank"
+                >
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className={`${activeSection == 1 ? "active-section" : ""}`}
+                  onClick={(e) => scrollSection(e, "about-sec")}
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className={`${activeSection == 2 ? 'active-section' :''}`} onClick={(e) => scrollSection(e, "works-sec")}>
+                <a
+                  href="#"
+                  className={`${activeSection == 2 ? "active-section" : ""}`}
+                  onClick={(e) => scrollSection(e, "works-sec")}
+                >
                   Work
                 </a>
               </li>
               <li>
-                <a href="#" className={`${activeSection == 3 ? 'active-section' :''}`} onClick={(e) => scrollSection(e, "projects-sec")}>
+                <a
+                  href="#"
+                  className={`${activeSection == 3 ? "active-section" : ""}`}
+                  onClick={(e) => scrollSection(e, "projects-sec")}
+                >
                   Projects
                 </a>
               </li>
@@ -40,7 +61,13 @@ const Header = ({ navBg, openSidebar, scrollSection, activeSection }) => {
                 </a>
               </li> */}
               <li>
-                <a href="#" className={`${activeSection == 5 ? 'active-section' :''}`} onClick={(e) => scrollSection(e, "contacts-sec")}>Contact</a>
+                <a
+                  href="#"
+                  className={`${activeSection == 5 ? "active-section" : ""}`}
+                  onClick={(e) => scrollSection(e, "contacts-sec")}
+                >
+                  Contact
+                </a>
               </li>
             </ul>
 

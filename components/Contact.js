@@ -96,7 +96,7 @@ const Contact = () => {
               <a href="#">
                 <Image src={linkedinLogo} alt="contant-img" className="social-logo" height={50} width={50} />
               </a>
-              <a href="#">
+              <a href="https://github.com/pratik1243" target="_blank">
                 <Image src={githubLogo} alt="contant-img" className="social-logo" height={50} width={50} />
               </a>
             </div>
