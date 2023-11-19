@@ -32,7 +32,7 @@ const Projects = ({ animateTrigger2, animateTrigger3 }) => {
                   <a href="https://safexpay.com/apix" target="_blank">
                     {" "}
                     <div
-                      className={`projects-card card-bg7 mt2-after-sm ${
+                      className={`projects-card card-bg7 ${
                         animateTrigger2 ? "anim-project-cards" : ""
                       }`}
                     >
