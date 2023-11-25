@@ -87,13 +87,13 @@ const Contact = () => {
             <div className="social-media-section">
               <h4>Get in touch</h4>
 
-              <a href="#">
+              <a href="https://www.instagram.com/pratikthakur826" target="_blank">
                 <Image src={instaLogo} alt="contant-img" className="social-logo" height={50} width={50} />
               </a>
-              <a href="#">
+              <a href="https://m.facebook.com/profile.php/?id=100050836133308" target="_blank">
                 <Image src={facebookLogo} alt="contant-img" className="social-logo" height={50} width={50} />
               </a>
-              <a href="#">
+              <a href="#" target="_blank">
                 <Image src={linkedinLogo} alt="contant-img" className="social-logo" height={50} width={50} />
               </a>
               <a href="https://github.com/pratik1243" target="_blank">

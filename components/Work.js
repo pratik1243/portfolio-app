@@ -50,7 +50,7 @@ const Work = ({ animateTrigger1 }) => {
                   creation and validation and mobile responsiveness
                 </li>
                 <li>
-                  Learned react, next js structure and material UI framework
+                  Worked on react, next js structure and material UI framework
                 </li>
               </ul>
             </div>

@@ -92,9 +92,10 @@ body {
 .menu-items-sec li a {
   text-decoration: none;
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   transition: 1s;
   letter-spacing: 0.9px;
+  font-weight: 500;
   /* font-family: sans-serif; */
 }
 
@@ -110,7 +111,7 @@ body {
 
 .active-section {
   color: #0f98f9 !important;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .menu-icon-btn svg {
@@ -555,7 +556,7 @@ body {
   font-size: 42px;
   color: #fff;
   margin-bottom: 35px;
-  border-bottom: 0.2px solid #1275be;
+  border-bottom: 1.6px solid #1275be;
   padding-bottom: 9px;
 }
 
@@ -662,7 +663,7 @@ body {
   font-size: 42px;
   color: #fff;
   margin-bottom: 41px;
-  border-bottom: 0.2px solid #1275be;
+  border-bottom: 1.6px solid #1275be;
   padding-bottom: 12px;
 }
 
@@ -729,11 +730,11 @@ body {
 }
 
 .gradient-bg-3 {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   position: absolute;
   right: 0px;
-  top: 70px;
+  top: 60px;
   background-color: #0f6276;
   box-shadow: 0px 0px 157px 180px #0f6276;
   border-radius: 50%;
@@ -767,7 +768,7 @@ body {
   font-size: 42px;
   color: #fff;
   margin-bottom: 41px;
-  border-bottom: 0.2px solid #1275be;
+  border-bottom: 1.6px solid #1275be;
   padding-bottom: 12px;
 }
 
@@ -776,7 +777,7 @@ body {
   color: #fff;
   text-transform: capitalize;
   letter-spacing: 0.8px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .projects-cards-sec a {
@@ -887,7 +888,7 @@ box-shadow: 0px 6px 8px 7px #105766;
   font-size: 42px;
   color: #fff;
   margin-bottom: 50px;
-  border-bottom: 0.2px solid #1275be;
+  border-bottom: 1.6px solid #1275be;
   padding: 12px 0px;
 }
 

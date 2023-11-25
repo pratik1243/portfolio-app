@@ -92,9 +92,8 @@ const Sidebar = ({ open, closeSidebar, scrollSection, activeSection }) => {
           <li className="menu-list-btn">
             <a
               href="../Pratik-Thakur-CV.pdf"
-              type="application/pdf"
-              target="_blank"
-            >
+              download
+          >
               Resume
             </a>
           </li>
