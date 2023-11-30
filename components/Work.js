@@ -45,6 +45,7 @@ const Work = ({ animateTrigger1 }) => {
               <ul className="roles-list">
                 <li>Started working on structure of HTML and CSS</li>
                 <li>Worked with javascript including jquery</li>
+                <li>Learned to build HTML mailers for different email applications</li>
                 <li>
                   Worked on form builder demo project where i learned form
                   creation and validation and mobile responsiveness

@@ -1,12 +1,9 @@
-
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #071224 !important;
   scroll-behavior: smooth;
-  
 }
 
 ::-webkit-scrollbar {
@@ -99,10 +96,15 @@ body {
   /* font-family: sans-serif; */
 }
 
-.menu-items-sec li a:hover {
+.menu-items-sec li:last-child a {
   color: #0093ff;
+  font-weight: 600;
 }
 
+.menu-items-sec li a:hover {
+  color: #0093ff;
+  font-weight: 600;
+}
 
 .menu-icon-btn {
   float: right;
@@ -110,8 +112,8 @@ body {
 }
 
 .active-section {
-  color: #0f98f9 !important;
-  font-weight: 500;
+  color: #0093ff !important;
+  font-weight: 600;
 }
 
 .menu-icon-btn svg {
@@ -200,7 +202,7 @@ body {
 .responsive-menu-list .menu-list-btn a {
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
+  font-size: 17px;
   transition: 1s;
   letter-spacing: 0.9px;
 }
@@ -208,7 +210,6 @@ body {
 .responsive-menu-list .menu-list-btn a:hover {
   color: #0093ff;
 }
-
 
 .fade-show-menu {
   animation: 1s linear animSideOpen infinite;
@@ -283,7 +284,6 @@ body {
   outline: 3px solid #0093ff;
   margin: auto;
   /* transform: scale(0.9); */
-
 }
 
 .portfolio-image-sec .portfolio-user-img {
@@ -298,12 +298,11 @@ body {
   /* transform: translate(-24px, 0px);
   height: 120%;
   width: 108%; */
-
 }
 
 @keyframes profileImgAnim {
   0% {
-    transform: translate(-26px, 70px);;
+    transform: translate(-26px, 70px);
     opacity: 0.6;
   }
 
@@ -312,7 +311,6 @@ body {
     opacity: 1;
   }
 }
-
 
 .gradient-bg-1 {
   height: 80px;
@@ -754,11 +752,11 @@ body {
   opacity: 0;
 }
 
-#personal-projects-sec{
+#personal-projects-sec {
   margin-top: 75px;
 }
 
-#personal-projects-sec h4{
+#personal-projects-sec h4 {
   opacity: 0;
   animation-delay: 0.3s;
   transform: none !important;
@@ -767,12 +765,12 @@ body {
 .project-sec .project-head-txt {
   font-size: 42px;
   color: #fff;
-  margin-bottom: 41px;
+  margin-bottom: 53px;
   border-bottom: 1.6px solid #1275be;
   padding-bottom: 12px;
 }
 
-.projects-cards-sec h4{
+.projects-cards-sec h4 {
   font-size: 25px;
   color: #fff;
   text-transform: capitalize;
@@ -855,8 +853,6 @@ box-shadow: 0px 6px 8px 7px #105766;
   animation-delay: 1.6s;
 }
 
-
-
 .card-bg7 {
   animation-delay: 0.6s;
 }
@@ -873,6 +869,93 @@ box-shadow: 0px 6px 8px 7px #105766;
   animation-delay: 1.2s;
 }
 
+.project-details-sec {
+  margin-top: 40px;
+}
+
+.project-details-card {
+  background-color: #121b2a66;
+  padding: 35px 23px;
+  margin-top: 50px;
+  border-radius: 7px;
+  border: 1px solid #3f3f3f78;
+  transition: all 0.5s;
+  max-width: 1200px;
+  opacity: 0;
+}
+
+.project-details-card .images-sec {
+  height: 250px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.project-description-sec {
+  margin-left: 30px;
+}
+
+.project-description-sec .heade-txt {
+  font-size: 21px;
+  color: #fff;
+  padding-bottom: 11px;
+}
+
+.project-description-sec .heade-txt.heade-txt-anim::after {
+  content: "";
+  width: 0px;
+  background-color: #1275be;
+  height: 1.6px;
+  display: block;
+  margin-top: 10px;
+  transition: all 0.7s;
+  animation: 0.7s headeTxtAnim linear infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes headeTxtAnim {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+.project-description-sec .description-list {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 20px;
+}
+
+.project-description-sec .description-list li {
+  color: #e3e1e1f0;
+  font-size: 14.4px;
+  margin-bottom: 10px;
+}
+
+/* 
+.project-detail-img {
+  transition: all 0.7s;
+}
+
+.project-details-card:hover > div div .project-detail-img {
+transform: scale(1.1);
+} */
+
+.gradient-bg-4 {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 0px;
+  top: 35%;
+  background-color: #0f6276;
+  box-shadow: 0px 0px 157px 180px #0f6276;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: -2;
+}
 
 .contact-sec {
   /* margin-top: 110px; */
@@ -1117,9 +1200,9 @@ box-shadow: 0px 6px 8px 7px #105766;
     margin-top: 1.5rem;
   }
 
-.mt2-after-md{
-  margin-top: 3rem !important;
-}
+  .mt2-after-md {
+    margin-top: 3rem !important;
+  }
 
   .after-lg-mt {
     margin-top: 0;
@@ -1127,6 +1210,15 @@ box-shadow: 0px 6px 8px 7px #105766;
 
   .social-media-section {
     margin-top: 40px;
+  }
+
+  .project-description-sec {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+  .project-description-sec .description-list {
+    margin-top: 15px;
   }
 }
 

@@ -21,15 +21,6 @@ const Header = ({ navBg, openSidebar, scrollSection, activeSection }) => {
             <ul className="menu-items-sec">
               <li>
                 <a
-                  href="../Pratik-Thakur-CV.pdf"
-                  type="application/pdf"
-                  target="_blank"
-                >
-                  Resume
-                </a>
-              </li>
-              <li>
-                <a
                   href="#"
                   className={`${activeSection == 1 ? "active-section" : ""}`}
                   onClick={(e) => scrollSection(e, "about-sec")}
@@ -69,6 +60,16 @@ const Header = ({ navBg, openSidebar, scrollSection, activeSection }) => {
                   Contact
                 </a>
               </li>
+              <li>
+                <a
+                  href="../Pratik-Thakur-CV.pdf"
+                  type="application/pdf"
+                  target="_blank"
+                >
+                  Resume
+                </a>
+              </li>
+             
             </ul>
 
             <div className="menu-icon-btn">
