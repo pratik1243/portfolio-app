@@ -9,15 +9,22 @@ import projectImg5 from "../public/project-snap-5.png";
 import projectImg6 from "../public/project-snap-6.png";
 import ebookImg from "../public/ebook-img.png";
 import platformSafexImg from "../public/platform-safexpay-img.png";
-import neoPortalImg from "../public/neo-bank-portal.png";
+import dmoInternational from "../public/dmo-international.png";
 import apixSafexImg from "../public/apix-img.png";
 import bbpsPortalImg from "../public/bbps-portal-screenshot.jpg";
 import formBuilderImg from "../public/form-builder-page-screeenshot.jpg";
 import adPayImg from "../public/ad-pay-screenshot.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTrigger5, animateTrigger6 }) => {
- 
+const Projects = ({
+  animateTrigger2,
+  animateTrigger3,
+  animateTrigger4,
+  animateTrigger5,
+  animateTrigger6,
+  animateTrigger7,
+  animateTrigger8
+}) => {
   return (
     <div
       id="projects-sec"
@@ -26,9 +33,7 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
       <Container className="container-sec">
         <Row>
           <Col lg={12} md={12} sm={12} xs={12}>
-            <h1 className="project-head-txt">
-              Projects
-            </h1>
+            <h1 className="project-head-txt">Projects</h1>
           </Col>
 
           <Col lg={12} md={12} sm={12} xs={12}>
@@ -120,7 +125,12 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
             <div className="project-details-sec">
               <Row>
                 <Col lg={12} md={12} sm={12} xs={12}>
-                  <div className={`project-details-card ${animateTrigger4 ? "anim-project-cards" : ""}`} id="project-detail1">
+                  <div
+                    className={`project-details-card ${
+                      animateTrigger4 ? "anim-project-cards" : ""
+                    }`}
+                    id="project-detail1"
+                  >
                     <Row>
                       <Col lg={4} md={4} sm={9} xs={12}>
                         <div className="images-sec">
@@ -135,7 +145,11 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
                       </Col>
                       <Col lg={8} md={8} sm={12} xs={12}>
                         <div className="project-description-sec">
-                          <h3 className={`heade-txt ${animateTrigger4 ? "heade-txt-anim" : ""}`}>
+                          <h3
+                            className={`heade-txt ${
+                              animateTrigger4 ? "heade-txt-anim" : ""
+                            }`}
+                          >
                             Bharat Bill Payment System (BBPS)
                           </h3>
                           <ul className="description-list">
@@ -148,7 +162,7 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
                               Researched on structure and working of components
                               in tim creative template
                             </li>
-                            <li>Developed pages for COU and BOU portals</li>
+                            <li>Developed pages for COU and BOU portal</li>
                             <li>
                               Worked on customization of template and its UI
                               components according to design and product
@@ -165,7 +179,63 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
                   </div>
                 </Col>
                 <Col lg={12} md={12} sm={12} xs={12}>
-                  <div className={`project-details-card ${animateTrigger5 ? "anim-project-cards" : ""}`} id="project-detail2">
+                  <div
+                    className={`project-details-card ${
+                      animateTrigger7 ? "anim-project-cards" : ""
+                    }`}
+                    id="project-detail4"
+                  >
+                    <Row>
+                      <Col lg={4} md={4} sm={9} xs={12}>
+                        <div className="images-sec">
+                          <Image
+                            src={bbpsPortalImg}
+                            className="project-detail-img"
+                            alt="card-img"
+                            objectFit="cover"
+                            style={{ height: "100%", width: "100%" }}
+                          />
+                        </div>
+                      </Col>
+                      <Col lg={8} md={8} sm={12} xs={12}>
+                        <div className="project-description-sec">
+                          <h3
+                            className={`heade-txt ${
+                              animateTrigger4 ? "heade-txt-anim" : ""
+                            }`}
+                          >
+                            Digital Merchant Onboarding (DMO)
+                          </h3>
+                          <ul className="description-list">
+                            <li>
+                              DMO is merchant onboarding system in which users
+                              goes through KYC process
+                            </li>
+                            <li>
+                              Worked with languages such HTML, SASS, Bootstrap,
+                              Jquery and bs-dropzone
+                            </li>
+                            <li>
+                              Worked on web and mobile responsive design of the
+                              page
+                            </li>
+                            <li>
+                              Worked on front-end validation part of kyc forms
+                            </li>
+                            <li></li>
+                          </ul>
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
+                </Col>
+                <Col lg={12} md={12} sm={12} xs={12}>
+                  <div
+                    className={`project-details-card ${
+                      animateTrigger5 ? "anim-project-cards" : ""
+                    }`}
+                    id="project-detail2"
+                  >
                     <Row>
                       <Col lg={4} md={4} sm={9} xs={12}>
                         <div className="images-sec">
@@ -180,7 +250,13 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
                       </Col>
                       <Col lg={8} md={8} sm={12} xs={12}>
                         <div className="project-description-sec">
-                          <h3 className={`heade-txt ${animateTrigger5 ? "heade-txt-anim" : ""}`}>AD Pay Checkout</h3>
+                          <h3
+                            className={`heade-txt ${
+                              animateTrigger5 ? "heade-txt-anim" : ""
+                            }`}
+                          >
+                            AD Pay Checkout
+                          </h3>
                           <ul className="description-list">
                             <li>
                               AD Pay is checkout page which allows international
@@ -199,7 +275,8 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
                             </li>
                             <li>
                               Worked with back-end developers to resolve the
-                              issues related to UI and code structure
+                              issues related to UI and code structure on jsp
+                              pages
                             </li>
                           </ul>
                         </div>
@@ -208,7 +285,12 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
                   </div>
                 </Col>
                 <Col lg={12} md={12} sm={12} xs={12}>
-                  <div className={`project-details-card ${animateTrigger6 ? "anim-project-cards" : ""}`} id="project-detail3">
+                  <div
+                    className={`project-details-card ${
+                      animateTrigger8 ? "anim-project-cards" : ""
+                    }`}
+                    id="project-detail5"
+                  >
                     <Row>
                       <Col lg={4} md={4} sm={9} xs={12}>
                         <div className="images-sec">
@@ -223,7 +305,62 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
                       </Col>
                       <Col lg={8} md={8} sm={12} xs={12}>
                         <div className="project-description-sec">
-                          <h3 className={`heade-txt ${animateTrigger6 ? "heade-txt-anim" : ""}`}>Form Builder Page</h3>
+                          <h3
+                            className={`heade-txt ${
+                              animateTrigger8 ? "heade-txt-anim" : ""
+                            }`}
+                          >
+                            Neo Banking Portal
+                          </h3>
+                          <ul className="description-list">
+                            <li>
+                              Form builder page is used by merchants to create
+                              and customize forms
+                            </li>
+                            <li>
+                              Redesigned and restructure existing portal UI
+                            </li>
+                            <li>
+                              Developed additional modules for admin and
+                              merchant portals
+                            </li>
+                            <li>
+                            Worked with back-end developers to resolve the issues related to UI
+                            </li>
+                          </ul>
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
+                </Col>
+                <Col lg={12} md={12} sm={12} xs={12}>
+                  <div
+                    className={`project-details-card ${
+                      animateTrigger6 ? "anim-project-cards" : ""
+                    }`}
+                    id="project-detail3"
+                  >
+                    <Row>
+                      <Col lg={4} md={4} sm={9} xs={12}>
+                        <div className="images-sec">
+                          <Image
+                            src={formBuilderImg}
+                            className="project-detail-img"
+                            alt="card-img"
+                            objectFit="cover"
+                            style={{ height: "100%", width: "100%" }}
+                          />
+                        </div>
+                      </Col>
+                      <Col lg={8} md={8} sm={12} xs={12}>
+                        <div className="project-description-sec">
+                          <h3
+                            className={`heade-txt ${
+                              animateTrigger6 ? "heade-txt-anim" : ""
+                            }`}
+                          >
+                            Form Builder Page
+                          </h3>
                           <ul className="description-list">
                             <li>
                               Form builder page is used by merchants to create
@@ -240,6 +377,7 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
                     </Row>
                   </div>
                 </Col>
+                
               </Row>
             </div>
           </Col>
@@ -375,7 +513,7 @@ const Projects = ({ animateTrigger2, animateTrigger3, animateTrigger4, animateTr
           </Col>
         </Row>
       </Container>
-      <div className={`${animateTrigger4 ? 'gradient-bg-4' : ""}`}></div>
+      <div className={`${animateTrigger4 ? "gradient-bg-4" : ""}`}></div>
     </div>
   );
 };

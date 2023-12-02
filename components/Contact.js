@@ -75,7 +75,7 @@ const Contact = () => {
                   <div className="contact-txt-sec">
                     <span>Address</span>
                     <p>
-                      A/201, Nana Maharaj CHS, Kopar Cross Road, Shrastri Nagar
+                      A/201, Nana Maharaj CHS, Kopar Cross Road, Shrastri Nagar,
                       Dombivli (W) - 421202
                     </p>
                   </div>

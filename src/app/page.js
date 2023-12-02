@@ -11,6 +11,8 @@ import Contact from "../../components/Contact";
 export default function Home() {
   const [loader, setLoader] = useState(true);
   const [navBg, setNavBg] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState(0);
   const [trigger, setTrigger] = useState(false);
   const [trigger1, setTrigger1] = useState(false);
   const [trigger2, setTrigger2] = useState(false);
@@ -18,6 +20,8 @@ export default function Home() {
   const [trigger4, setTrigger4] = useState(false);
   const [trigger5, setTrigger5] = useState(false);
   const [trigger6, setTrigger6] = useState(false);
+  const [trigger7, setTrigger7] = useState(false);
+  const [trigger8, setTrigger8] = useState(false);
   const [animateTrigger, setAnimateTrigger] = useState(false);
   const [animateTrigger1, setAnimateTrigger1] = useState(false);
   const [animateTrigger2, setAnimateTrigger2] = useState(false);
@@ -25,9 +29,23 @@ export default function Home() {
   const [animateTrigger4, setAnimateTrigger4] = useState(false);
   const [animateTrigger5, setAnimateTrigger5] = useState(false);
   const [animateTrigger6, setAnimateTrigger6] = useState(false);
+  const [animateTrigger7, setAnimateTrigger7] = useState(false);
+  const [animateTrigger8, setAnimateTrigger8] = useState(false);
 
-  const [activeSection, setActiveSection] = useState(0);
-  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 2000);
+
+    document.addEventListener("scroll", handleScrollNav);
+    window.addEventListener("resize", resetOnResize);
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollNav);
+      window.removeEventListener("resize", resetOnResize);
+    };
+  }, []);
+
 
   const handleScrollEvent1 = () => {
     const element = document.getElementById("about-sec");
@@ -46,6 +64,11 @@ export default function Home() {
     const elementPosition6 = element6.getBoundingClientRect().top;
     const element7 = document.getElementById("project-detail3");
     const elementPosition7 = element7.getBoundingClientRect().top;
+    const element8 = document.getElementById("project-detail4");
+    const elementPosition8 = element8.getBoundingClientRect().top;
+    const element9 = document.getElementById("project-detail5");
+    const elementPosition9 = element9.getBoundingClientRect().top;
+
 
     if (window.innerHeight - elementPosition > 60) {
       setTrigger(true);
@@ -84,6 +107,14 @@ export default function Home() {
     if (window.innerHeight - elementPosition7 > 130) {
       setTrigger6(true);
     }
+
+    if (window.innerHeight - elementPosition8 > 130) {
+      setTrigger7(true);
+    }
+
+    if (window.innerHeight - elementPosition9 > 130) {
+      setTrigger8(true);
+    }
   };
 
   useEffect(() => {
@@ -115,12 +146,21 @@ export default function Home() {
       setAnimateTrigger6(true);
     }
 
+    if (trigger7) {
+      setAnimateTrigger7(true);
+    }
+
+    if (trigger8) {
+      setAnimateTrigger8(true);
+    }
+
     document.addEventListener("scroll", handleScrollEvent1);
 
     return () => {
       document.removeEventListener("scroll", handleScrollEvent1);
     };
-  }, [trigger, trigger1, trigger2, trigger3, trigger4, trigger5, trigger6]);
+  }, [trigger, trigger1, trigger2, trigger3, trigger4, trigger5, trigger6, trigger7, trigger8]);
+
 
   const handleScrollNav = () => {
     if (window.pageYOffset > 60) {
@@ -137,20 +177,6 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoader(false);
-    }, 2000);
-
-    document.addEventListener("scroll", handleScrollNav);
-    window.addEventListener("resize", resetOnResize);
-
-    return () => {
-      document.removeEventListener("scroll", handleScrollNav);
-      window.removeEventListener("resize", resetOnResize);
-    };
-  }, []);
-
   const closeSidebar = () => {
     setOpen(false);
     document.body.style.overflow = "auto";
@@ -163,17 +189,16 @@ export default function Home() {
 
   const scrollSection = (e, id) => {
     e.preventDefault();
-
     let node = document.getElementById(id);
-
     const scrollOptions = {
       top: node.offsetTop - 100,
       behavior: "smooth",
     };
-
     window.scrollTo(scrollOptions);
   };
 
+
+  
   return (
     <>
       {loader ? (
@@ -197,6 +222,7 @@ export default function Home() {
       ) : (
         <div>
           <div className="main-sec">
+          {/* <h2>Count: {count}</h2> */}
             <Header
               navBg={navBg}
               activeSection={activeSection}
@@ -218,6 +244,8 @@ export default function Home() {
               animateTrigger4={animateTrigger4}
               animateTrigger5={animateTrigger5}
               animateTrigger6={animateTrigger6}
+              animateTrigger7={animateTrigger7}
+              animateTrigger8={animateTrigger8}
             />
             <Contact />
           </div>
