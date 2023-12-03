@@ -28,17 +28,17 @@ body {
 }
 
 .nav-sec {
-  padding: 20px 17px;
+  padding: 13px 17px;
   position: fixed;
   z-index: 1000;
   top: 0;
   width: 100%;
   opacity: 0;
-  animation: 0.7s headeranim linear infinite;
-  animation-delay: 0.7s;
+  animation: 0.5s headeranim linear infinite;
+  animation-delay: 0.5s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 
 @keyframes headeranim {
@@ -54,7 +54,7 @@ body {
 }
 
 .add-nav-bg {
-  background-color: #121b2ad9;
+  background-color: #121b2aea;
   border: 1px solid #3f3f3f78;
 }
 
@@ -66,7 +66,6 @@ body {
 
 .nav-sec .logo-sec h1 {
   color: #0093ff;
-  /* font-family: sans-serif; */
   margin-bottom: 0px;
   margin-top: 2px;
   font-size: 32px;
@@ -92,7 +91,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.9px;
   font-weight: 500;
-  /* font-family: sans-serif; */
 }
 
 .menu-items-sec li:last-child a {
@@ -170,7 +168,6 @@ body {
 
 .menu-close-sec h1 {
   color: #0093ff;
-  /* font-family: sans-serif; */
   margin-bottom: 0px;
   font-size: 28px;
 }
@@ -252,11 +249,9 @@ body {
 
 .introduction-sec {
   margin-top: 130px;
-  /* margin-top: 160px; */
   display: flex;
   align-items: center;
   padding: 27px;
-  /* padding-bottom: 0px; */
   position: relative;
   scroll-snap-align: start;
 }
@@ -266,11 +261,6 @@ body {
   max-width: 350px;
   border-radius: 27% 73% 60% 40% / 30% 38% 62% 70%;
   background-color: #0093ff;
-  /* max-width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  margin: auto;
-  border: 3px solid #0093ff;  */
   overflow: hidden;
   animation: 0.9s headTxtanim linear infinite;
   animation-delay: 0.9s;
@@ -282,7 +272,6 @@ body {
   z-index: 1;
   outline: 3px solid #0093ff;
   margin: auto;
-  /* transform: scale(0.9); */
 }
 
 .portfolio-image-sec .portfolio-user-img {
@@ -294,9 +283,6 @@ body {
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   opacity: 0;
-  /* transform: translate(-24px, 0px);
-  height: 120%;
-  width: 108%; */
 }
 
 @keyframes profileImgAnim {
@@ -392,7 +378,6 @@ body {
   font-size: 58px;
   color: #0093ff;
   margin-bottom: 1px;
-  /* font-family: sans-serif; */
   margin-left: 0px;
 }
 
@@ -407,60 +392,8 @@ body {
   color: #b6b3b3;
   margin-top: 20px;
   line-height: 28px;
-  /* max-width: 540px; */
   max-width: 480px;
 }
-
-/* .cv-download-btn {
-  padding: 5px 22px;
-  outline: none;
-  border-right: 0px;
-  background-color: transparent;
-  border: 2px solid #0093ff;
-  margin-top: 40px;
-  border-radius: 8px;
-  color: #0093ff;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.8px;
-  font-weight: 500;
-  transition: all 0.5s ease-in-out;
-  position: relative;
-  overflow: hidden;
-  animation-direction: reverse;
-}
-
-.cv-download-btn:hover > .btn-gradient {
-  display: inline-block;
-  background-color: rgba(128, 128, 128, 0.234);
-  height: 100%;
-  width: 25px;
-  box-shadow: 0px 0px 20px 30px rgba(128, 128, 128, 0.234);
-  position: absolute;
-  animation: 0.5s animCvBtn linear infinite;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  z-index: -1;
-}
-
-@keyframes animCvBtn {
-  0% {
-    transform: translateX(-70px) skew(-20deg);
-  }
-
-  100% {
-    transform: translateX(300px) skew(-20deg);
-  }
-}
-
-.cv-download-btn svg {
-  margin-right: 13px;
-  font-size: 18px;
-  transform: scale(1.2);
-  margin-top: -3px;
-  
-} */
 
 .loader-sec {
   width: 100%;
@@ -478,7 +411,6 @@ body {
 
 .loader-inner-sec .loader-txt {
   color: #0093ff;
-  /* font-family: sans-serif; */
   margin-bottom: 0px;
   font-size: 36px;
   position: absolute;
@@ -522,7 +454,6 @@ body {
 
 .about-sec {
   margin-top: 130px;
-  /* margin-top: 100px; */
   padding: 27px;
   position: relative;
   z-index: 3;
@@ -558,8 +489,6 @@ body {
 }
 
 .vector-portfolio-imgsec {
-  /* text-align: center; */
-  /* margin-top: 36px; */
   height: 100%;
   display: grid;
   place-items: center;
@@ -609,12 +538,8 @@ body {
   border: 1px solid #3f3f3f78;
   text-align: center;
   border-radius: 12px;
-  transition: all 0.6s;
+  
 }
-
-/* .skills-section .skills-cards:hover {
-  background-color: #061022;
-} */
 
 .skills-section .skills-cards .skill-txt {
   font-size: 17px;
@@ -784,7 +709,6 @@ body {
 
 .projects-cards-sec a .projects-card {
   overflow: hidden;
-  /* height: 280px; */
   height: 250px;
   width: 100%;
   border-radius: 8px;
@@ -792,10 +716,6 @@ body {
   opacity: 0;
   transition: all 0.5s;
 }
-
-/* .projects-cards-sec a .projects-card:hover{
-box-shadow: 0px 6px 8px 7px #105766;
-} */
 
 .projects-cards-sec a .projects-card img {
   transition: all 0.7s;
@@ -829,43 +749,27 @@ box-shadow: 0px 6px 8px 7px #105766;
 }
 
 .card-bg1 {
-  animation-delay: 0.6s;
+  animation-delay: 0.4s;
 }
 
 .card-bg2 {
-  animation-delay: 0.8s;
-}
-
-.card-bg3 {
-  animation-delay: 1s;
-}
-
-.card-bg4 {
-  animation-delay: 1.2s;
-}
-
-.card-bg5 {
-  animation-delay: 1.4s;
-}
-
-.card-bg6 {
-  animation-delay: 1.6s;
-}
-
-.card-bg7 {
   animation-delay: 0.6s;
 }
 
-.card-bg8 {
+.card-bg3 {
   animation-delay: 0.8s;
 }
 
-.card-bg9 {
+.card-bg4 {
   animation-delay: 1s;
 }
 
-.card-bg10 {
+.card-bg5 {
   animation-delay: 1.2s;
+}
+
+.card-bg6 {
+  animation-delay: 1.4s;
 }
 
 .project-details-sec {
@@ -897,6 +801,7 @@ box-shadow: 0px 6px 8px 7px #105766;
   font-size: 21px;
   color: #fff;
   padding-bottom: 11px;
+  line-height: 30px;
 }
 
 .project-description-sec .heade-txt.heade-txt-anim::after {
@@ -934,15 +839,6 @@ box-shadow: 0px 6px 8px 7px #105766;
   margin-bottom: 10px;
 }
 
-/* 
-.project-detail-img {
-  transition: all 0.7s;
-}
-
-.project-details-card:hover > div div .project-detail-img {
-transform: scale(1.1);
-} */
-
 .gradient-bg-4 {
   height: 70px;
   width: 70px;
@@ -957,9 +853,6 @@ transform: scale(1.1);
 }
 
 .contact-sec {
-  /* margin-top: 110px; */
-  /* margin-bottom: 80px; */
-  /* padding: 27px; */
   position: relative;
   margin-top: 100px;
   padding: 27px;
@@ -1139,17 +1032,13 @@ transform: scale(1.1);
     padding: 8px;
   }
 
-  .nav-sec{
-    padding: 20px 8px;
+  .nav-sec {
+    padding: 13px 8px;
   }
 
-  .project-details-card{
+  .project-details-card {
     padding: 25px 18px;
   }
-
-  /* .portfolio-image-sec {
-    width: 90%;
-  } */
 
   .skills-section .skills-cards {
     padding: 26px 20px;

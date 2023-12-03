@@ -32,21 +32,6 @@ export default function Home() {
   const [animateTrigger7, setAnimateTrigger7] = useState(false);
   const [animateTrigger8, setAnimateTrigger8] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoader(false);
-    }, 2000);
-
-    document.addEventListener("scroll", handleScrollNav);
-    window.addEventListener("resize", resetOnResize);
-
-    return () => {
-      document.removeEventListener("scroll", handleScrollNav);
-      window.removeEventListener("resize", resetOnResize);
-    };
-  }, []);
-
-
   const handleScrollEvent1 = () => {
     const element = document.getElementById("about-sec");
     const elementPosition = element.getBoundingClientRect().top;
@@ -177,6 +162,21 @@ export default function Home() {
     }
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 2000);
+
+    document.addEventListener("scroll", handleScrollNav);
+    window.addEventListener("resize", resetOnResize);
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollNav);
+      window.removeEventListener("resize", resetOnResize);
+    };
+  }, []);
+
+
   const closeSidebar = () => {
     setOpen(false);
     document.body.style.overflow = "auto";
@@ -222,7 +222,6 @@ export default function Home() {
       ) : (
         <div>
           <div className="main-sec">
-          {/* <h2>Count: {count}</h2> */}
             <Header
               navBg={navBg}
               activeSection={activeSection}

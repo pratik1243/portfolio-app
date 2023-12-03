@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import Image from "next/image";
 import projectImg1 from "../public/project-snap-1.png";
 import projectImg2 from "../public/project-snap-2.png";
@@ -44,7 +43,7 @@ const Projects = ({
                   <a href="https://safexpay.com/apix" target="_blank">
                     {" "}
                     <div
-                      className={`projects-card card-bg7 ${
+                      className={`projects-card card-bg1 ${
                         animateTrigger2 ? "anim-project-cards" : ""
                       }`}
                     >
@@ -64,7 +63,7 @@ const Projects = ({
                   >
                     {" "}
                     <div
-                      className={`projects-card card-bg8 mt2-after-sm ${
+                      className={`projects-card card-bg2 mt2-after-sm ${
                         animateTrigger2 ? "anim-project-cards" : ""
                       }`}
                     >
@@ -84,7 +83,7 @@ const Projects = ({
                   >
                     {" "}
                     <div
-                      className={`projects-card card-bg9 mt2-after-sm mt2-after-md ${
+                      className={`projects-card card-bg3 mt2-after-sm mt2-after-md ${
                         animateTrigger2 ? "anim-project-cards" : ""
                       }`}
                     >
@@ -189,7 +188,7 @@ const Projects = ({
                       <Col lg={4} md={4} sm={9} xs={12}>
                         <div className="images-sec">
                           <Image
-                            src={bbpsPortalImg}
+                            src={dmoInternational}
                             className="project-detail-img"
                             alt="card-img"
                             objectFit="cover"
@@ -201,7 +200,7 @@ const Projects = ({
                         <div className="project-description-sec">
                           <h3
                             className={`heade-txt ${
-                              animateTrigger4 ? "heade-txt-anim" : ""
+                              animateTrigger7 ? "heade-txt-anim" : ""
                             }`}
                           >
                             Digital Merchant Onboarding (DMO)
@@ -212,15 +211,15 @@ const Projects = ({
                               goes through KYC process
                             </li>
                             <li>
-                              Worked with languages such HTML, SASS, Bootstrap,
+                              Developed structure using languages such HTML, SASS, Bootstrap,
                               Jquery and bs-dropzone
                             </li>
                             <li>
                               Worked on web and mobile responsive design of the
-                              page
+                              pages
                             </li>
                             <li>
-                              Worked on front-end validation part of kyc forms
+                              Integrated front-end validation part of kyc forms
                             </li>
                             <li></li>
                           </ul>
@@ -271,7 +270,7 @@ const Projects = ({
                               manager requirement
                             </li>
                             <li>
-                              Worked on language switch feature in checkout page
+                              Integrated language switch feature in checkout page
                             </li>
                             <li>
                               Worked with back-end developers to resolve the
@@ -376,8 +375,7 @@ const Projects = ({
                       </Col>
                     </Row>
                   </div>
-                </Col>
-                
+                </Col>                
               </Row>
             </div>
           </Col>

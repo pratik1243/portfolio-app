@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import htmlLogo from "../public/html5-logo.png";
 import JsLogo from "../public/javascript-logo.svg";
 import reactLogo from "../public/react-logo.png";
@@ -54,7 +53,7 @@ const About = ({ animateTrigger }) => {
 
           <Col lg={6}>
             <div className={`vector-portfolio-imgsec ${animateTrigger ? "animate-vector-img" : ""}`}>
-              <Image src={vectorAboutLogo} objectFit="cover" height={285} width={285} />
+              <Image src={vectorAboutLogo} objectFit="cover" alt="vector-logo" height={285} width={285} />
             </div>
           </Col>
 
