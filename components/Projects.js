@@ -13,6 +13,8 @@ import apixSafexImg from "../public/apix-img.png";
 import bbpsPortalImg from "../public/bbps-portal-screenshot.jpg";
 import formBuilderImg from "../public/form-builder-page-screeenshot.jpg";
 import adPayImg from "../public/ad-pay-screenshot.jpg";
+import neoBankPortalImg from "../public/neo-banking-portal.jpg";
+import aasaanPortalImg from "../public/aasaan-screenshot.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Projects = ({
@@ -22,7 +24,8 @@ const Projects = ({
   animateTrigger5,
   animateTrigger6,
   animateTrigger7,
-  animateTrigger8
+  animateTrigger8,
+  animateTrigger9
 }) => {
   return (
     <div
@@ -161,16 +164,20 @@ const Projects = ({
                               Researched on structure and working of components
                               in tim creative template
                             </li>
-                            <li>Developed pages for COU and BOU portal</li>
+                            <li>
+                              Worked on react, next js and material UI
+                              frameworks
+                            </li>
+                            <li>Developed pages for COU and BOU portals</li>
                             <li>
                               Worked on customization of template and its UI
                               components according to design and product
                               requirement
                             </li>
-                            <li>
+                            {/* <li>
                               Worked with back-end developers to resolve the
                               issues related to front-end and data fetching
-                            </li>
+                            </li> */}
                           </ul>
                         </div>
                       </Col>
@@ -211,8 +218,8 @@ const Projects = ({
                               goes through KYC process
                             </li>
                             <li>
-                              Developed structure using languages such HTML, SASS, Bootstrap,
-                              Jquery and bs-dropzone
+                              Developed structure using languages such HTML,
+                              SASS, Bootstrap, Jquery and bs-dropzone
                             </li>
                             <li>
                               Worked on web and mobile responsive design of the
@@ -262,15 +269,20 @@ const Projects = ({
                               merchants to do payment through different methods
                             </li>
                             <li>
+                              Developed structure using languages such HTML,
+                              CSS, Bootstrap and jquery
+                            </li>
+                            <li>
                               Worked on front-end validation part of checkout
                               page
                             </li>
-                            <li>
+                            {/* <li>
                               Updation and additional changes as per product
-                              manager requirement
-                            </li>
+                              requirement
+                            </li> */}
                             <li>
-                              Integrated language switch feature in checkout page
+                              Integrated language switch feature in checkout
+                              page
                             </li>
                             <li>
                               Worked with back-end developers to resolve the
@@ -294,7 +306,7 @@ const Projects = ({
                       <Col lg={4} md={4} sm={9} xs={12}>
                         <div className="images-sec">
                           <Image
-                            src={formBuilderImg}
+                            src={neoBankPortalImg}
                             className="project-detail-img"
                             alt="card-img"
                             objectFit="cover"
@@ -323,9 +335,7 @@ const Projects = ({
                               Developed additional modules for admin and
                               merchant portals
                             </li>
-                            <li>
-                            Worked with back-end developers to resolve the issues related to UI
-                            </li>
+                            <li>Worked on react hook form, formik and yup validation</li>
                           </ul>
                         </div>
                       </Col>
@@ -366,16 +376,68 @@ const Projects = ({
                               and customize forms
                             </li>
                             <li>
+                              Developed structure using languages such HTML,
+                              CSS, Bootstrap and jquery
+                            </li>
+                            <li>
                               Worked on web and responsive design of the page
                             </li>
-                            <li>Added Partial payment section</li>
+                            <li>
+                              Added partial payment section by which merchant
+                              can pay amount in installments and can also view
+                              history related to partial payment
+                            </li>
                             <li></li>
                           </ul>
                         </div>
                       </Col>
                     </Row>
                   </div>
-                </Col>                
+                </Col>
+                <Col lg={12} md={12} sm={12} xs={12}>
+                  <div
+                    className={`project-details-card ${
+                      animateTrigger9 ? "anim-project-cards" : ""
+                    }`}
+                    id="project-detail6"
+                  >
+                    <Row>
+                      <Col lg={4} md={4} sm={9} xs={12}>
+                        <div className="images-sec">
+                          <Image
+                            src={aasaanPortalImg}
+                            className="project-detail-img"
+                            alt="card-img"
+                            objectFit="cover"
+                            style={{ height: "100%", width: "100%" }}
+                          />
+                        </div>
+                      </Col>
+                      <Col lg={8} md={8} sm={12} xs={12}>
+                        <div className="project-description-sec">
+                          <h3
+                            className={`heade-txt ${
+                              animateTrigger9 ? "heade-txt-anim" : ""
+                            }`}
+                          >
+                            Aassan Portal
+                          </h3>
+                          <ul className="description-list">
+                            <li>
+                              Aasaan is a one click checkout, aimed to
+                              revolutionise shopper experience
+                            </li>
+                            <li>
+                              Developed structure using react js and react
+                              bootstrap
+                            </li>
+                            <li>Developed modules for merchant portal</li>
+                          </ul>
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
+                </Col>
               </Row>
             </div>
           </Col>

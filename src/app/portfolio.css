@@ -968,7 +968,7 @@ body {
   }
 
   .work-sec {
-    margin-top: 50px;
+    margin-top: 70px;
   }
 
   .about-sec {
@@ -1015,11 +1015,19 @@ body {
   }
 
   .project-sec {
-    margin-top: 10px;
+    margin-top: 40px;
   }
 
   .inner-contact-list .contact-txt-sec span {
     margin-top: 6px;
+  }
+
+  .project-details-sec{
+    margin-top: 0px;
+  }
+
+  #personal-projects-sec{
+    margin-top: 50px;
   }
 }
 
