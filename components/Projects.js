@@ -13,7 +13,7 @@ import apixSafexImg from "../public/apix-img.png";
 import bbpsPortalImg from "../public/bbps-portal-screenshot.jpg";
 import formBuilderImg from "../public/form-builder-page-screeenshot.jpg";
 import adPayImg from "../public/ad-pay-screenshot.jpg";
-import neoBankPortalImg from "../public/neo-banking-portal.jpg";
+import neoBankPortalImg from "../public/neo-portal-screen.jpg";
 import aasaanPortalImg from "../public/aasaan-screenshot.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -98,27 +98,7 @@ const Projects = ({
                       />
                     </div>{" "}
                   </a>
-                </Col>
-                {/* <Col lg={4} md={4} sm={6} xs={12}>
-                  <a
-                    href="https://safexpay.com/get-a-payment-platform/"
-                    target="_blank"
-                  >
-                    {" "}
-                    <div
-                      className={`projects-card card-bg10 mt-5 ${
-                        animateTrigger2 ? "anim-project-cards" : ""
-                      }`}
-                    >
-                      <Image
-                        src={neoPortalImg}
-                        alt="card-img"
-                        objectFit="cover"
-                        style={{ height: "100%", width: "140%" }}
-                      />
-                    </div>{" "}
-                  </a>
-                </Col> */}
+                </Col>               
               </Row>
             </div>
           </Col>
@@ -134,7 +114,7 @@ const Projects = ({
                     id="project-detail1"
                   >
                     <Row>
-                      <Col lg={4} md={4} sm={9} xs={12}>
+                      <Col lg={4} md={5} sm={12} xs={12}>
                         <div className="images-sec">
                           <Image
                             src={bbpsPortalImg}
@@ -145,7 +125,7 @@ const Projects = ({
                           />
                         </div>
                       </Col>
-                      <Col lg={8} md={8} sm={12} xs={12}>
+                      <Col lg={8} md={7} sm={12} xs={12}>
                         <div className="project-description-sec">
                           <h3
                             className={`heade-txt ${
@@ -173,11 +153,7 @@ const Projects = ({
                               Worked on customization of template and its UI
                               components according to design and product
                               requirement
-                            </li>
-                            {/* <li>
-                              Worked with back-end developers to resolve the
-                              issues related to front-end and data fetching
-                            </li> */}
+                            </li>                           
                           </ul>
                         </div>
                       </Col>
@@ -192,7 +168,7 @@ const Projects = ({
                     id="project-detail4"
                   >
                     <Row>
-                      <Col lg={4} md={4} sm={9} xs={12}>
+                      <Col lg={4} md={5} sm={12} xs={12}>
                         <div className="images-sec">
                           <Image
                             src={dmoInternational}
@@ -203,7 +179,7 @@ const Projects = ({
                           />
                         </div>
                       </Col>
-                      <Col lg={8} md={8} sm={12} xs={12}>
+                      <Col lg={8} md={7} sm={12} xs={12}>
                         <div className="project-description-sec">
                           <h3
                             className={`heade-txt ${
@@ -243,7 +219,7 @@ const Projects = ({
                     id="project-detail2"
                   >
                     <Row>
-                      <Col lg={4} md={4} sm={9} xs={12}>
+                      <Col lg={4} md={5} sm={12} xs={12}>
                         <div className="images-sec">
                           <Image
                             src={adPayImg}
@@ -254,7 +230,7 @@ const Projects = ({
                           />
                         </div>
                       </Col>
-                      <Col lg={8} md={8} sm={12} xs={12}>
+                      <Col lg={8} md={7} sm={12} xs={12}>
                         <div className="project-description-sec">
                           <h3
                             className={`heade-txt ${
@@ -276,10 +252,6 @@ const Projects = ({
                               Worked on front-end validation part of checkout
                               page
                             </li>
-                            {/* <li>
-                              Updation and additional changes as per product
-                              requirement
-                            </li> */}
                             <li>
                               Integrated language switch feature in checkout
                               page
@@ -303,7 +275,7 @@ const Projects = ({
                     id="project-detail5"
                   >
                     <Row>
-                      <Col lg={4} md={4} sm={9} xs={12}>
+                      <Col lg={4} md={5} sm={12} xs={12}>
                         <div className="images-sec">
                           <Image
                             src={neoBankPortalImg}
@@ -314,7 +286,7 @@ const Projects = ({
                           />
                         </div>
                       </Col>
-                      <Col lg={8} md={8} sm={12} xs={12}>
+                      <Col lg={8} md={7} sm={12} xs={12}>
                         <div className="project-description-sec">
                           <h3
                             className={`heade-txt ${
@@ -325,9 +297,7 @@ const Projects = ({
                           </h3>
                           <ul className="description-list">
                             <li>
-                              Form builder page is used by merchants to create
-                              and customize forms
-                            </li>
+                            Neo banking portal help businesses to automate the payout process, reducing the time and effort required to transfer funds to multiple beneficiaries                            </li>
                             <li>
                               Redesigned and restructure existing portal UI
                             </li>
@@ -350,7 +320,7 @@ const Projects = ({
                     id="project-detail3"
                   >
                     <Row>
-                      <Col lg={4} md={4} sm={9} xs={12}>
+                      <Col lg={4} md={5} sm={12} xs={12}>
                         <div className="images-sec">
                           <Image
                             src={formBuilderImg}
@@ -361,7 +331,7 @@ const Projects = ({
                           />
                         </div>
                       </Col>
-                      <Col lg={8} md={8} sm={12} xs={12}>
+                      <Col lg={8} md={7} sm={12} xs={12}>
                         <div className="project-description-sec">
                           <h3
                             className={`heade-txt ${
@@ -383,9 +353,7 @@ const Projects = ({
                               Worked on web and responsive design of the page
                             </li>
                             <li>
-                              Added partial payment section by which merchant
-                              can pay amount in installments and can also view
-                              history related to partial payment
+                              Added partial payment and view payment history section
                             </li>
                             <li></li>
                           </ul>
@@ -402,7 +370,7 @@ const Projects = ({
                     id="project-detail6"
                   >
                     <Row>
-                      <Col lg={4} md={4} sm={9} xs={12}>
+                      <Col lg={4} md={5} sm={12} xs={12}>
                         <div className="images-sec">
                           <Image
                             src={aasaanPortalImg}
@@ -413,7 +381,7 @@ const Projects = ({
                           />
                         </div>
                       </Col>
-                      <Col lg={8} md={8} sm={12} xs={12}>
+                      <Col lg={8} md={7} sm={12} xs={12}>
                         <div className="project-description-sec">
                           <h3
                             className={`heade-txt ${
@@ -424,7 +392,7 @@ const Projects = ({
                           </h3>
                           <ul className="description-list">
                             <li>
-                              Aasaan is a one click checkout, aimed to
+                              Aasaan is a one click checkout aimed to
                               revolutionise shopper experience
                             </li>
                             <li>
@@ -450,7 +418,7 @@ const Projects = ({
               <Row>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
-                    href="https://pratik1243.github.io/AGT.github.io/"
+                    href="https://pratik1243.github.io/justicia.github.io/"
                     target="_blank"
                   >
                     {" "}
@@ -460,17 +428,18 @@ const Projects = ({
                       }`}
                     >
                       <Image
-                        src={projectImg4}
+                        src={projectImg6}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "100%", width: "600px" }}
+                        
+                        style={{ height: "100%", width: "150%" }}
                       />
                     </div>{" "}
                   </a>
                 </Col>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
-                    href="https://pratik1243.github.io/justicia.github.io/"
+                    href="https://pratik1243.github.io/layout.github.io/"
                     target="_blank"
                   >
                     {" "}
@@ -480,10 +449,10 @@ const Projects = ({
                       }`}
                     >
                       <Image
-                        src={projectImg6}
+                        src={projectImg3}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "100%", width: "150%" }}
+                        style={{ height: "100%", width: "600px" }}
                       />
                     </div>{" "}
                   </a>
@@ -510,7 +479,7 @@ const Projects = ({
                 </Col>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
-                    href="https://pratik1243.github.io/heylead.github.io/"
+                    href="https://pratik1243.github.io/heylead-website/"
                     target="_blank"
                   >
                     {" "}
@@ -550,7 +519,7 @@ const Projects = ({
                 </Col>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
-                    href="https://pratik1243.github.io/layout.github.io/"
+                    href="https://pratik1243.github.io/AGT.github.io/"
                     target="_blank"
                   >
                     {" "}
@@ -560,7 +529,7 @@ const Projects = ({
                       }`}
                     >
                       <Image
-                        src={projectImg3}
+                        src={projectImg4}
                         alt="card-img"
                         objectFit="cover"
                         style={{ height: "100%", width: "600px" }}
@@ -574,6 +543,7 @@ const Projects = ({
         </Row>
       </Container>
       <div className={`${animateTrigger4 ? "gradient-bg-4" : ""}`}></div>
+      {/* <div className={`${animateTrigger9 ? "gradient-bg-5" : ""}`}></div> */}
     </div>
   );
 };
