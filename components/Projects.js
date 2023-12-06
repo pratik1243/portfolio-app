@@ -163,57 +163,6 @@ const Projects = ({
                 <Col lg={12} md={12} sm={12} xs={12}>
                   <div
                     className={`project-details-card ${
-                      animateTrigger7 ? "anim-project-cards" : ""
-                    }`}
-                    id="project-detail4"
-                  >
-                    <Row>
-                      <Col lg={4} md={5} sm={12} xs={12}>
-                        <div className="images-sec">
-                          <Image
-                            src={dmoInternational}
-                            className="project-detail-img"
-                            alt="card-img"
-                            objectFit="cover"
-                            style={{ height: "100%", width: "100%" }}
-                          />
-                        </div>
-                      </Col>
-                      <Col lg={8} md={7} sm={12} xs={12}>
-                        <div className="project-description-sec">
-                          <h3
-                            className={`heade-txt ${
-                              animateTrigger7 ? "heade-txt-anim" : ""
-                            }`}
-                          >
-                            Digital Merchant Onboarding (DMO)
-                          </h3>
-                          <ul className="description-list">
-                            <li>
-                              DMO is merchant onboarding system in which users
-                              goes through KYC process
-                            </li>
-                            <li>
-                              Developed structure using languages such HTML,
-                              SASS, Bootstrap, Jquery and bs-dropzone
-                            </li>
-                            <li>
-                              Worked on web and mobile responsive design of the
-                              pages
-                            </li>
-                            <li>
-                              Integrated front-end validation part of kyc forms
-                            </li>
-                            <li></li>
-                          </ul>
-                        </div>
-                      </Col>
-                    </Row>
-                  </div>
-                </Col>
-                <Col lg={12} md={12} sm={12} xs={12}>
-                  <div
-                    className={`project-details-card ${
                       animateTrigger5 ? "anim-project-cards" : ""
                     }`}
                     id="project-detail2"
@@ -267,6 +216,58 @@ const Projects = ({
                     </Row>
                   </div>
                 </Col>
+               
+                <Col lg={12} md={12} sm={12} xs={12}>
+                  <div
+                    className={`project-details-card ${
+                      animateTrigger7 ? "anim-project-cards" : ""
+                    }`}
+                    id="project-detail4"
+                  >
+                    <Row>
+                      <Col lg={4} md={5} sm={12} xs={12}>
+                        <div className="images-sec">
+                          <Image
+                            src={dmoInternational}
+                            className="project-detail-img"
+                            alt="card-img"
+                            objectFit="cover"
+                            style={{ height: "100%", width: "100%" }}
+                          />
+                        </div>
+                      </Col>
+                      <Col lg={8} md={7} sm={12} xs={12}>
+                        <div className="project-description-sec">
+                          <h3
+                            className={`heade-txt ${
+                              animateTrigger7 ? "heade-txt-anim" : ""
+                            }`}
+                          >
+                            Digital Merchant Onboarding (DMO)
+                          </h3>
+                          <ul className="description-list">
+                            <li>
+                              DMO is merchant onboarding system in which users
+                              goes through KYC process
+                            </li>
+                            <li>
+                              Developed structure using languages such HTML,
+                              SASS, Bootstrap, Jquery and bs-dropzone
+                            </li>
+                            <li>
+                              Worked on web and mobile responsive design of the
+                              pages
+                            </li>
+                            <li>
+                              Integrated front-end validation part of kyc forms
+                            </li>
+                            <li></li>
+                          </ul>
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
+                </Col>
                 <Col lg={12} md={12} sm={12} xs={12}>
                   <div
                     className={`project-details-card ${
@@ -299,13 +300,13 @@ const Projects = ({
                             <li>
                             Neo banking portal help businesses to automate the payout process, reducing the time and effort required to transfer funds to multiple beneficiaries                            </li>
                             <li>
-                              Redesigned and restructure existing portal UI
+                              Redesigned and restructured new portal UI
                             </li>
                             <li>
                               Developed additional modules for admin and
                               merchant portals
                             </li>
-                            <li>Worked on react hook form, formik and yup validation</li>
+                            <li>Worked on next js, material UI, react hook form, formik and yup validation</li>
                           </ul>
                         </div>
                       </Col>
@@ -479,7 +480,7 @@ const Projects = ({
                 </Col>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
-                    href="https://pratik1243.github.io/heylead-website/"
+                    href="https://pratik1243.github.io/heylead-web-app/"
                     target="_blank"
                   >
                     {" "}
