@@ -93,7 +93,7 @@ const Contact = () => {
               <a href="https://m.facebook.com/profile.php/?id=100050836133308" target="_blank">
                 <Image src={facebookLogo} alt="contant-img" className="social-logo" height={50} width={50} />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/pratik-thakur-7664b7202/">
                 <Image src={linkedinLogo} alt="contant-img" className="social-logo" height={50} width={50} />
               </a>
               <a href="https://github.com/pratik1243" target="_blank">
