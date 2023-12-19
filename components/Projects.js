@@ -7,6 +7,8 @@ import projectImg4 from "../public/project-snap-4.png";
 import projectImg5 from "../public/project-snap-5.png";
 import projectImg6 from "../public/project-snap-6.png";
 import ebookImg from "../public/ebook-img.png";
+import partnerProgramImg from "../public/partner-program-screenshot.png";
+import consolidatedPageImg from "../public/consolidate-page-screenshot.png";
 import platformSafexImg from "../public/platform-safexpay-img.png";
 import dmoInternational from "../public/dmo-international.png";
 import apixSafexImg from "../public/apix-img.png";
@@ -42,31 +44,14 @@ const Projects = ({
             <div className="projects-cards-sec">
               {/* <h4>live Projects</h4> */}
               <Row>
-                <Col lg={4} md={4} sm={6} xs={12}>
-                  <a href="https://safexpay.com/apix" target="_blank">
-                    {" "}
-                    <div
-                      className={`projects-card card-bg1 ${
-                        animateTrigger2 ? "anim-project-cards" : ""
-                      }`}
-                    >
-                      <Image
-                        src={apixSafexImg}
-                        alt="card-img"
-                        objectFit="cover"
-                        style={{ height: "100%", width: "120%" }}
-                      />
-                    </div>{" "}
-                  </a>
-                </Col>
-                <Col lg={4} md={4} sm={6} xs={12}>
+              <Col lg={4} md={4} sm={6} xs={12}>
                   <a
                     href="https://www.aasaancheckout.com/ebook/"
                     target="_blank"
                   >
                     {" "}
                     <div
-                      className={`projects-card card-bg2 mt2-after-sm ${
+                      className={`projects-card card-bg1 mt2-after-sm ${
                         animateTrigger2 ? "anim-project-cards" : ""
                       }`}
                     >
@@ -80,13 +65,51 @@ const Projects = ({
                   </a>
                 </Col>
                 <Col lg={4} md={4} sm={6} xs={12}>
+                  <a href="https://safexpay.com/apix" target="_blank">
+                    {" "}
+                    <div
+                      className={`projects-card card-bg2 mt2-after-sm ${
+                        animateTrigger2 ? "anim-project-cards" : ""
+                      }`}
+                    >
+                      <Image
+                        src={apixSafexImg}
+                        alt="card-img"
+                        objectFit="cover"
+                        style={{ height: "100%", width: "120%" }}
+                      />
+                    </div>{" "}
+                  </a>
+                </Col>  
+                <Col lg={4} md={4} sm={6} xs={12}>
+                  <a
+                    href="https://aasaancheckout.com/consolidated-dashboard/"
+                    target="_blank"
+                  >
+                    {" "}
+                    <div
+                      className={`projects-card card-bg3 mt2-after-sm mt2-after-md ${
+                        animateTrigger2 ? "anim-project-cards" : ""
+                      }`}
+                    >
+                      <Image
+                        src={consolidatedPageImg}
+                        alt="card-img"
+                        objectFit="cover"
+                        style={{ height: "100%", width: "100%" }}
+                      />
+                    </div>{" "}
+                  </a>
+                </Col>  
+                            
+                <Col lg={4} md={4} sm={6} xs={12}>
                   <a
                     href="https://safexpay.com/get-a-payment-platform/"
                     target="_blank"
                   >
                     {" "}
                     <div
-                      className={`projects-card card-bg3 mt2-after-sm mt2-after-md ${
+                      className={`projects-card card-bg4 mt-5 ${
                         animateTrigger2 ? "anim-project-cards" : ""
                       }`}
                     >
@@ -98,7 +121,28 @@ const Projects = ({
                       />
                     </div>{" "}
                   </a>
-                </Col>               
+                </Col>    
+               
+                <Col lg={4} md={4} sm={6} xs={12}>
+                  <a
+                    href="https://aasaancheckout.com/partner-program/"
+                    target="_blank"
+                  >
+                    {" "}
+                    <div
+                      className={`projects-card card-bg5 mt-5 ${
+                        animateTrigger2 ? "anim-project-cards" : ""
+                      }`}
+                    >
+                      <Image
+                        src={partnerProgramImg}
+                        alt="card-img"
+                        objectFit="cover"
+                        style={{ height: "100%", width: "120%" }}
+                      />
+                    </div>{" "}
+                  </a>
+                </Col>          
               </Row>
             </div>
           </Col>
