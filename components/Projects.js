@@ -51,7 +51,7 @@ const Projects = ({
                   >
                     {" "}
                     <div
-                      className={`projects-card card-bg1 mt2-after-sm ${
+                      className={`projects-card card-bg1 ${
                         animateTrigger2 ? "anim-project-cards" : ""
                       }`}
                     >
