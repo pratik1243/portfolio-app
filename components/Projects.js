@@ -96,7 +96,7 @@ const Projects = ({
                         src={consolidatedPageImg}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "100%", width: "100%" }}
+                        style={{ height: "100%", width: "130%", marginLeft:"-55px" }}
                       />
                     </div>{" "}
                   </a>

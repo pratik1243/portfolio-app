@@ -89,7 +89,7 @@ const Sidebar = ({ open, closeSidebar, scrollSection, activeSection }) => {
               Contact
             </a>
           </li>
-          <li className="menu-list-btn">
+          <li className="menu-list-btn resume-dowmload-btn">
             <a
               href="../Pratik-Thakur-CV.pdf"
               download

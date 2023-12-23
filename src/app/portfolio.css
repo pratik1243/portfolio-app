@@ -203,6 +203,11 @@ body {
   letter-spacing: 0.9px;
 }
 
+.resume-dowmload-btn a{
+  color: #0093ff !important;
+  font-weight: 600 !important;
+}
+
 .responsive-menu-list .menu-list-btn a:hover {
   color: #0093ff;
 }
