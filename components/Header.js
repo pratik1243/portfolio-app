@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+//import Pdf from '../public/assets/Pratik-Thakur-CV.pdf';
 import { Container, Row, Col } from "react-bootstrap";
 
 const Header = ({ navBg, openSidebar, scrollSection, activeSection }) => {
@@ -62,7 +63,7 @@ const Header = ({ navBg, openSidebar, scrollSection, activeSection }) => {
               </li>
               <li>
                 <a
-                  href="../Pratik-Thakur-CV.pdf"
+                  href="../assets/Pratik-Thakur-CV.pdf"
                   type="application/pdf"
                   target="_blank"
                 >
