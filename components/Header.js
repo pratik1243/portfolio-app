@@ -63,7 +63,7 @@ const Header = ({ navBg, openSidebar, scrollSection, activeSection }) => {
               </li>
               <li>
                 <a
-                  href="../assets/Pratik-Thakur-CV.pdf"
+                  href="/Pratik-Thakur-CV.pdf"
                   type="application/pdf"
                   target="_blank"
                 >
