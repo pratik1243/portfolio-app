@@ -1,4 +1,5 @@
 import React from "react";
+import pdfFile from '../public/assets/Pratik-Thakur-CV.pdf';
 
 const Sidebar = ({ open, closeSidebar, scrollSection, activeSection }) => {
   return (
@@ -91,7 +92,7 @@ const Sidebar = ({ open, closeSidebar, scrollSection, activeSection }) => {
           </li>
           <li className="menu-list-btn resume-dowmload-btn">
             <a
-              href="../Pratik-Thakur-CV.pdf"
+              href={pdfFile}
               download
           >
               Resume
