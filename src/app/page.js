@@ -13,6 +13,7 @@ export default function Home() {
   const [navBg, setNavBg] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(0);
+  const [theme, setTheme] = useState(true);
   const [trigger, setTrigger] = useState(false);
   const [trigger1, setTrigger1] = useState(false);
   const [trigger2, setTrigger2] = useState(false);
@@ -36,27 +37,27 @@ export default function Home() {
 
   const handleScrollEvent1 = () => {
     const element = document.getElementById("about-sec");
-    const elementPosition = element.getBoundingClientRect().top;
+    const elementPosition = element?.getBoundingClientRect().top;
     const element1 = document.getElementById("works-sec");
-    const elementPosition1 = element1.getBoundingClientRect().top;
+    const elementPosition1 = element1?.getBoundingClientRect().top;
     const element2 = document.getElementById("projects-sec");
-    const elementPosition2 = element2.getBoundingClientRect().top;
+    const elementPosition2 = element2?.getBoundingClientRect().top;
     const element4 = document.getElementById("personal-projects-sec");
-    const elementPosition4 = element4.getBoundingClientRect().top;
+    const elementPosition4 = element4?.getBoundingClientRect().top;
     const element3 = document.getElementById("contacts-sec");
-    const elementPosition3 = element3.getBoundingClientRect().top;
+    const elementPosition3 = element3?.getBoundingClientRect().top;
     const element5 = document.getElementById("project-detail1");
-    const elementPosition5 = element5.getBoundingClientRect().top;
+    const elementPosition5 = element5?.getBoundingClientRect().top;
     const element6 = document.getElementById("project-detail2");
-    const elementPosition6 = element6.getBoundingClientRect().top;
+    const elementPosition6 = element6?.getBoundingClientRect().top;
     const element7 = document.getElementById("project-detail3");
-    const elementPosition7 = element7.getBoundingClientRect().top;
+    const elementPosition7 = element7?.getBoundingClientRect().top;
     const element8 = document.getElementById("project-detail4");
-    const elementPosition8 = element8.getBoundingClientRect().top;
+    const elementPosition8 = element8?.getBoundingClientRect().top;
     const element9 = document.getElementById("project-detail5");
-    const elementPosition9 = element9.getBoundingClientRect().top;
+    const elementPosition9 = element9?.getBoundingClientRect().top;
     const element10 = document.getElementById("project-detail6");
-    const elementPosition10 = element10.getBoundingClientRect().top;
+    const elementPosition10 = element10?.getBoundingClientRect().top;
 
 
     if (window.innerHeight - elementPosition > 60) {
@@ -214,7 +215,7 @@ export default function Home() {
   return (
     <>
       {loader ? (
-        <div className="loader-sec">
+        <div className={`loader-sec ${theme ? 'light-loader-bg' : ''}`}>
           <div className="loader-inner-sec">
             <h1 className="loader-txt">P</h1>
 
@@ -233,15 +234,19 @@ export default function Home() {
         </div>
       ) : (
         <div>
-          <div className="main-sec">
+          <div className={`main-sec ${theme ? "light-theme" : ""}`}>
             <Header
               navBg={navBg}
+              theme={theme}
+              setTheme={setTheme}
               activeSection={activeSection}
               openSidebar={openSidebar}
               scrollSection={scrollSection}
             />
             <Sidebar
               open={open}
+              theme={theme}
+              setTheme={setTheme}
               activeSection={activeSection}
               closeSidebar={closeSidebar}
               scrollSection={scrollSection}

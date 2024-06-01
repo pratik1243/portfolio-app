@@ -18,7 +18,6 @@ const About = ({ animateTrigger }) => {
     <div
       id="about-sec"
       className={`about-sec ${animateTrigger ? "animate-about-sec" : ""}`}
-      //className="about-sec"
     >
       <Container className="container-sec">
         <Row>

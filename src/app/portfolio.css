@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #071224 !important;
   scroll-behavior: smooth;
 }
 
@@ -11,7 +10,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #4c4c4eb8;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -21,6 +20,10 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #0093ff;
+}
+
+.main-sec {
+  background-color: #071224 !important;
 }
 
 .container-sec {
@@ -34,11 +37,11 @@ body {
   top: 0;
   width: 100%;
   opacity: 0;
-  animation: 0.5s headeranim linear infinite;
-  animation-delay: 0.5s;
+  animation: 0.4s headeranim linear infinite;
+  animation-delay: 0.4s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 
 @keyframes headeranim {
@@ -65,7 +68,7 @@ body {
 }
 
 .nav-sec .logo-sec h1 {
-  color: #0093ff;
+  color: #0093ff !important;
   margin-bottom: 0px;
   margin-top: 2px;
   font-size: 32px;
@@ -203,7 +206,7 @@ body {
   letter-spacing: 0.9px;
 }
 
-.resume-dowmload-btn a{
+.resume-dowmload-btn a {
   color: #0093ff !important;
   font-weight: 600 !important;
 }
@@ -213,7 +216,7 @@ body {
 }
 
 .fade-show-menu {
-  animation: 1s linear animSideOpen infinite;
+  animation: 0.6s linear animSideOpen infinite;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -253,7 +256,7 @@ body {
 }
 
 .introduction-sec {
-  margin-top: 130px;
+  padding-top: 190px !important;
   display: flex;
   align-items: center;
   padding: 27px;
@@ -311,13 +314,13 @@ body {
   background-color: #0f6276;
   box-shadow: 0px 0px 157px 180px #0f6276;
   border-radius: 50%;
-  animation: 0.4s headTxtanim linear infinite;
+  animation: 0.4s gradient1anim linear infinite;
   animation-delay: 0.4s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   opacity: 0;
   transition: all 1s;
-  z-index: -2;
+  z-index: 0;
 }
 
 @keyframes gradient1anim {
@@ -339,12 +342,12 @@ body {
   background-color: #0f6276;
   box-shadow: 0px 0px 157px 180px #0f6276;
   border-radius: 50%;
-  animation: 0.8s gradient2anim linear infinite;
-  animation-delay: 0.8s;
+  animation: 0.6s gradient2anim linear infinite;
+  animation-delay: 0.6s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.6s;
 }
 
 @keyframes gradient2anim {
@@ -381,7 +384,7 @@ body {
 
 .intro-left-sec .intro-inner-sec .head-txt1 {
   font-size: 58px;
-  color: #0093ff;
+  color: #0093ff !important;
   margin-bottom: 1px;
   margin-left: 0px;
 }
@@ -406,6 +409,7 @@ body {
   align-items: center;
   height: 100vh;
   justify-content: center;
+  background-color: #071224;
 }
 
 .loader-inner-sec {
@@ -543,7 +547,6 @@ body {
   border: 1px solid #3f3f3f78;
   text-align: center;
   border-radius: 12px;
-  
 }
 
 .skills-section .skills-cards .skill-txt {
@@ -639,7 +642,7 @@ body {
 }
 
 .work-sec .experience-cards span {
-  color: #0093ff;
+  color: #0093ff !important;
   font-size: 15px;
   font-weight: 500;
 }
@@ -688,7 +691,7 @@ body {
 #personal-projects-sec h4 {
   opacity: 0;
   animation-delay: 0.3s;
-  transform: none !important;  
+  transform: none !important;
 }
 
 .project-sec .project-head-txt {
@@ -858,21 +861,6 @@ body {
   z-index: -2;
 }
 
-/* .gradient-bg-5 {
-  height: 70px;
-  width: 70px;
-  position: absolute;
-  right: 50%;
-  left: 50%;
-  bottom: 30%;
-  background-color: #0f6276;
-  box-shadow: 0px 0px 157px 180px #0f6276;
-  border-radius: 50%;
-  transition: all 1s;
-  z-index: -2;
-} */
-
-
 .contact-sec {
   position: relative;
   margin-top: 100px;
@@ -916,16 +904,14 @@ body {
 }
 
 .inner-contact-list .contact-txt-sec span {
-  display: block;
   color: #fff;
-  margin-bottom: 2px;
+  display: block;
 }
 
 .inner-contact-list .contact-txt-sec a {
   text-decoration: none;
   color: #bbb7b7f0;
   font-size: 14px;
-  transition: 1s;
   letter-spacing: 0.9px;
 }
 
@@ -962,6 +948,192 @@ body {
   outline: 1px solid white;
 }
 
+/* light theme css start */
+
+.main-sec.light-theme {
+  background-color: #fafafa !important;
+}
+
+.main-sec.light-theme .portfolio-image-sec {
+  background-color: #7ec3f4;
+  outline: 3px solid #7ec3f4;
+}
+
+.main-sec.light-theme .gradient-bg-1 {
+  background-color: #3fbfdf5c !important;
+  box-shadow: 0px 0px 157px 180px #3fbfdf5c !important;
+  display: none;
+}
+
+.main-sec.light-theme .gradient-bg-2 {
+  background-color: #3fbfdf5c !important;
+  box-shadow: 0px 0px 157px 180px #3fbfdf5c !important;
+  display: none;
+}
+
+.main-sec.light-theme .gradient-bg-3 {
+  background-color: #3fbfdf5c !important;
+  box-shadow: 0px 0px 157px 180px #3fbfdf5c !important;
+  display: none;
+}
+
+.main-sec.light-theme .gradient-bg-4 {
+  background-color: #3fbfdf5c !important;
+  box-shadow: 0px 0px 157px 180px #3fbfdf5c !important;
+  display: none;
+}
+
+.main-sec.light-theme .menu-items-sec li a {
+  color: #061124;
+  font-weight: 500 !important;
+}
+
+.main-sec.light-theme .responsive-menu-list .menu-list-btn a {
+  color: #061124;
+}
+
+.main-sec.light-theme h1 {
+  color: #061124 !important;
+}
+
+.main-sec.light-theme h2 {
+  color: #061124 !important;
+}
+
+.main-sec.light-theme h3 {
+  color: #061124 !important;
+}
+
+.main-sec.light-theme h4 {
+  color: #061124 !important;
+}
+
+.main-sec.light-theme span {
+  color: #0093ff !important;
+}
+
+.main-sec.light-theme li {
+  color: #847f7f !important;
+}
+
+.main-sec.light-theme p {
+  color: #847f7f !important;
+}
+
+.main-sec.light-theme .about-head-txt,
+.work-head-txt,
+.project-head-txt,
+.contact-head-txt {
+  border-color: #229ef6 !important;
+}
+
+.main-sec.light-theme .heade-txt::after {
+  background-color: #229ef6 !important;
+}
+
+.main-sec.light-theme .nav-sec.add-nav-bg {
+  background-color: #fff !important;
+  border: none !important;
+  box-shadow: 2px 0px 4px 2px rgb(231, 230, 230);
+}
+
+.main-sec.light-theme .nav-sec .logo-sec h1 {
+  color: #0093ff !important;
+}
+.main-sec.light-theme .menu-close-sec h1 {
+  color: #0093ff !important;
+}
+
+.main-sec.light-theme .skills-cards {
+  background-color: #fff !important;
+  border: none !important;
+  box-shadow: 0px 0px 6px 0px rgb(190, 189, 189);
+}
+
+.main-sec.light-theme .skills-section .skills-head-txt {
+  color: #061124 !important;
+}
+
+.main-sec.light-theme .skills-cards span {
+  color: #061124 !important;
+}
+
+.main-sec.light-theme .experience-cards {
+  background-color: #fff !important;
+  border: none !important;
+  box-shadow: 0px 0px 6px 0px rgb(190, 189, 189);
+}
+
+.main-sec.light-theme .project-details-card {
+  background-color: #fff !important;
+  border: none !important;
+  box-shadow: 0px 0px 6px 0px rgb(190, 189, 189);
+}
+
+.main-sec.light-theme .projects-card {
+  background-color: #fff !important;
+  border: none !important;
+  box-shadow: 0px 0px 6px 0px rgb(190, 189, 189);
+}
+
+.main-sec.light-theme .images-sec {
+  box-shadow: 0px 0px 6px 0px rgb(190, 189, 189);
+}
+
+.light-loader-bg {
+  background-color: #fff !important;
+}
+
+.main-sec.light-theme .contact-list span {
+  color: #061124 !important;
+}
+
+.theme-btn {
+  outline: none;
+  background-color: transparent;
+  border-width: 0px;
+  padding: 0;
+  right: -15px;
+  position: relative;
+}
+
+.theme-btn svg {
+  color: white;
+}
+
+.mobile-theme-btn {
+  position: absolute;
+  bottom: 18px;
+  right: 20px;
+  height: 21px;
+}
+
+.main-sec.light-theme .theme-btn svg {
+  color: #061124 !important;
+}
+
+.main-sec.light-theme .menu-icon-btn svg {
+  color: #061124 !important;
+}
+
+.main-sec.light-theme .side-bar {
+  background-color: white !important;
+}
+
+.main-sec.light-theme .side-bar.side-bar-open {
+  box-shadow: 0px 0px 23px 7px #23242533 !important;
+}
+
+.main-sec.light-theme .side-bar-bg {
+  background-color: #cdcfd4ba !important;
+}
+
+.main-sec.light-theme .menu-close-btn svg {
+  color: #061124 !important;
+}
+
+/* light theme css end */
+
 @media (max-width: 575px) {
   .menu-icon-btn svg {
     display: block;
@@ -972,7 +1144,7 @@ body {
   }
 
   .introduction-sec {
-    margin-top: 30px;
+    padding-top: 30px !important;
   }
 
   .intro-left-sec .intro-inner-sec .head-txt1 {
@@ -1043,11 +1215,11 @@ body {
     margin-top: 6px;
   }
 
-  .project-details-sec{
+  .project-details-sec {
     margin-top: 20px;
   }
 
-  #personal-projects-sec{
+  #personal-projects-sec {
     margin-top: 50px;
   }
 }
@@ -1058,7 +1230,7 @@ body {
   .introduction-sec,
   .project-sec,
   .contact-sec {
-    padding: 8px;
+    padding: 8px !important;
   }
 
   .nav-sec {
@@ -1162,7 +1334,7 @@ body {
   }
 
   .introduction-sec {
-    margin-top: 60px;
+    padding-top: 60px !important;
   }
 
   .after-lg-mt {
@@ -1185,8 +1357,8 @@ body {
   .vector-portfolio-imgsec {
     height: auto;
   }
-  
-  .project-description-sec{
+
+  .project-description-sec {
     margin-left: 10px;
   }
 }

@@ -10,13 +10,10 @@ const Contact = () => {
   return (
     <div id="contacts-sec" className="contact-sec">
       <Container className="container-sec mt-4 mb-5">
-        {/* <h4 className="contact-head-txt">Contact Me</h4> */}
         <h4 className="contact-head-txt">Contact Me</h4>
         <Row>
-          {/* <Col lg={7} md={7} sm={12} xs={12}></Col> */}
           <Col lg={7} md={7} sm={12} xs={12}>
             <div className="contact-list-sec">
-              {/* <h4 className="contact-list-head">Contact Me</h4> */}
               <div className="contact-list">
                 <div className="inner-contact-list">
                   <div className="contact-svg-div">
@@ -35,7 +32,7 @@ const Contact = () => {
                   <div className="contact-txt-sec">
                     <span>Email ID</span>
                     <a href="mailto:thakurpratik226@gmail.com">
-                      thakurpratik226@gmail.com
+                    <p> thakurpratik226@gmail.com </p>
                     </a>
                   </div>
                 </div>
@@ -54,7 +51,7 @@ const Contact = () => {
                   </div>
                   <div className="contact-txt-sec">
                     <span>Mobile No</span>
-                    <a href="tel:+919082270512">+91-9082270512</a>
+                    <a href="tel:+919082270512"><p>+91-9082270512</p></a>
                   </div>
                 </div>
                 <div className="inner-contact-list">
