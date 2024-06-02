@@ -3,7 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: #fafafa;
 }
 
 ::-webkit-scrollbar {
@@ -11,7 +10,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: #071224;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -24,7 +23,7 @@ body {
 }
 
 .body-theme-cls::-webkit-scrollbar-track {
-  background-color: #071224 !important;
+  background-color: #fafafa !important;
 }
 
 .main-sec {
