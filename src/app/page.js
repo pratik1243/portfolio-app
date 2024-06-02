@@ -9,9 +9,11 @@ import Projects from "../../components/Projects";
 import Contact from "../../components/Contact";
 
 export default function Home() {
+
+  let themeType = window.matchMedia?.("(prefers-color-scheme: light)").matches ? true : false;
   const [loader, setLoader] = useState(true);
   const [navBg, setNavBg] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(themeType);
   const [activeSection, setActiveSection] = useState(0);
   const [theme, setTheme] = useState(true);
   const [trigger, setTrigger] = useState(false);
@@ -210,8 +212,6 @@ export default function Home() {
     window.scrollTo(scrollOptions);
   };
 
-
-  
   return (
     <>
       {loader ? (
