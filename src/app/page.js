@@ -10,12 +10,21 @@ import Contact from "../../components/Contact";
 
 export default function Home() {
 
-  let themeType = typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: light)").matches ? true : false;
+  const themeType = () => {
+    let hours = new Date().getHours()
+    let isDayTime = hours > 6 && hours < 20;
+    if(isDayTime === true){
+      return true
+    } else {
+      return false    
+    }  
+  };
+
   const [loader, setLoader] = useState(true);
   const [navBg, setNavBg] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(0);
-  const [theme, setTheme] = useState(themeType);
+  const [theme, setTheme] = useState(themeType());
   const [trigger, setTrigger] = useState(false);
   const [trigger1, setTrigger1] = useState(false);
   const [trigger2, setTrigger2] = useState(false);
@@ -211,7 +220,7 @@ export default function Home() {
       behavior: "smooth",
     };
     if (typeof window !== "undefined") {
-     window.scrollTo(scrollOptions);
+      window.scrollTo(scrollOptions);
     }
   };
 
@@ -236,39 +245,37 @@ export default function Home() {
           </div>
         </div>
       ) : (
-        <div>
-          <div className={`main-sec ${theme ? "light-theme" : ""}`}>
-            <Header
-              navBg={navBg}
-              theme={theme}
-              setTheme={setTheme}
-              activeSection={activeSection}
-              openSidebar={openSidebar}
-              scrollSection={scrollSection}
-            />
-            <Sidebar
-              open={open}
-              theme={theme}
-              setTheme={setTheme}
-              activeSection={activeSection}
-              closeSidebar={closeSidebar}
-              scrollSection={scrollSection}
-            />
-            <Introduction />
-            <About animateTrigger={animateTrigger} />
-            <Work animateTrigger1={animateTrigger1} />
-            <Projects
-              animateTrigger2={animateTrigger2}
-              animateTrigger3={animateTrigger3}
-              animateTrigger4={animateTrigger4}
-              animateTrigger5={animateTrigger5}
-              animateTrigger6={animateTrigger6}
-              animateTrigger7={animateTrigger7}
-              animateTrigger8={animateTrigger8}
-              animateTrigger9={animateTrigger9}
-            />
-            <Contact />
-          </div>
+        <div className={`main-sec ${theme ? "light-theme" : ""}`}>
+          <Header
+            navBg={navBg}
+            theme={theme}
+            setTheme={setTheme}
+            activeSection={activeSection}
+            openSidebar={openSidebar}
+            scrollSection={scrollSection}
+          />
+          <Sidebar
+            open={open}
+            theme={theme}
+            setTheme={setTheme}
+            activeSection={activeSection}
+            closeSidebar={closeSidebar}
+            scrollSection={scrollSection}
+          />
+          <Introduction />
+          <About animateTrigger={animateTrigger} />
+          <Work animateTrigger1={animateTrigger1} />
+          <Projects
+            animateTrigger2={animateTrigger2}
+            animateTrigger3={animateTrigger3}
+            animateTrigger4={animateTrigger4}
+            animateTrigger5={animateTrigger5}
+            animateTrigger6={animateTrigger6}
+            animateTrigger7={animateTrigger7}
+            animateTrigger8={animateTrigger8}
+            animateTrigger9={animateTrigger9}
+          />
+          <Contact />
         </div>
       )}
     </>
