@@ -10,7 +10,7 @@ import Contact from "../../components/Contact";
 
 export default function Home() {
 
-  let themeType = window.matchMedia?.("(prefers-color-scheme: light)").matches ? true : false;
+  let themeType = typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: light)").matches ? true : false;
   const [loader, setLoader] = useState(true);
   const [navBg, setNavBg] = useState(false);
   const [open, setOpen] = useState(themeType);
@@ -60,7 +60,6 @@ export default function Home() {
     const elementPosition9 = element9?.getBoundingClientRect().top;
     const element10 = document.getElementById("project-detail6");
     const elementPosition10 = element10?.getBoundingClientRect().top;
-
 
     if (window.innerHeight - elementPosition > 60) {
       setTrigger(true);
@@ -154,13 +153,14 @@ export default function Home() {
       setAnimateTrigger9(true);
     }
 
-    document.addEventListener("scroll", handleScrollEvent1);
+    if(typeof window !== "undefined"){
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
 
     return () => {
       document.removeEventListener("scroll", handleScrollEvent1);
     };
   }, [trigger, trigger1, trigger2, trigger3, trigger4, trigger5, trigger6, trigger7, trigger8, trigger9]);
-
 
   const handleScrollNav = () => {
     if (window.pageYOffset > 60) {
@@ -182,15 +182,16 @@ export default function Home() {
       setLoader(false);
     }, 2000);
 
-    document.addEventListener("scroll", handleScrollNav);
-    window.addEventListener("resize", resetOnResize);
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollNav);
+      window.addEventListener("resize", resetOnResize);
+    }
 
     return () => {
       document.removeEventListener("scroll", handleScrollNav);
       window.removeEventListener("resize", resetOnResize);
     };
   }, []);
-
 
   const closeSidebar = () => {
     setOpen(false);
@@ -209,13 +210,15 @@ export default function Home() {
       top: node.offsetTop - 100,
       behavior: "smooth",
     };
-    window.scrollTo(scrollOptions);
+    if (typeof window !== "undefined") {
+     window.scrollTo(scrollOptions);
+    }
   };
 
   return (
     <>
       {loader ? (
-        <div className={`loader-sec ${theme ? 'light-loader-bg' : ''}`}>
+        <div className={`loader-sec ${theme ? "light-loader-bg" : ""}`}>
           <div className="loader-inner-sec">
             <h1 className="loader-txt">P</h1>
 
