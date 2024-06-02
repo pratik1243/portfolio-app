@@ -183,6 +183,10 @@ body {
 .menu-close-sec .menu-close-btn {
   width: fit-content;
   height: fit-content;
+  outline: none;
+  border-width: 0px;
+  background-color: transparent;
+  padding: 0;
 }
 
 .menu-close-sec .menu-close-btn svg {
@@ -1108,7 +1112,7 @@ body {
 
 .mobile-theme-btn {
   position: absolute;
-  bottom: 18px;
+  bottom: 23px;
   right: 20px;
   height: 21px;
 }
