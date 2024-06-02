@@ -10,21 +10,11 @@ import Contact from "../../components/Contact";
 
 export default function Home() {
 
-  const themeType = () => {
-    let hours = new Date().getHours()
-    let isDayTime = hours > 6 && hours < 20;
-    if(isDayTime === true){
-      return true
-    } else {
-      return false    
-    }  
-  };
-
   const [loader, setLoader] = useState(true);
   const [navBg, setNavBg] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(0);
-  const [theme, setTheme] = useState(themeType());
+  const [theme, setTheme] = useState(false);
   const [trigger, setTrigger] = useState(false);
   const [trigger1, setTrigger1] = useState(false);
   const [trigger2, setTrigger2] = useState(false);
@@ -227,7 +217,7 @@ export default function Home() {
   return (
     <>
       {loader ? (
-        <div className={`loader-sec ${theme ? "light-loader-bg" : ""}`}>
+        <div className="loader-sec">
           <div className="loader-inner-sec">
             <h1 className="loader-txt">P</h1>
 
