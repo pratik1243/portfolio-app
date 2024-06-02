@@ -77,6 +77,11 @@ const Header = ({
                   className="theme-btn"
                   onClick={() => {
                     setTheme(!theme);
+                    if (!theme) {
+                      document.body.classList.remove("body-theme-cls");
+                    } else {
+                      document.body.classList.add("body-theme-cls");
+                    }
                   }}
                 >
                   {theme ? (
