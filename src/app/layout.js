@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Roboto } from "next/font/google";
-import './portfolio.css';
+import '../../public/assets/style/portfolio.css';
 
 const roboto = Roboto({
   weight: '400',
