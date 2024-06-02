@@ -13,9 +13,9 @@ export default function Home() {
   let themeType = typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: light)").matches ? true : false;
   const [loader, setLoader] = useState(true);
   const [navBg, setNavBg] = useState(false);
-  const [open, setOpen] = useState(themeType);
+  const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(0);
-  const [theme, setTheme] = useState(true);
+  const [theme, setTheme] = useState(themeType);
   const [trigger, setTrigger] = useState(false);
   const [trigger1, setTrigger1] = useState(false);
   const [trigger2, setTrigger2] = useState(false);
