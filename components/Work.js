@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Work = ({ animateTrigger1 }) => {  
@@ -14,8 +13,8 @@ const Work = ({ animateTrigger1 }) => {
           </Col>
           <Col lg={6} md={6} sm={6} xs={12}>
             <div className={`experience-cards ${animateTrigger1 ? "animate-work-cards" : ""}`}>
-              <h4>Safexpay (Junior Front End Developer)</h4>
-              <span>4 July 2022 - Present</span>
+              <h4>Safexpay (Jr. Frontend Developer)</h4>
+              <span>4 July 2022 - Present · 2 yrs</span>
 
               <ul className="roles-list">
                 <li>To convert figma designs into user-friendly web pages</li>
@@ -39,8 +38,8 @@ const Work = ({ animateTrigger1 }) => {
           </Col>
           <Col lg={6} md={6} sm={6} xs={12}>
             <div className={`experience-cards expe-card2 ${animateTrigger1 ? "animate-work-cards" : ""}`}>
-              <h4>Safexpay (Front End Developer Intern)</h4>
-              <span>25 Oct 2021 - 3 July 2022</span>
+              <h4>Safexpay (Frontend Developer Intern)</h4>
+              <span>25 Oct 2021 - 3 July 2022 · 10 mos</span>
 
               <ul className="roles-list">
                 <li>Started working on structure of HTML and CSS</li>
