@@ -30,6 +30,7 @@ const Introduction = () => {
                 <div className="portfolio-user-img">
                   <Image
                     src={portfolioImage}
+                    priority={true}
                     alt="portfolio-logo"
                     layout="fill"
                     objectFit="cover"
