@@ -96,7 +96,7 @@ const Sidebar = ({
           className="theme-btn mobile-theme-btn"
           onClick={switchTheme}
         >
-          {theme == "dark" ? (
+          {theme !== "dark" ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
