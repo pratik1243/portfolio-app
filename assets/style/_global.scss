@@ -33,6 +33,14 @@ body {
   // background-repeat: no-repeat;
 }
 
+body:has(.side-bar.side-bar-open) {
+  overflow: hidden;
+}
+
+body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
+  background-color: #fafafa !important;
+}
+
 .container-sec {
   max-width: 1250px !important;
 }

@@ -7,14 +7,17 @@ import Work from "../../components/Work";
 import Sidebar from "../../components/Sidebar";
 import Projects from "../../components/Projects";
 import Contact from "../../components/Contact";
+import { useSelector, useDispatch } from "react-redux";
+import { changeTheme } from "../../redux/themeSlice";
 
 export default function Home() {
-
+  
+  const dispatch = useDispatch();
+  const theme = useSelector((state) => state?.portfolioTheme?.theme);
   const [loader, setLoader] = useState(true);
   const [navBg, setNavBg] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(0);
-  const [theme, setTheme] = useState(false);
   const [trigger, setTrigger] = useState(false);
   const [trigger1, setTrigger1] = useState(false);
   const [trigger2, setTrigger2] = useState(false);
@@ -61,7 +64,6 @@ export default function Home() {
     const elementPosition9 = element9?.getBoundingClientRect().top;
     const element10 = document.getElementById("project-detail6");
     const elementPosition10 = element10?.getBoundingClientRect().top;
-
 
     if (window.innerHeight - elementPosition > 60) {
       setTrigger(true);
@@ -118,59 +120,15 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
-    if (trigger) {
-      setAnimateTrigger(true);
-    }
+  const switchTheme = () => {
+    setOpen(false);
 
-    if (trigger1) {
-      setAnimateTrigger1(true);
+    if (theme == "dark") {
+      dispatch(changeTheme("light"));
+    } else {
+      dispatch(changeTheme("dark"));
     }
-
-    if (trigger2) {
-      setAnimateTrigger2(true);
-    }
-
-    if (trigger3) {
-      setAnimateTrigger3(true);
-    }
-
-    if (trigger4) {
-      setAnimateTrigger4(true);
-    }
-
-    if (trigger5) {
-      setAnimateTrigger5(true);
-    }
-
-    if (trigger6) {
-      setAnimateTrigger6(true);
-    }
-
-    if (trigger7) {
-      setAnimateTrigger7(true);
-    }
-
-    if (trigger8) {
-      setAnimateTrigger8(true);
-    }
-
-    if (trigger9) {
-      setAnimateTrigger9(true);
-    }
-
-    if (trigger10) {
-      setAnimateTrigger10(true);
-    }
-
-    if(typeof window !== "undefined"){
-      document.addEventListener("scroll", handleScrollEvent1);
-    }
-
-    return () => {
-      document.removeEventListener("scroll", handleScrollEvent1);
-    };
-  }, [trigger, trigger1, trigger2, trigger3, trigger4, trigger5, trigger6, trigger7, trigger8, trigger9, trigger10]);
+  };
 
   const handleScrollNav = () => {
     if (window.pageYOffset > 60) {
@@ -183,9 +141,182 @@ export default function Home() {
   const resetOnResize = () => {
     if (window.innerWidth > 576) {
       setOpen(false);
-      document.body.style.overflow = "auto";
     }
   };
+
+  const closeSidebar = () => {
+    setOpen(false);
+  };
+
+  const openSidebar = () => {
+    setOpen(!open);
+  };
+
+  const scrollSection = (e, id) => {
+    e.preventDefault();
+    let node = document.getElementById(id);
+    const scrollOptions = {
+      top: node.offsetTop - 100,
+      behavior: "smooth",
+    };
+    if (typeof window !== "undefined") {
+      window.scrollTo(scrollOptions);
+    }
+  };
+
+  useEffect(() => {
+    if (trigger) {
+      setAnimateTrigger(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger]);
+
+  useEffect(() => {
+    if (trigger1) {
+      setAnimateTrigger1(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger1]);
+
+  useEffect(() => {
+    if (trigger2) {
+      setAnimateTrigger2(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger2]);
+
+  useEffect(() => {
+    if (trigger3) {
+      setAnimateTrigger3(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger3]);
+
+  useEffect(() => {
+    if (trigger4) {
+      setAnimateTrigger4(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger4]);
+
+  useEffect(() => {
+    if (trigger5) {
+      setAnimateTrigger5(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger5]);
+
+  useEffect(() => {
+    if (trigger6) {
+      setAnimateTrigger6(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger6]);
+
+  useEffect(() => {
+    if (trigger7) {
+      setAnimateTrigger7(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger7]);
+
+  useEffect(() => {
+    if (trigger8) {
+      setAnimateTrigger8(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger8]);
+
+  useEffect(() => {
+    if (trigger9) {
+      setAnimateTrigger9(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger9]);
+
+  useEffect(() => {
+    if (trigger10) {
+      setAnimateTrigger10(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger10]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -202,28 +333,6 @@ export default function Home() {
       window.removeEventListener("resize", resetOnResize);
     };
   }, []);
-
-  const closeSidebar = () => {
-    setOpen(false);
-    document.body.style.overflow = "auto";
-  };
-
-  const openSidebar = () => {
-    setOpen(!open);
-    document.body.style.overflow = "hidden";
-  };
-
-  const scrollSection = (e, id) => {
-    e.preventDefault();
-    let node = document.getElementById(id);
-    const scrollOptions = {
-      top: node.offsetTop - 100,
-      behavior: "smooth",
-    };
-    if (typeof window !== "undefined") {
-      window.scrollTo(scrollOptions);
-    }
-  };
 
   return (
     <>
@@ -246,11 +355,11 @@ export default function Home() {
           </div>
         </div>
       ) : (
-        <div className={`main-sec ${theme ? "light-theme" : ""}`}>
+        <div className={`main-sec ${theme == "light" ? "light-theme" : ""}`}>
           <Header
             navBg={navBg}
             theme={theme}
-            setTheme={setTheme}
+            switchTheme={switchTheme}
             activeSection={activeSection}
             openSidebar={openSidebar}
             scrollSection={scrollSection}
@@ -258,7 +367,7 @@ export default function Home() {
           <Sidebar
             open={open}
             theme={theme}
-            setTheme={setTheme}
+            switchTheme={switchTheme}
             activeSection={activeSection}
             closeSidebar={closeSidebar}
             scrollSection={scrollSection}

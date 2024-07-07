@@ -4,7 +4,7 @@ const Sidebar = ({
   open,
   closeSidebar,
   theme,
-  setTheme,
+  switchTheme,
   scrollSection,
   activeSection,
 }) => {
@@ -94,12 +94,9 @@ const Sidebar = ({
 
         <button
           className="theme-btn mobile-theme-btn"
-          onClick={() => {
-            setTheme(!theme);
-            closeSidebar();
-          }}
+          onClick={switchTheme}
         >
-          {theme ? (
+          {theme == "dark" ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"

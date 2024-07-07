@@ -4,11 +4,12 @@ import { Container, Row, Col } from "react-bootstrap";
 const Header = ({
   navBg,
   openSidebar,
+  switchTheme,
   theme,
   scrollSection,
-  activeSection,
-  setTheme,
+  activeSection
 }) => {
+
   return (
     <div className={`nav-sec ${navBg ? "add-nav-bg" : ""}`}>
       <Container className="container-sec">
@@ -76,16 +77,9 @@ const Header = ({
               <li>
                 <button
                   className="theme-btn"
-                  onClick={() => {
-                    setTheme(!theme);
-                    if (!theme) {
-                      document.body.classList.add("body-theme-cls");
-                    } else {
-                      document.body.classList.remove("body-theme-cls");
-                    }
-                  }}
+                  onClick={switchTheme}
                 >
-                  {theme ? (
+                  {theme == "dark" ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="23"
