@@ -1,0 +1,47 @@
+
+@import './variables';
+
+@mixin portfolioAnimation(
+  $animationName,
+  $animationDelay,
+  $animationDuration,
+  $transitionSec,
+  $opacity,
+  $animationFillMode
+) {
+  @if $opacity == "unset" {
+    animation: $animationDuration $animationName linear infinite;
+    animation-delay: $animationDelay;
+    animation-fill-mode: $animationFillMode;
+    animation-iteration-count: 1;
+    transition: all $transitionSec;
+  } @else {
+    opacity: $opacity;
+    animation: $animationDuration $animationName linear infinite;
+    animation-delay: $animationDelay;
+    animation-fill-mode: $animationFillMode;
+    animation-iteration-count: 1;
+    transition: all $transitionSec;
+  }
+}
+
+@mixin portfolioGradients($height, $width, $top, $right, $bottom, $left) {
+  height: $height;
+  width: $width;
+  right: $right;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  position: absolute;
+  background-color: $gradient-background;
+  box-shadow: $gradient-boxShadow;
+  border-radius: 50%;
+}
+
+
+@mixin portfolioLightThemeCards {
+  background-color: #fff !important;
+  border: 1px solid rgb(244, 242, 242) !important;
+  // box-shadow: 2px 0px 4px 2px rgb(231, 230, 230);
+  box-shadow: 6px 6px 10px -2px rgb(233, 233, 233);
+}

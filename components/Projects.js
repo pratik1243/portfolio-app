@@ -1,22 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import projectImg1 from "../public/assets/images/project-snap-1.png";
-import projectImg2 from "../public/assets/images/project-snap-2.png";
-import projectImg3 from "../public/assets/images/project-snap-3.png";
-import projectImg4 from "../public/assets/images/project-snap-4.png";
-import projectImg5 from "../public/assets/images/project-snap-5.png";
-import projectImg6 from "../public/assets/images/project-snap-6.png";
-import ebookImg from "../public/assets/images/ebook-img.png";
-import partnerProgramImg from "../public/assets/images/partner-program-screenshot.png";
-import consolidatedPageImg from "../public/assets/images/consolidate-page-screenshot.png";
-import platformSafexImg from "../public/assets/images/platform-safexpay-img.png";
-import dmoInternational from "../public/assets/images/dmo-international.png";
-import apixSafexImg from "../public/assets/images/apix-img.png";
-import bbpsPortalImg from "../public/assets/images/bbps-portal-screenshot.jpg";
-import formBuilderImg from "../public/assets/images/form-builder-page-screeenshot.jpg";
-import adPayImg from "../public/assets/images/ad-pay-screenshot.jpg";
-import neoBankPortalImg from "../public/assets/images/neo-portal-screen.jpg";
-import aasaanPortalImg from "../public/assets/images/aasaan-screenshot.jpg";
+import projectImg1 from "../assets/images/project-snap-1.png";
+import projectImg2 from "../assets/images/project-snap-2.png";
+import projectImg3 from "../assets/images/project-snap-3.png";
+import projectImg4 from "../assets/images/project-snap-4.png";
+import projectImg5 from "../assets/images/project-snap-5.png";
+import projectImg6 from "../assets/images/project-snap-6.png";
+import ebookImg from "../assets/images/ebook-img.png";
+import partnerProgramImg from "../assets/images/partner-program-screenshot.png";
+import consolidatedPageImg from "../assets/images/consolidate-page-screenshot.png";
+import platformSafexImg from "../assets/images/platform-safexpay-img.png";
+import dmoInternational from "../assets/images/dmo-international.png";
+import apixSafexImg from "../assets/images/apix-img.png";
+import bbpsPortalImg from "../assets/images/bbps-portal-screenshot.jpg";
+import formBuilderImg from "../assets/images/form-builder-page-screeenshot.jpg";
+import adPayImg from "../assets/images/ad-pay-screenshot.jpg";
+import neoBankPortalImg from "../assets/images/neo-portal-screen.jpg";
+import aasaanPortalImg from "../assets/images/aasaan-screenshot.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Projects = ({
@@ -27,12 +27,13 @@ const Projects = ({
   animateTrigger6,
   animateTrigger7,
   animateTrigger8,
-  animateTrigger9
+  animateTrigger9,
+  animateTrigger10
 }) => {
   return (
     <div
       id="projects-sec"
-      className={`project-sec ${animateTrigger2 ? "animate-about-sec" : ""}`}
+      className={`project-sec ${animateTrigger2 ? "animate-project-sec" : ""}`}
     >
       <Container className="container-sec">
         <Row>
@@ -583,12 +584,15 @@ const Projects = ({
                   </a>
                 </Col>
               </Row>
+
+              
             </div>
           </Col>
         </Row>
       </Container>
       <div className={`${animateTrigger4 ? "gradient-bg-4" : ""}`}></div>
-      {/* <div className={`${animateTrigger9 ? "gradient-bg-5" : ""}`}></div> */}
+      <div className={`${animateTrigger10 ? "gradient-bg-5" : ""}`}></div>
+      
     </div>
   );
 };

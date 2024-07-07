@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
-import instaLogo from "../public/assets/images/instagram-logo.svg";
-import facebookLogo from "../public/assets/images/facebook-logo2.svg";
-import githubLogo from "../public/assets/images/github-logo.svg";
-import linkedinLogo from "../public/assets/images/linkedin-logo.svg";
+import instaLogo from "../assets/images/instagram-logo.svg";
+import facebookLogo from "../assets/images/facebook-logo2.svg";
+import githubLogo from "../assets/images/github-logo.svg";
+import linkedinLogo from "../assets/images/linkedin-logo.svg";
 
 const Contact = () => {
   return (

@@ -1,15 +1,15 @@
 import React from "react";
-import htmlLogo from "../public/assets/images/html5-logo.png";
-import JsLogo from "../public/assets/images/javascript-logo.svg";
-import reactLogo from "../public/assets/images/react-logo.png";
-import cssLogo from "../public/assets/images/css-logo.png";
-import sassLogo from "../public/assets/images/sass-logo.svg";
-import nextJsLogo from "../public/assets/images/next-js-logo.svg";
-import reduxLogo from "../public/assets/images/redux-logo.svg";
-import muiLogo from "../public/assets/images/material-ui-logo.svg";
-import bootStrapLogo from "../public/assets/images/bootstrap-logo.svg";
-import vectorAboutLogo from "../public/assets/images/portfolio-vector-img3.svg";
-import jqueryLogo from "../public/assets/images/jquery-logo.svg";
+import htmlLogo from "../assets/images/html5-logo.png";
+import JsLogo from "../assets/images/javascript-logo.svg";
+import reactLogo from "../assets/images/react-logo.png";
+import cssLogo from "../assets/images/css-logo.png";
+import sassLogo from "../assets/images/sass-logo.svg";
+import nextJsLogo from "../assets/images/next-js-logo.svg";
+import reduxLogo from "../assets/images/redux-logo.svg";
+import muiLogo from "../assets/images/material-ui-logo.svg";
+import bootStrapLogo from "../assets/images/bootstrap-logo.svg";
+import vectorAboutLogo from "../assets/images/portfolio-vector-img3.svg";
+import jqueryLogo from "../assets/images/jquery-logo.svg";
 import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
 

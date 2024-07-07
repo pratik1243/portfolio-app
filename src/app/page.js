@@ -25,6 +25,7 @@ export default function Home() {
   const [trigger7, setTrigger7] = useState(false);
   const [trigger8, setTrigger8] = useState(false);
   const [trigger9, setTrigger9] = useState(false);
+  const [trigger10, setTrigger10] = useState(false);
   const [animateTrigger, setAnimateTrigger] = useState(false);
   const [animateTrigger1, setAnimateTrigger1] = useState(false);
   const [animateTrigger2, setAnimateTrigger2] = useState(false);
@@ -35,6 +36,7 @@ export default function Home() {
   const [animateTrigger7, setAnimateTrigger7] = useState(false);
   const [animateTrigger8, setAnimateTrigger8] = useState(false);
   const [animateTrigger9, setAnimateTrigger9] = useState(false);
+  const [animateTrigger10, setAnimateTrigger10] = useState(false);
 
   const handleScrollEvent1 = () => {
     const element = document.getElementById("about-sec");
@@ -59,6 +61,7 @@ export default function Home() {
     const elementPosition9 = element9?.getBoundingClientRect().top;
     const element10 = document.getElementById("project-detail6");
     const elementPosition10 = element10?.getBoundingClientRect().top;
+
 
     if (window.innerHeight - elementPosition > 60) {
       setTrigger(true);
@@ -109,6 +112,10 @@ export default function Home() {
     if (window.innerHeight - elementPosition10 > 130) {
       setTrigger9(true);
     }
+
+    if (window.innerHeight - elementPosition10 > 500) {
+      setTrigger10(true);
+    }
   };
 
   useEffect(() => {
@@ -152,6 +159,10 @@ export default function Home() {
       setAnimateTrigger9(true);
     }
 
+    if (trigger10) {
+      setAnimateTrigger10(true);
+    }
+
     if(typeof window !== "undefined"){
       document.addEventListener("scroll", handleScrollEvent1);
     }
@@ -159,7 +170,7 @@ export default function Home() {
     return () => {
       document.removeEventListener("scroll", handleScrollEvent1);
     };
-  }, [trigger, trigger1, trigger2, trigger3, trigger4, trigger5, trigger6, trigger7, trigger8, trigger9]);
+  }, [trigger, trigger1, trigger2, trigger3, trigger4, trigger5, trigger6, trigger7, trigger8, trigger9, trigger10]);
 
   const handleScrollNav = () => {
     if (window.pageYOffset > 60) {
@@ -223,13 +234,13 @@ export default function Home() {
 
             <svg height="200" width="200" className="loader-icon">
               <circle
-                class="circle"
+                className="circle"
                 cx="100"
                 cy="100"
                 r="95"
                 stroke="#0093ff"
-                stroke-width="10"
-                fill-opacity="0"
+                strokeWidth="10"
+                fillOpacity="0"
               />
             </svg>
           </div>
@@ -264,6 +275,7 @@ export default function Home() {
             animateTrigger7={animateTrigger7}
             animateTrigger8={animateTrigger8}
             animateTrigger9={animateTrigger9}
+            animateTrigger10={animateTrigger10}
           />
           <Contact />
         </div>
