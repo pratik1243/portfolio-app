@@ -74,7 +74,7 @@ const Header = ({
                   Resume
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <button
                   className="theme-btn"
                   onClick={switchTheme}
@@ -104,7 +104,7 @@ const Header = ({
                     </svg>
                   )}
                 </button>
-              </li>
+              </li> */}
             </ul>
 
             <div className="menu-icon-btn">
