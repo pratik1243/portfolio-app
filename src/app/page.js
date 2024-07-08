@@ -7,17 +7,14 @@ import Work from "../../components/Work";
 import Sidebar from "../../components/Sidebar";
 import Projects from "../../components/Projects";
 import Contact from "../../components/Contact";
-import { useSelector, useDispatch } from "react-redux";
-import { changeTheme } from "../../redux/themeSlice";
 
 export default function Home() {
   
-  const dispatch = useDispatch();
-  const theme = useSelector((state) => state?.portfolioTheme?.theme);
   const [loader, setLoader] = useState(true);
   const [navBg, setNavBg] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(0);
+  const [theme, setTheme] = useState("dark");
   const [trigger, setTrigger] = useState(false);
   const [trigger1, setTrigger1] = useState(false);
   const [trigger2, setTrigger2] = useState(false);
@@ -124,9 +121,9 @@ export default function Home() {
     setOpen(false);
 
     if (theme == "dark") {
-      dispatch(changeTheme("light"));
+      setTheme("light");
     } else {
-      dispatch(changeTheme("dark"));
+      setTheme("dark");
     }
   };
 
