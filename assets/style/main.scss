@@ -501,27 +501,27 @@
         transition: all 0.5s;
 
         &.card-bg1 {
-          animation-delay: 0.4s !important;
+          animation-delay: 0.3s !important;
         }
 
         &.card-bg2 {
-          animation-delay: 0.6s !important;
+          animation-delay: 0.4s !important;
         }
 
         &.card-bg3 {
-          animation-delay: 0.8s !important;
+          animation-delay: 0.5s !important;
         }
 
         &.card-bg4 {
-          animation-delay: 1s !important;
+          animation-delay: 0.6s !important;
         }
 
         &.card-bg5 {
-          animation-delay: 1.2s !important;
+          animation-delay: 0.7s !important;
         }
 
         &.card-bg6 {
-          animation-delay: 1.4s !important;
+          animation-delay: 0.8s !important;
         }
 
         &.anim-project-cards {
@@ -766,6 +766,11 @@
 
 .lg-mt {
   margin-top: 1.5rem;
+}
+
+.resume-dowmload-btn a{
+  color: $base-color !important;
+  font-weight: 600 !important;
 }
 
 // ****** media queries start ******
