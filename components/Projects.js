@@ -306,7 +306,7 @@ const Projects = ({
                             <li>
                               Integrated front-end validation part of kyc forms
                             </li>
-                            <li></li>
+                            {/* <li></li> */}
                           </ul>
                         </div>
                       </Col>
@@ -401,7 +401,7 @@ const Projects = ({
                             <li>
                               Added partial payment and view payment history section
                             </li>
-                            <li></li>
+                            {/* <li></li> */}
                           </ul>
                         </div>
                       </Col>

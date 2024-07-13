@@ -17,7 +17,7 @@ const Work = ({ animateTrigger1 }) => {
               <span>4 July 2022 - Present · 2 yrs</span>
 
               <ul className="roles-list">
-                <li>To convert figma designs into user-friendly web pages</li>
+                <li> To convert figma designs into user-friendly web pages</li>
                 <li>
                   To Create responsive web designs that adapt to different
                   screen sizes, devices and make them Compatible to all browsers

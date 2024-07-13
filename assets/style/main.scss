@@ -218,8 +218,7 @@
   align-items: center;
   padding: 27px;
   position: relative;
-  scroll-snap-align: start;  
-   
+  scroll-snap-align: start;
 
   .intro-left-sec {
     .intro-inner-sec {
@@ -389,7 +388,6 @@
   position: relative;
   z-index: 2;
   opacity: 0;
-  
 
   &.animate-work-sec {
     @include portfolioAnimation(aboutUpanim, 0.6s, 0.6s, 0.6s, unset, forwards);
@@ -441,13 +439,30 @@
 
     .roles-list {
       margin-top: 23px;
-      padding-left: 2px;
+      padding-left: 0px;
 
       li {
-        margin-bottom: 15px;
+        margin-bottom: 17px;
         color: #e3e1e1f0;
         font-size: 15px;
         list-style: none;
+        padding-left: 28px;
+        position: relative;
+
+        &::before {
+          content: "";
+          transform: rotate(45deg);
+          content: "";
+          position: absolute;
+          height: 14px;
+          width: 13px;
+          left: 0;
+          display: block;
+          background-image: url("../images/work-exp-arrow.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          top: 5px;
+        }
       }
     }
   }
@@ -548,7 +563,7 @@
 
   .project-details-sec {
     margin-top: 40px;
-   
+
     .project-details-card {
       background-color: #121b2a66;
       padding: 35px 23px;
@@ -611,8 +626,25 @@
           li {
             color: #e3e1e1f0;
             font-size: 14.4px;
-            margin-bottom: 10px;
+            margin-bottom: 13px;
             line-height: 23px;
+            position: relative;
+            padding-left: 27px;
+
+            &::before {
+              content: "";
+              transform: rotate(45deg);
+              content: "";
+              position: absolute;
+              height: 14px;
+              width: 13px;
+              left: 0;
+              display: block;
+              background-image: url("../images/work-exp-arrow.svg");
+              background-repeat: no-repeat;
+              background-size: contain;
+              top: 4px;
+            }
           }
         }
       }
@@ -625,7 +657,7 @@
     @include portfolioGradients(40px, 40px, 28%, unset, unset, 0px);
   }
 
-  .gradient-bg-5{
+  .gradient-bg-5 {
     transition: all 1s;
     z-index: -2;
     @include portfolioGradients(50px, 50px, unset, 0, 210px, unset);
@@ -768,7 +800,7 @@
   margin-top: 1.5rem;
 }
 
-.resume-dowmload-btn a{
+.resume-dowmload-btn a {
   color: $base-color !important;
   font-weight: 600 !important;
 }
