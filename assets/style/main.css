@@ -960,7 +960,7 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
   background-image: url("../images/work-exp-arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  top: 4px;
+  top: 5px;
 }
 .project-sec .gradient-bg-4 {
   transition: all 1s;
