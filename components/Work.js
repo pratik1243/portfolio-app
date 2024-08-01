@@ -42,12 +42,11 @@ const Work = ({ animateTrigger1 }) => {
               <span>25 Oct 2021 - 3 July 2022 · 10 mos</span>
 
               <ul className="roles-list">
-                <li>Started working on structure of HTML and CSS</li>
+                <li>Started working on structure of HTML, CSS, SASS and Bootstrap</li>
                 <li>Worked with javascript including jquery</li>
                 <li>Learned to build HTML mailers for different email applications</li>
                 <li>
-                  Worked on form builder demo project where i learned form
-                  creation and validation and mobile responsiveness
+                  Worked on form validations and responsive part of front end
                 </li>
                 <li>
                   Worked on react, next js structure and material UI framework

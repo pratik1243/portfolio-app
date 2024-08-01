@@ -9,8 +9,10 @@ import projectImg6 from "../assets/images/project-snap-6.png";
 import ebookImg from "../assets/images/ebook-img.png";
 import partnerProgramImg from "../assets/images/partner-program-screenshot.png";
 import consolidatedPageImg from "../assets/images/consolidate-page-screenshot.png";
+import consolidatedPageImg2 from "../assets/images/consolidate-page2-screenshot.png";
 import platformSafexImg from "../assets/images/platform-safexpay-img.png";
 import dmoInternational from "../assets/images/dmo-international.png";
+import pgPortalImg from "../assets/images/pg-portal-img.jpeg";
 import apixSafexImg from "../assets/images/apix-img.png";
 import bbpsPortalImg from "../assets/images/bbps-portal-screenshot.jpg";
 import formBuilderImg from "../assets/images/form-builder-page-screeenshot.jpg";
@@ -28,7 +30,7 @@ const Projects = ({
   animateTrigger7,
   animateTrigger8,
   animateTrigger9,
-  animateTrigger10
+  animateTrigger10,
 }) => {
   return (
     <div
@@ -45,7 +47,7 @@ const Projects = ({
             <div className="projects-cards-sec">
               {/* <h4>live Projects</h4> */}
               <Row>
-              <Col lg={4} md={4} sm={6} xs={12}>
+                {/* <Col lg={4} md={4} sm={6} xs={12}>
                   <a
                     href="https://www.aasaancheckout.com/ebook/"
                     target="_blank"
@@ -81,7 +83,7 @@ const Projects = ({
                       />
                     </div>{" "}
                   </a>
-                </Col>  
+                </Col> */}
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
                     href="https://aasaancheckout.com/consolidated-dashboard/"
@@ -89,7 +91,7 @@ const Projects = ({
                   >
                     {" "}
                     <div
-                      className={`projects-card card-bg3 mt2-after-sm mt2-after-md ${
+                      className={`projects-card card-bg1 ${
                         animateTrigger2 ? "anim-project-cards" : ""
                       }`}
                     >
@@ -97,12 +99,16 @@ const Projects = ({
                         src={consolidatedPageImg}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "100%", width: "130%", marginLeft:"-55px" }}
+                        style={{
+                          height: "100%",
+                          width: "130%",
+                          marginLeft: "-55px",
+                        }}
                       />
                     </div>{" "}
                   </a>
-                </Col>  
-                            
+                </Col>
+
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
                     href="https://safexpay.com/get-a-payment-platform/"
@@ -110,7 +116,7 @@ const Projects = ({
                   >
                     {" "}
                     <div
-                      className={`projects-card card-bg4 mt-5 ${
+                      className={`projects-card card-bg2 mt2-after-sm ${
                         animateTrigger2 ? "anim-project-cards" : ""
                       }`}
                     >
@@ -122,9 +128,30 @@ const Projects = ({
                       />
                     </div>{" "}
                   </a>
-                </Col>    
-               
+                </Col>
+
                 <Col lg={4} md={4} sm={6} xs={12}>
+                  <a
+                    href="https://aasaancheckout.com/products/consolidated-dashboard"
+                    target="_blank"
+                  >
+                    {" "}
+                    <div
+                      className={`projects-card card-bg3 mt2-after-sm mt2-after-md ${
+                        animateTrigger2 ? "anim-project-cards" : ""
+                      }`}
+                    >
+                      <Image
+                        src={consolidatedPageImg2}
+                        alt="card-img"
+                        objectFit="cover"
+                        style={{ height: "100%", width: "130%" }}
+                      />
+                    </div>{" "}
+                  </a>
+                </Col>
+
+                {/* <Col lg={4} md={4} sm={6} xs={12}>
                   <a
                     href="https://aasaancheckout.com/partner-program/"
                     target="_blank"
@@ -143,7 +170,7 @@ const Projects = ({
                       />
                     </div>{" "}
                   </a>
-                </Col>          
+                </Col> */}
               </Row>
             </div>
           </Col>
@@ -198,7 +225,7 @@ const Projects = ({
                               Worked on customization of template and its UI
                               components according to design and product
                               requirement
-                            </li>                           
+                            </li>
                           </ul>
                         </div>
                       </Col>
@@ -261,7 +288,7 @@ const Projects = ({
                     </Row>
                   </div>
                 </Col>
-               
+
                 <Col lg={12} md={12} sm={12} xs={12}>
                   <div
                     className={`project-details-card ${
@@ -313,7 +340,7 @@ const Projects = ({
                     </Row>
                   </div>
                 </Col>
-                <Col lg={12} md={12} sm={12} xs={12}>
+                {/* <Col lg={12} md={12} sm={12} xs={12}>
                   <div
                     className={`project-details-card ${
                       animateTrigger8 ? "anim-project-cards" : ""
@@ -343,21 +370,26 @@ const Projects = ({
                           </h3>
                           <ul className="description-list">
                             <li>
-                            Neo banking portal help businesses to automate the payout process, reducing the time and effort required to transfer funds to multiple beneficiaries                            </li>
-                            <li>
-                              Redesigned and restructured new portal UI
+                              Neo banking portal help businesses to automate the
+                              payout process, reducing the time and effort
+                              required to transfer funds to multiple
+                              beneficiaries{" "}
                             </li>
+                            <li>Redesigned and restructured new portal UI</li>
                             <li>
                               Developed additional modules for admin and
                               merchant portals
                             </li>
-                            <li>Worked on next js, material UI, react hook form, formik and yup validation</li>
+                            <li>
+                              Worked on next js, material UI, react hook form,
+                              formik and yup validation
+                            </li>
                           </ul>
                         </div>
                       </Col>
                     </Row>
                   </div>
-                </Col>
+                </Col> */}
                 <Col lg={12} md={12} sm={12} xs={12}>
                   <div
                     className={`project-details-card ${
@@ -369,7 +401,7 @@ const Projects = ({
                       <Col lg={4} md={5} sm={12} xs={12}>
                         <div className="images-sec">
                           <Image
-                            src={formBuilderImg}
+                            src={pgPortalImg}
                             className="project-detail-img"
                             alt="card-img"
                             objectFit="cover"
@@ -384,24 +416,32 @@ const Projects = ({
                               animateTrigger6 ? "heade-txt-anim" : ""
                             }`}
                           >
-                            Form Builder Page
+                            {/* Form Builder Page */}
+                            Payment Gateway Portal (PG 2.0)
                           </h3>
                           <ul className="description-list">
                             <li>
-                              Form builder page is used by merchants to create
-                              and customize forms
+                              Developed front end for modules such as
+                              e-verification, e-invoice, kyc hub and
+                              payment page customization for aggregator js checkout page
                             </li>
                             <li>
-                              Developed structure using languages such HTML,
-                              CSS, Bootstrap and jquery
+                              Worked on API integration part of modules in
+                              portal
                             </li>
                             <li>
-                              Worked on web and responsive design of the page
+                              Resolved issues related to front end UI and
+                              rectification across different modules in portal
                             </li>
+
+                            {/* <li>
+                              Worked with testing and back end team to resolve
+                              issues to product front end flow
+                            </li> */}
                             <li>
-                              Added partial payment and view payment history section
+                              Developed emailers for admin, merchant, reseller
+                              and aggregator portal
                             </li>
-                            {/* <li></li> */}
                           </ul>
                         </div>
                       </Col>
@@ -442,10 +482,16 @@ const Projects = ({
                               revolutionise shopper experience
                             </li>
                             <li>
-                              Developed structure using react js and react
-                              bootstrap
+                              Worked on react js, react
+                              bootstrap and developed pages for merchant portal
                             </li>
-                            <li>Developed modules for merchant portal</li>
+                            <li>
+                              Developed landing pages and emailers for merchant portal
+                            </li>
+                            <li></li>
+                            <li>
+                              Developed checkout customization module in which merchants can customize brand color and theme of aasaan checkout page integrated in their websites
+                            </li>
                           </ul>
                         </div>
                       </Col>
@@ -477,7 +523,6 @@ const Projects = ({
                         src={projectImg6}
                         alt="card-img"
                         objectFit="cover"
-                        
                         style={{ height: "100%", width: "150%" }}
                       />
                     </div>{" "}
@@ -584,15 +629,12 @@ const Projects = ({
                   </a>
                 </Col>
               </Row>
-
-              
             </div>
           </Col>
         </Row>
       </Container>
       <div className={`${animateTrigger4 ? "gradient-bg-4" : ""}`}></div>
       <div className={`${animateTrigger10 ? "gradient-bg-5" : ""}`}></div>
-      
     </div>
   );
 };

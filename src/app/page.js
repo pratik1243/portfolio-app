@@ -88,7 +88,7 @@ export default function Home() {
       setTrigger3(true);
     }
 
-    if (window.innerHeight - elementPosition5 > 135) {
+    if (window.innerHeight - elementPosition5 > 163) {
       setTrigger4(true);
     }
 
