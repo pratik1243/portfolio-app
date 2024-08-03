@@ -86,7 +86,7 @@ const Sidebar = ({
             </a>
           </li>
           <li className="menu-list-btn resume-dowmload-btn">
-            <a href="/Pratik-Thakur-CV.pdf" download="Pratik-Thakur-CV">
+            <a href="/Pratik-Thakur-CV.pdf" download>
               Resume
             </a>
           </li>
