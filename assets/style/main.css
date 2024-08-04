@@ -1011,7 +1011,7 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
 .contact-sec {
   position: relative;
   padding: 27px;
-  margin-top: 100px;
+  margin-top: 130px;
   background-color: rgba(0, 147, 255, 0.0392156863);
 }
 .contact-sec .contact-head-txt {
@@ -1181,7 +1181,7 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
     padding-top: 30px !important;
   }
   .introduction-sec .intro-left-sec .intro-inner-sec .head-txt1 {
-    font-size: 45px;
+    font-size: 41px;
   }
   .introduction-sec .intro-left-sec .intro-inner-sec .head-txt2 {
     font-size: 26px;

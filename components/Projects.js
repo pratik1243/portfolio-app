@@ -423,7 +423,7 @@ const Projects = ({
                             <li>
                               Developed front end for modules such as
                               e-verification, e-invoice, kyc hub and
-                              payment page customization for aggregator js checkout page
+                              payment page customization
                             </li>
                             <li>
                               Worked on API integration part of modules in
@@ -478,8 +478,7 @@ const Projects = ({
                           </h3>
                           <ul className="description-list">
                             <li>
-                              Aasaan is a one click checkout aimed to
-                              revolutionise shopper experience
+                            Aasaan is build to improve the shopping experience and increase conversions on a brand's website
                             </li>
                             <li>
                               Worked on react js, react

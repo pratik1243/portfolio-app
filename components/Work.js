@@ -51,6 +51,9 @@ const Work = ({ animateTrigger1 }) => {
                 <li>
                   Worked on react, next js structure and material UI framework
                 </li>
+                <li>
+                  Worked on redux toolkit for data management
+                </li>
               </ul>
             </div>
           </Col>
