@@ -1291,7 +1291,7 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
     width: 37px;
   }
   .project-sec .project-details-sec .project-details-card .project-description-sec {
-    margin-left: 10px;
+    margin-left: 0px;
   }
 }
 @media (max-width: 1360px) {
