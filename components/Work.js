@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Work = ({ animateTrigger1 }) => {  
+const Work = ({ animateTrigger1 }) => {
   return (
-    <div id="works-sec" 
-    className={`work-sec ${animateTrigger1 ? "animate-work-sec" : ""}`}
+    <div
+      id="works-sec"
+      className={`work-sec ${animateTrigger1 ? "animate-work-sec" : ""}`}
     >
       <Container className="container-sec">
         <Row>
@@ -12,54 +13,69 @@ const Work = ({ animateTrigger1 }) => {
             <h1 className="work-head-txt">Work Experience</h1>
           </Col>
           <Col lg={6} md={6} sm={6} xs={12}>
-            <div className={`experience-cards ${animateTrigger1 ? "animate-work-cards" : ""}`}>
+            <div
+              className={`experience-cards ${
+                animateTrigger1 ? "animate-work-cards" : ""
+              }`}
+            >
               <h4>Safexpay (Jr. Frontend Developer)</h4>
               <span>4 July 2022 - Present · 2 yrs</span>
 
               <ul className="roles-list">
-                <li> To convert figma designs into user-friendly web pages</li>
                 <li>
-                  To Create responsive web designs that adapt to different
-                  screen sizes, devices and make them Compatible to all browsers
+                  Worked on structure of next js, redux toolkit and material UI
                 </li>
                 <li>
-                  Collaborate with back-end developers to effectively resolve
-                  the issues related to UI
+                  Maintainance and updation of content in safexpay official
+                  website and safexpay docs page
                 </li>
                 <li>
-                  Recurring discussions and review with the product team
-                  regarding the UI design flow
+                  Worked on code structure and API integration of modules in PG
+                  portal
                 </li>
                 <li>
-                  To manage and track changes to the codebase
+                  Recurring discussions, review with the product team regarding
+                  the UI design flow and implementation of front end pages
+                </li>
+                <li>
+                  Worked with win SCP software for deployment, bitbucket and git
                 </li>
               </ul>
             </div>
           </Col>
           <Col lg={6} md={6} sm={6} xs={12}>
-            <div className={`experience-cards expe-card2 ${animateTrigger1 ? "animate-work-cards" : ""}`}>
+            <div
+              className={`experience-cards expe-card2 ${
+                animateTrigger1 ? "animate-work-cards" : ""
+              }`}
+            >
               <h4>Safexpay (Frontend Developer Intern)</h4>
               <span>25 Oct 2021 - 3 July 2022 · 10 mos</span>
 
               <ul className="roles-list">
-                <li>Started working on structure of HTML, CSS, SASS and Bootstrap</li>
-                <li>Worked with javascript including jquery</li>
-                <li>Learned to build HTML mailers for different email applications</li>
                 <li>
-                  Worked on form validations and responsive part of front end
+                  Started working on structure of HTML, CSS, Javascript and
+                  Bootstrap
                 </li>
                 <li>
-                  Worked on react, next js structure and material UI framework
+                  Worked on SASS preprocessor, jquery and responsive design
+                  system
+                </li>
+                <li>Learned to build HTML mailers for different products</li>
+                <li>
+                  Worked on front end validations in checkout pages and
+                  developed UI for portals
                 </li>
                 <li>
-                  Worked on redux toolkit for data management
+                  Developed different landing pages used for onboarding
+                  merchants, marketing campaigns, payments, etc
                 </li>
               </ul>
             </div>
           </Col>
         </Row>
       </Container>
-      
+
       <div className="gradient-bg-3"></div>
     </div>
   );

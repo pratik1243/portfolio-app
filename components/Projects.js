@@ -320,7 +320,7 @@ const Projects = ({
                           <ul className="description-list">
                             <li>
                               DMO is merchant onboarding system in which users
-                              goes through KYC process
+                              goes through KYC process in portal
                             </li>
                             <li>
                               Developed structure using languages such HTML,
@@ -333,7 +333,10 @@ const Projects = ({
                             <li>
                               Integrated front-end validation part of kyc forms
                             </li>
-                            {/* <li></li> */}
+                            <li>
+                              Worked with back-end developers to resolve the
+                              issues related to UI in CSS and JS
+                            </li>
                           </ul>
                         </div>
                       </Col>
@@ -421,9 +424,13 @@ const Projects = ({
                           </h3>
                           <ul className="description-list">
                             <li>
+                              PG 2.0 portal acts as an intermediary in
+                              electronic financial transactions between admin and merchants
+                            </li>
+                            <li>
                               Developed front end for modules such as
-                              e-verification, e-invoice, kyc hub and
-                              payment page customization
+                              e-verification, e-invoice, kyc hub and payment
+                              page customization
                             </li>
                             <li>
                               Worked on API integration part of modules in
@@ -478,18 +485,22 @@ const Projects = ({
                           </h3>
                           <ul className="description-list">
                             <li>
-                            Aasaan is build to improve the shopping experience and increase conversions on a brand's website
+                              Aasaan is build to improve the shopping experience
+                              and increase conversions on a brand's website
                             </li>
                             <li>
-                              Worked on react js, react
-                              bootstrap and developed pages for merchant portal
+                              Worked on react js, react bootstrap and developed
+                              pages for merchant portal
                             </li>
                             <li>
-                              Developed landing pages and emailers for merchant portal
+                              Developed landing pages and emailers for merchant
+                              portal
                             </li>
                             <li></li>
                             <li>
-                              Developed checkout customization module in which merchants can customize brand color and theme of aasaan checkout page integrated in their websites
+                              Developed checkout customization module in which
+                              merchants can customize brand color and theme of
+                              aasaan checkout page integrated in their websites
                             </li>
                           </ul>
                         </div>

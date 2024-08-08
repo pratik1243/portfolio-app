@@ -66,7 +66,7 @@ const Header = ({
               </li>
               <li>
                 <a
-                  href="/Pratik-Thakur-Resume.pdf"
+                  href="/Pratik-New-Resume.pdf"
                   type="application/pdf"
                   rel="noreferrer"
                   target="_blank"
