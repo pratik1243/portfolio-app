@@ -520,7 +520,7 @@ const Projects = ({
               <Row>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
-                    href="https://pratik1243.github.io/justicia.github.io/"
+                    href="https://pratik1243.github.io/justicia-website/"
                     target="_blank"
                   >
                     {" "}
