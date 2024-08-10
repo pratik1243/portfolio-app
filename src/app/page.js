@@ -84,11 +84,11 @@ export default function Home() {
       setActiveSection(5);
     }
 
-    if (window.innerHeight - elementPosition4 > 30) {
+    if (window.innerHeight - elementPosition4 > 70) {
       setTrigger3(true);
     }
 
-    if (window.innerHeight - elementPosition5 > 163) {
+    if (window.innerHeight - elementPosition5 > 168) {
       setTrigger4(true);
     }
 
