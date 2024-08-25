@@ -402,10 +402,6 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
 .nav-sec .menu-items-sec li {
   list-style: none;
 }
-.nav-sec .menu-items-sec li:last-child a {
-  color: #0093ff;
-  font-weight: 600;
-}
 .nav-sec .menu-items-sec li a {
   text-decoration: none;
   color: #fff;
@@ -438,7 +434,7 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
   position: fixed;
   top: 0;
   right: 0;
-  transition: 0.4s;
+  transition: 0.3s;
   z-index: 1500;
   display: none;
   overflow: hidden;
@@ -1105,11 +1101,6 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
 
 .lg-mt {
   margin-top: 1.5rem;
-}
-
-.resume-dowmload-btn a {
-  color: #0093ff !important;
-  font-weight: 600 !important;
 }
 
 @media (max-width: 380px) {

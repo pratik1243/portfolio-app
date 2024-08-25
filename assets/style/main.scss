@@ -42,10 +42,10 @@
     li {
       list-style: none;
 
-      &:last-child a {
-        color: $base-color;
-        font-weight: 600;
-      }
+      // &:last-child a {
+      //   //color: $base-color;
+      //   font-weight: 600;
+      // }
 
       a {
         text-decoration: none;
@@ -86,7 +86,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  transition: 0.4s;
+  transition: 0.3s;
   z-index: 1500;
   display: none;
   overflow: hidden;
@@ -800,10 +800,10 @@
   margin-top: 1.5rem;
 }
 
-.resume-dowmload-btn a {
-  color: $base-color !important;
-  font-weight: 600 !important;
-}
+// .resume-dowmload-btn a {
+//   color: $base-color !important;
+//   font-weight: 600 !important;
+// }
 
 // ****** media queries start ******
 
