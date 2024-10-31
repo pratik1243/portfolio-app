@@ -54,7 +54,7 @@ const Work = ({ animateTrigger1 }) => {
 
               <ul className="roles-list">
                 <li>
-                  Started working on structure of HTML, CSS, Javascript and
+                  Worked on structure of HTML, CSS, Javascript and
                   Bootstrap
                 </li>
                 <li>
