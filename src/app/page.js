@@ -88,7 +88,7 @@ export default function Home() {
       setTrigger3(true);
     }
 
-    if (window.innerHeight - elementPosition5 > 168) {
+    if (window.innerHeight - elementPosition5 > 130) {
       setTrigger4(true);
     }
 
@@ -117,15 +117,15 @@ export default function Home() {
     }
   };
 
-  const switchTheme = () => {
-    setOpen(false);
+  // const switchTheme = () => {
+  //   setOpen(false);
 
-    if (theme == "dark") {
-      setTheme("light");
-    } else {
-      setTheme("dark");
-    }
-  };
+  //   // if (theme == "dark") {
+  //   //   setTheme("light");
+  //   // } else {
+  //   //   setTheme("dark");
+  //   // }
+  // };
 
   const handleScrollNav = () => {
     if (window.pageYOffset > 60) {
@@ -356,7 +356,7 @@ export default function Home() {
           <Header
             navBg={navBg}
             theme={theme}
-            switchTheme={switchTheme}
+            //switchTheme={switchTheme}
             activeSection={activeSection}
             openSidebar={openSidebar}
             scrollSection={scrollSection}
@@ -364,7 +364,7 @@ export default function Home() {
           <Sidebar
             open={open}
             theme={theme}
-            switchTheme={switchTheme}
+            //switchTheme={switchTheme}
             activeSection={activeSection}
             closeSidebar={closeSidebar}
             scrollSection={scrollSection}

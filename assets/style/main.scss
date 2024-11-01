@@ -488,7 +488,7 @@
   .project-head-txt {
     font-size: 42px;
     color: $base-white-color;
-    margin-bottom: 35px;
+    //margin-bottom: 35px;
     border-bottom: 1.6px solid #1275be;
     padding-bottom: 12px;
   }
@@ -562,17 +562,19 @@
   }
 
   .project-details-sec {
-    margin-top: 40px;
-
     .project-details-card {
       background-color: #121b2a66;
       padding: 35px 23px;
-      margin-top: 50px;
+      margin-top: 44px;
       border-radius: 7px;
       border: 1px solid #3f3f3f78;
       transition: all 0.5s;
       max-width: 1200px;
       opacity: 0;
+
+      &.card-bg1 {
+        animation-delay: 0.3s !important;
+      }
 
       &.anim-project-cards {
         @include portfolioAnimation(
@@ -860,6 +862,7 @@
   }
 
   .about-sec {
+    margin-top: 80px;
     .about-head-txt {
       font-size: 31px;
     }
@@ -869,10 +872,6 @@
     .project-head-txt {
       font-size: 31px;
     }
-  }
-
-  .about-sec {
-    margin-top: 80px;
   }
 
   .contact-sec {
@@ -994,6 +993,7 @@
   }
 
   .contact-sec {
+    margin-top: 80px;
     .contact-list-sec {
       .inner-contact-list {
         .contact-txt-sec {

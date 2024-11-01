@@ -4,8 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 const Header = ({
   navBg,
   openSidebar,
-  switchTheme,
-  theme,
+  // switchTheme,
+  // theme,
   scrollSection,
   activeSection
 }) => {

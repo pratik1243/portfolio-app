@@ -829,7 +829,6 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
 .project-sec .project-head-txt {
   font-size: 42px;
   color: #fff;
-  margin-bottom: 35px;
   border-bottom: 1.6px solid #1275be;
   padding-bottom: 12px;
 }
@@ -884,18 +883,18 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
 .project-sec .projects-cards-sec a .projects-card img:hover {
   transform: scale(1.1);
 }
-.project-sec .project-details-sec {
-  margin-top: 40px;
-}
 .project-sec .project-details-sec .project-details-card {
   background-color: rgba(18, 27, 42, 0.4);
   padding: 35px 23px;
-  margin-top: 50px;
+  margin-top: 44px;
   border-radius: 7px;
   border: 1px solid rgba(63, 63, 63, 0.4705882353);
   transition: all 0.5s;
   max-width: 1200px;
   opacity: 0;
+}
+.project-sec .project-details-sec .project-details-card.card-bg1 {
+  animation-delay: 0.3s !important;
 }
 .project-sec .project-details-sec .project-details-card.anim-project-cards {
   animation: 0.5s animateProjectCards linear infinite;
@@ -1134,14 +1133,14 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
   .work-sec .work-head-txt {
     font-size: 31px;
   }
+  .about-sec {
+    margin-top: 80px;
+  }
   .about-sec .about-head-txt {
     font-size: 31px;
   }
   .project-sec .project-head-txt {
     font-size: 31px;
-  }
-  .about-sec {
-    margin-top: 80px;
   }
   .contact-sec .contact-head-txt {
     margin-bottom: 35px;
@@ -1224,6 +1223,9 @@ body:has(.main-sec.light-theme)::-webkit-scrollbar-track {
   }
   .project-sec .projects-cards-sec a .projects-card {
     height: 270px;
+  }
+  .contact-sec {
+    margin-top: 80px;
   }
   .contact-sec .contact-list-sec .inner-contact-list .contact-txt-sec span {
     margin-top: 6px;

@@ -3,8 +3,8 @@ import React from "react";
 const Sidebar = ({
   open,
   closeSidebar,
-  theme,
-  switchTheme,
+  // theme,
+  // switchTheme,
   scrollSection,
   activeSection,
 }) => {

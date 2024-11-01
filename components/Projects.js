@@ -2,22 +2,22 @@ import React from "react";
 import Image from "next/image";
 import projectImg1 from "../assets/images/project-snap-1.png";
 import projectImg2 from "../assets/images/project-snap-2.png";
-import projectImg3 from "../assets/images/project-snap-3.png";
 import projectImg4 from "../assets/images/pac-game-image.png";
 import projectImg5 from "../assets/images/project-snap-5.png";
 import projectImg6 from "../assets/images/project-snap-6.png";
+//import projectImg3 from "../assets/images/project-snap-3.png";
 // import ebookImg from "../assets/images/ebook-img.png";
 // import partnerProgramImg from "../assets/images/partner-program-screenshot.png";
-import consolidatedPageImg from "../assets/images/consolidate-page-screenshot.png";
-import consolidatedPageImg2 from "../assets/images/consolidate-page2-screenshot.png";
+// import consolidatedPageImg from "../assets/images/consolidate-page-screenshot.png";
+// import consolidatedPageImg2 from "../assets/images/consolidate-page2-screenshot.png";
+// import formBuilderImg from "../assets/images/form-builder-page-screeenshot.jpg";
+// import apixSafexImg from "../assets/images/apix-img.png";
+// import neoBankPortalImg from "../assets/images/neo-portal-screen.jpg";
 import platformSafexImg from "../assets/images/platform-safexpay-img.png";
 import dmoInternational from "../assets/images/dmo-international.png";
 import pgPortalImg from "../assets/images/pg-portal-img.jpeg";
-// import apixSafexImg from "../assets/images/apix-img.png";
 import bbpsPortalImg from "../assets/images/bbps-portal-screenshot.jpg";
-// import formBuilderImg from "../assets/images/form-builder-page-screeenshot.jpg";
 import adPayImg from "../assets/images/ad-pay-screenshot.jpg";
-// import neoBankPortalImg from "../assets/images/neo-portal-screen.jpg";
 import aasaanPortalImg from "../assets/images/aasaan-screenshot.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -43,11 +43,11 @@ const Projects = ({
             <h1 className="project-head-txt">Projects</h1>
           </Col>
 
-          <Col lg={12} md={12} sm={12} xs={12}>
+          {/* <Col lg={12} md={12} sm={12} xs={12}>
             <div className="projects-cards-sec">
-              {/* <h4>live Projects</h4> */}
+              <h4>live Projects</h4>
               <Row>
-                {/* <Col lg={4} md={4} sm={6} xs={12}>
+                <Col lg={4} md={4} sm={6} xs={12}>
                   <a
                     href="https://www.aasaancheckout.com/ebook/"
                     target="_blank"
@@ -83,7 +83,7 @@ const Projects = ({
                       />
                     </div>{" "}
                   </a>
-                </Col> */}
+                </Col>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
                     href="https://aasaancheckout.com/consolidated-dashboard/"
@@ -151,7 +151,7 @@ const Projects = ({
                   </a>
                 </Col>
 
-                {/* <Col lg={4} md={4} sm={6} xs={12}>
+                <Col lg={4} md={4} sm={6} xs={12}>
                   <a
                     href="https://aasaancheckout.com/partner-program/"
                     target="_blank"
@@ -170,17 +170,17 @@ const Projects = ({
                       />
                     </div>{" "}
                   </a>
-                </Col> */}
+                </Col>
               </Row>
             </div>
-          </Col>
+          </Col> */}
 
           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="project-details-sec">
               <Row>
                 <Col lg={12} md={12} sm={12} xs={12}>
                   <div
-                    className={`project-details-card ${
+                    className={`project-details-card card-bg1 ${
                       animateTrigger4 ? "anim-project-cards" : ""
                     }`}
                     id="project-detail1"
@@ -540,7 +540,7 @@ const Projects = ({
                 </Col>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
-                    href="https://pratik1243.github.io/layout.github.io/"
+                    href="https://safexpay.com/get-a-payment-platform/"
                     target="_blank"
                   >
                     {" "}
@@ -550,10 +550,10 @@ const Projects = ({
                       }`}
                     >
                       <Image
-                        src={projectImg3}
+                        src={platformSafexImg}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "100%", width: "600px" }}
+                        style={{ height: "100%", width: "120%" }}
                       />
                     </div>{" "}
                   </a>
@@ -633,7 +633,7 @@ const Projects = ({
                         src={projectImg4}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "105%", width: "110%" }}
+                        style={{ height: "100%", width: "100%" }}
                       />
                     </div>{" "}
                   </a>
