@@ -574,6 +574,7 @@
 
       &.card-bg1 {
         animation-delay: 0.3s !important;
+        margin-top: 30px !important;
       }
 
       &.anim-project-cards {
@@ -978,9 +979,9 @@
   .project-sec {
     margin-top: 40px;
 
-    .project-details-sec {
-      margin-top: 20px;
-    }
+    // .project-details-sec {
+    //   margin-top: 20px;
+    // }
 
     .projects-cards-sec {
       a {
