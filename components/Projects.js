@@ -16,9 +16,9 @@ import projectImg6 from "../assets/images/project-snap-6.png";
 import platformSafexImg from "../assets/images/platform-safexpay-img.png";
 import dmoInternational from "../assets/images/dmo-international.png";
 import pgPortalImg from "../assets/images/pg-portal-img.jpeg";
-import bbpsPortalImg from "../assets/images/bbps-portal-screenshot.jpg";
+import bbpsPortalImg from "../assets/images/bbps-portal-screenshot.png";
 import adPayImg from "../assets/images/ad-pay-screenshot.jpg";
-import aasaanPortalImg from "../assets/images/aasaan-screenshot.jpg";
+import aasaanPortalImg from "../assets/images/aasaan-screenshot.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Projects = ({
