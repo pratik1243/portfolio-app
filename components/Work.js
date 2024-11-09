@@ -7,6 +7,7 @@ const Work = ({ animateTrigger1 }) => {
       id="works-sec"
       className={`work-sec ${animateTrigger1 ? "animate-work-sec" : ""}`}
     >
+      
       <Container className="container-sec">
         <Row>
           <Col lg={12} md={12} sm={12} xs={12}>
