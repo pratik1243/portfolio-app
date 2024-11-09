@@ -74,6 +74,7 @@ export default function Home() {
       setTrigger1(true);
       setActiveSection(2);
     }
+    
 
     if (window.innerHeight - elementPosition2 > 80) {
       setTrigger2(true);
