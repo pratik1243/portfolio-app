@@ -1,15 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
-import Header from "../../components/Header";
-import Introduction from "../../components/Introduction";
-import About from "../../components/About";
-import Work from "../../components/Work";
-import Sidebar from "../../components/Sidebar";
-import Projects from "../../components/Projects";
-import Contact from "../../components/Contact";
+import dynamic from "next/dynamic";
+const IntroductionComp = dynamic(() => import("../../components/Introduction"));
+const AboutComp = dynamic(() => import("../../components/About"));
+const WorkComp = dynamic(() => import("../../components/Work"));
+const SidebarComp = dynamic(() => import("../../components/Sidebar"));
+const HeaderComp = dynamic(() => import("../../components/Header"));
+const ProjectsComp = dynamic(() => import("../../components/Projects"));
+const ContactComp = dynamic(() => import("../../components/Contact"));
 
 export default function Home() {
-  
   const [loader, setLoader] = useState(true);
   const [navBg, setNavBg] = useState(false);
   const [open, setOpen] = useState(false);
@@ -74,7 +74,6 @@ export default function Home() {
       setTrigger1(true);
       setActiveSection(2);
     }
-    
 
     if (window.innerHeight - elementPosition2 > 80) {
       setTrigger2(true);
@@ -354,7 +353,7 @@ export default function Home() {
         </div>
       ) : (
         <div className={`main-sec ${theme == "light" ? "light-theme" : ""}`}>
-          <Header
+          <HeaderComp
             navBg={navBg}
             theme={theme}
             //switchTheme={switchTheme}
@@ -362,7 +361,7 @@ export default function Home() {
             openSidebar={openSidebar}
             scrollSection={scrollSection}
           />
-          <Sidebar
+          <SidebarComp
             open={open}
             theme={theme}
             //switchTheme={switchTheme}
@@ -370,10 +369,10 @@ export default function Home() {
             closeSidebar={closeSidebar}
             scrollSection={scrollSection}
           />
-          <Introduction />
-          <About animateTrigger={animateTrigger} />
-          <Work animateTrigger1={animateTrigger1} />
-          <Projects
+          <IntroductionComp />
+          <AboutComp animateTrigger={animateTrigger} />
+          <WorkComp animateTrigger1={animateTrigger1} />
+          <ProjectsComp
             animateTrigger2={animateTrigger2}
             animateTrigger3={animateTrigger3}
             animateTrigger4={animateTrigger4}
@@ -384,7 +383,7 @@ export default function Home() {
             animateTrigger9={animateTrigger9}
             animateTrigger10={animateTrigger10}
           />
-          <Contact />
+          <ContactComp />
         </div>
       )}
     </>
