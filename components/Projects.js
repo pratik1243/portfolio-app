@@ -1,24 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import projectImg1 from "../assets/images/project-snap-1.png";
-import projectImg2 from "../assets/images/project-snap-2.png";
 import projectImg4 from "../assets/images/pac-game-image.png";
 import projectImg5 from "../assets/images/project-snap-5.png";
 import projectImg6 from "../assets/images/project-snap-6.png";
-//import projectImg3 from "../assets/images/project-snap-3.png";
-// import ebookImg from "../assets/images/ebook-img.png";
-// import partnerProgramImg from "../assets/images/partner-program-screenshot.png";
-// import consolidatedPageImg from "../assets/images/consolidate-page-screenshot.png";
-// import consolidatedPageImg2 from "../assets/images/consolidate-page2-screenshot.png";
-// import formBuilderImg from "../assets/images/form-builder-page-screeenshot.jpg";
-// import apixSafexImg from "../assets/images/apix-img.png";
-// import neoBankPortalImg from "../assets/images/neo-portal-screen.jpg";
-import platformSafexImg from "../assets/images/platform-safexpay-img.png";
 import dmoInternational from "../assets/images/dmo-international.png";
 import pgPortalImg from "../assets/images/pg-portal-img.jpeg";
 import bbpsPortalImg from "../assets/images/bbps-portal-screenshot.png";
 import adPayImg from "../assets/images/ad-pay-screenshot.jpg";
 import aasaanPortalImg from "../assets/images/aasaan-screenshot.png";
+import timSheetImg from "../assets/images/time-sheet-screenshot.png";
+import businesAssistImg from "../assets/images/business-assist-screenshot.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Projects = ({
@@ -42,138 +34,6 @@ const Projects = ({
           <Col lg={12} md={12} sm={12} xs={12}>
             <h1 className="project-head-txt">Projects</h1>
           </Col>
-
-          {/* <Col lg={12} md={12} sm={12} xs={12}>
-            <div className="projects-cards-sec">
-              <h4>live Projects</h4>
-              <Row>
-                <Col lg={4} md={4} sm={6} xs={12}>
-                  <a
-                    href="https://www.aasaancheckout.com/ebook/"
-                    target="_blank"
-                  >
-                    {" "}
-                    <div
-                      className={`projects-card card-bg1 ${
-                        animateTrigger2 ? "anim-project-cards" : ""
-                      }`}
-                    >
-                      <Image
-                        src={ebookImg}
-                        alt="card-img"
-                        objectFit="cover"
-                        style={{ height: "100%", width: "120%" }}
-                      />
-                    </div>{" "}
-                  </a>
-                </Col>
-                <Col lg={4} md={4} sm={6} xs={12}>
-                  <a href="https://safexpay.com/apix" target="_blank">
-                    {" "}
-                    <div
-                      className={`projects-card card-bg2 mt2-after-sm ${
-                        animateTrigger2 ? "anim-project-cards" : ""
-                      }`}
-                    >
-                      <Image
-                        src={apixSafexImg}
-                        alt="card-img"
-                        objectFit="cover"
-                        style={{ height: "100%", width: "120%" }}
-                      />
-                    </div>{" "}
-                  </a>
-                </Col>
-                <Col lg={4} md={4} sm={6} xs={12}>
-                  <a
-                    href="https://aasaancheckout.com/consolidated-dashboard/"
-                    target="_blank"
-                  >
-                    {" "}
-                    <div
-                      className={`projects-card card-bg1 ${
-                        animateTrigger2 ? "anim-project-cards" : ""
-                      }`}
-                    >
-                      <Image
-                        src={consolidatedPageImg}
-                        alt="card-img"
-                        objectFit="cover"
-                        style={{
-                          height: "100%",
-                          width: "130%",
-                          marginLeft: "-55px",
-                        }}
-                      />
-                    </div>{" "}
-                  </a>
-                </Col>
-
-                <Col lg={4} md={4} sm={6} xs={12}>
-                  <a
-                    href="https://safexpay.com/get-a-payment-platform/"
-                    target="_blank"
-                  >
-                    {" "}
-                    <div
-                      className={`projects-card card-bg2 mt2-after-sm ${
-                        animateTrigger2 ? "anim-project-cards" : ""
-                      }`}
-                    >
-                      <Image
-                        src={platformSafexImg}
-                        alt="card-img"
-                        objectFit="cover"
-                        style={{ height: "100%", width: "120%" }}
-                      />
-                    </div>{" "}
-                  </a>
-                </Col>
-
-                <Col lg={4} md={4} sm={6} xs={12}>
-                  <a
-                    href="https://aasaancheckout.com/products/consolidated-dashboard"
-                    target="_blank"
-                  >
-                    {" "}
-                    <div
-                      className={`projects-card card-bg3 mt2-after-sm mt2-after-md ${
-                        animateTrigger2 ? "anim-project-cards" : ""
-                      }`}
-                    >
-                      <Image
-                        src={consolidatedPageImg2}
-                        alt="card-img"
-                        objectFit="cover"
-                        style={{ height: "100%", width: "130%" }}
-                      />
-                    </div>{" "}
-                  </a>
-                </Col>
-
-                <Col lg={4} md={4} sm={6} xs={12}>
-                  <a
-                    href="https://aasaancheckout.com/partner-program/"
-                    target="_blank"
-                  >
-                    {" "}
-                    <div
-                      className={`projects-card card-bg5 mt-5 ${
-                        animateTrigger2 ? "anim-project-cards" : ""
-                      }`}
-                    >
-                      <Image
-                        src={partnerProgramImg}
-                        alt="card-img"
-                        objectFit="cover"
-                        style={{ height: "100%", width: "120%" }}
-                      />
-                    </div>{" "}
-                  </a>
-                </Col>
-              </Row>
-            </div>
-          </Col> */}
 
           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="project-details-sec">
@@ -343,56 +203,7 @@ const Projects = ({
                     </Row>
                   </div>
                 </Col>
-                {/* <Col lg={12} md={12} sm={12} xs={12}>
-                  <div
-                    className={`project-details-card ${
-                      animateTrigger8 ? "anim-project-cards" : ""
-                    }`}
-                    id="project-detail5"
-                  >
-                    <Row>
-                      <Col lg={4} md={5} sm={12} xs={12}>
-                        <div className="images-sec">
-                          <Image
-                            src={neoBankPortalImg}
-                            className="project-detail-img"
-                            alt="card-img"
-                            objectFit="cover"
-                            style={{ height: "100%", width: "100%" }}
-                          />
-                        </div>
-                      </Col>
-                      <Col lg={8} md={7} sm={12} xs={12}>
-                        <div className="project-description-sec">
-                          <h3
-                            className={`heade-txt ${
-                              animateTrigger8 ? "heade-txt-anim" : ""
-                            }`}
-                          >
-                            Neo Banking Portal
-                          </h3>
-                          <ul className="description-list">
-                            <li>
-                              Neo banking portal help businesses to automate the
-                              payout process, reducing the time and effort
-                              required to transfer funds to multiple
-                              beneficiaries{" "}
-                            </li>
-                            <li>Redesigned and restructured new portal UI</li>
-                            <li>
-                              Developed additional modules for admin and
-                              merchant portals
-                            </li>
-                            <li>
-                              Worked on next js, material UI, react hook form,
-                              formik and yup validation
-                            </li>
-                          </ul>
-                        </div>
-                      </Col>
-                    </Row>
-                  </div>
-                </Col> */}
+         
                 <Col lg={12} md={12} sm={12} xs={12}>
                   <div
                     className={`project-details-card ${
@@ -540,7 +351,7 @@ const Projects = ({
                 </Col>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
-                    href="https://safexpay.com/get-a-payment-platform/"
+                    href="https://pratik1243.github.io/time-sheet-test-app/"
                     target="_blank"
                   >
                     {" "}
@@ -550,7 +361,7 @@ const Projects = ({
                       }`}
                     >
                       <Image
-                        src={platformSafexImg}
+                        src={timSheetImg}
                         alt="card-img"
                         objectFit="cover"
                         style={{ height: "100%", width: "120%" }}
@@ -560,7 +371,7 @@ const Projects = ({
                 </Col>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
-                    href="https://pratik1243.github.io/react-todo-app/"
+                    href="https://pratik1243.github.io/business-landing-page/"
                     target="_blank"
                   >
                     {" "}
@@ -570,10 +381,10 @@ const Projects = ({
                       }`}
                     >
                       <Image
-                        src={projectImg2}
+                        src={businesAssistImg}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "150%", width: "105%" }}
+                        style={{ height: "100%", width: "110%" }}
                       />
                     </div>{" "}
                   </a>
