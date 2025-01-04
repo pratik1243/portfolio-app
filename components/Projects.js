@@ -364,7 +364,7 @@ const Projects = ({
                         src={timSheetImg}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "100%", width: "120%" }}
+                        style={{ height: "100%", width: "110%" }}
                       />
                     </div>{" "}
                   </a>
