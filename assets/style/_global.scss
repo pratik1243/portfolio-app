@@ -1,13 +1,12 @@
 @import "./variables";
 @import "./mixin";
-//@import "./animate-keyframes";
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: $portfolio-background;
+  background-color: $portfolio-background !important;
 }
 
 ::-webkit-scrollbar {
@@ -28,10 +27,7 @@ body {
 }
 
 .main-sec {
-  background-color: $portfolio-background !important;
-  // background-image: url("../images/gradient-bg2.jpg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background-color: $portfolio-background !important;  
 }
 
 body:has(.side-bar.side-bar-open) {

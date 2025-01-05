@@ -1,13 +1,40 @@
-import React from "react";
+"use client";
+import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Work = ({ animateTrigger1 }) => {
+const Work = ({ setActiveSection }) => {
+  const [trigger1, setTrigger1] = useState(false);
+  const [animateTrigger1, setAnimateTrigger1] = useState(false);
+
+  const handleScrollEvent1 = () => {
+    const element1 = document.getElementById("works-sec");
+    const elementPosition1 = element1?.getBoundingClientRect().top;
+
+    if (window.innerHeight - elementPosition1 > 80) {
+      setTrigger1(true);
+      setActiveSection(2);
+    }
+  };
+
+  useEffect(() => {
+    if (trigger1) {
+      setAnimateTrigger1(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger1]);
+
   return (
     <div
       id="works-sec"
       className={`work-sec ${animateTrigger1 ? "animate-work-sec" : ""}`}
     >
-      
       <Container className="container-sec">
         <Row>
           <Col lg={12} md={12} sm={12} xs={12}>
@@ -55,8 +82,7 @@ const Work = ({ animateTrigger1 }) => {
 
               <ul className="roles-list">
                 <li>
-                  Worked on structure of HTML, CSS, Javascript and
-                  Bootstrap
+                  Worked on structure of HTML, CSS, Javascript and Bootstrap
                 </li>
                 <li>
                   Worked on SASS preprocessor, jquery and responsive design

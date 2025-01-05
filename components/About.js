@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import htmlLogo from "../assets/images/html5-logo.png";
 import JsLogo from "../assets/images/javascript-logo.svg";
 import reactLogo from "../assets/images/react-logo.png";
@@ -10,10 +12,39 @@ import muiLogo from "../assets/images/material-ui-logo.svg";
 import bootStrapLogo from "../assets/images/bootstrap-logo.svg";
 import vectorAboutLogo from "../assets/images/portfolio-vector-img3.svg";
 import jqueryLogo from "../assets/images/jquery-logo.svg";
-import Image from "next/image";
 import { Container, Row, Col } from "react-bootstrap";
 
-const About = ({ animateTrigger }) => {
+const About = ({ setActiveSection }) => {
+  const [trigger, setTrigger] = useState(false);
+  const [animateTrigger, setAnimateTrigger] = useState(false);
+
+  const handleScrollEvent1 = () => {
+    const element = document.getElementById("about-sec");
+    const elementPosition = element?.getBoundingClientRect().top;
+
+    if (window.innerHeight - elementPosition > 60) {
+      setTrigger(true);
+      setActiveSection(1);
+    } else {
+      setTrigger(false);
+      setActiveSection(0);
+    }
+  };
+
+  useEffect(() => {
+    if (trigger) {
+      setAnimateTrigger(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger]);
+
   return (
     <div
       id="about-sec"
@@ -51,8 +82,18 @@ const About = ({ animateTrigger }) => {
           </Col>
 
           <Col lg={6}>
-            <div className={`vector-portfolio-imgsec ${animateTrigger ? "animate-vector-img" : ""}`}>
-              <Image src={vectorAboutLogo} objectFit="cover" alt="vector-logo" height={285} width={285} />
+            <div
+              className={`vector-portfolio-imgsec ${
+                animateTrigger ? "animate-vector-img" : ""
+              }`}
+            >
+              <Image
+                src={vectorAboutLogo}
+                objectFit="cover"
+                alt="vector-logo"
+                height={285}
+                width={285}
+              />
             </div>
           </Col>
 

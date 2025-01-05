@@ -1,5 +1,6 @@
-import React from "react";
+"use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import projectImg1 from "../assets/images/project-snap-1.png";
 import projectImg4 from "../assets/images/pac-game-image.png";
 import projectImg5 from "../assets/images/project-snap-5.png";
@@ -13,17 +14,214 @@ import timSheetImg from "../assets/images/time-sheet-screenshot.png";
 import businesAssistImg from "../assets/images/business-assist-screenshot.png";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Projects = ({
-  animateTrigger2,
-  animateTrigger3,
-  animateTrigger4,
-  animateTrigger5,
-  animateTrigger6,
-  animateTrigger7,
-  animateTrigger8,
-  animateTrigger9,
-  animateTrigger10,
-}) => {
+const Projects = ({ setActiveSection }) => {
+  const [trigger2, setTrigger2] = useState(false);
+  const [trigger3, setTrigger3] = useState(false);
+  const [trigger4, setTrigger4] = useState(false);
+  const [trigger5, setTrigger5] = useState(false);
+  const [trigger6, setTrigger6] = useState(false);
+  const [trigger7, setTrigger7] = useState(false);
+  const [trigger8, setTrigger8] = useState(false);
+  const [trigger9, setTrigger9] = useState(false);
+  const [trigger10, setTrigger10] = useState(false);
+  const [animateTrigger2, setAnimateTrigger2] = useState(false);
+  const [animateTrigger3, setAnimateTrigger3] = useState(false);
+  const [animateTrigger4, setAnimateTrigger4] = useState(false);
+  const [animateTrigger5, setAnimateTrigger5] = useState(false);
+  const [animateTrigger6, setAnimateTrigger6] = useState(false);
+  const [animateTrigger7, setAnimateTrigger7] = useState(false);
+  const [animateTrigger8, setAnimateTrigger8] = useState(false);
+  const [animateTrigger9, setAnimateTrigger9] = useState(false);
+  const [animateTrigger10, setAnimateTrigger10] = useState(false);
+
+  const handleScrollEvent1 = () => {
+    const element2 = document.getElementById("projects-sec");
+    const elementPosition2 = element2?.getBoundingClientRect().top;
+    const element4 = document.getElementById("personal-projects-sec");
+    const elementPosition4 = element4?.getBoundingClientRect().top;
+    const element3 = document.getElementById("contacts-sec");
+    const elementPosition3 = element3?.getBoundingClientRect().top;
+    const element5 = document.getElementById("project-detail1");
+    const elementPosition5 = element5?.getBoundingClientRect().top;
+    const element6 = document.getElementById("project-detail2");
+    const elementPosition6 = element6?.getBoundingClientRect().top;
+    const element7 = document.getElementById("project-detail3");
+    const elementPosition7 = element7?.getBoundingClientRect().top;
+    const element8 = document.getElementById("project-detail4");
+    const elementPosition8 = element8?.getBoundingClientRect().top;
+    const element9 = document.getElementById("project-detail5");
+    const elementPosition9 = element9?.getBoundingClientRect().top;
+    const element10 = document.getElementById("project-detail6");
+    const elementPosition10 = element10?.getBoundingClientRect().top;
+
+    if (window.innerHeight - elementPosition2 > 80) {
+      setTrigger2(true);
+      setActiveSection(3);
+    }
+
+    if (window.innerHeight - elementPosition3 > 40) {
+      setActiveSection(5);
+    }
+
+    if (window.innerHeight - elementPosition4 > 70) {
+      setTrigger3(true);
+    }
+
+    if (window.innerHeight - elementPosition5 > 130) {
+      setTrigger4(true);
+    }
+
+    if (window.innerHeight - elementPosition6 > 130) {
+      setTrigger5(true);
+    }
+
+    if (window.innerHeight - elementPosition7 > 130) {
+      setTrigger6(true);
+    }
+
+    if (window.innerHeight - elementPosition8 > 130) {
+      setTrigger7(true);
+    }
+
+    if (window.innerHeight - elementPosition9 > 130) {
+      setTrigger8(true);
+    }
+
+    if (window.innerHeight - elementPosition10 > 130) {
+      setTrigger9(true);
+    }
+
+    if (window.innerHeight - elementPosition10 > 500) {
+      setTrigger10(true);
+    }
+  };
+
+  useEffect(() => {
+    if (trigger2) {
+      setAnimateTrigger2(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger2]);
+
+  useEffect(() => {
+    if (trigger3) {
+      setAnimateTrigger3(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger3]);
+
+  useEffect(() => {
+    if (trigger4) {
+      setAnimateTrigger4(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger4]);
+
+  useEffect(() => {
+    if (trigger5) {
+      setAnimateTrigger5(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger5]);
+
+  useEffect(() => {
+    if (trigger6) {
+      setAnimateTrigger6(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger6]);
+
+  useEffect(() => {
+    if (trigger7) {
+      setAnimateTrigger7(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger7]);
+
+  useEffect(() => {
+    if (trigger8) {
+      setAnimateTrigger8(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger8]);
+
+  useEffect(() => {
+    if (trigger9) {
+      setAnimateTrigger9(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger9]);
+
+  useEffect(() => {
+    if (trigger10) {
+      setAnimateTrigger10(true);
+    }
+
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger10]);
+
   return (
     <div
       id="projects-sec"
@@ -203,7 +401,7 @@ const Projects = ({
                     </Row>
                   </div>
                 </Col>
-         
+
                 <Col lg={12} md={12} sm={12} xs={12}>
                   <div
                     className={`project-details-card ${
@@ -236,7 +434,8 @@ const Projects = ({
                           <ul className="description-list">
                             <li>
                               PG 2.0 portal acts as an intermediary in
-                              electronic financial transactions between admin and merchants
+                              electronic financial transactions between admin
+                              and merchants
                             </li>
                             <li>
                               Developed front end for modules such as
@@ -384,7 +583,7 @@ const Projects = ({
                         src={businesAssistImg}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "100%", width: "110%" }}
+                        style={{ height: "100%", width: "105%" }}
                       />
                     </div>{" "}
                   </a>
