@@ -73,7 +73,7 @@ const Contact = () => {
                     <span>Address</span>
                     <p>
                       A/201, Nana Maharaj CHS, Kopar Cross Road, Shrastri Nagar,
-                      Dombivli (W) - 421202
+                      Dombivli (W) - 421202, Maharashtra
                     </p>
                   </div>
                 </div>
