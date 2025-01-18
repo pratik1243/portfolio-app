@@ -7,7 +7,7 @@ const Header = ({
   // switchTheme,
   // theme,
   scrollSection,
-  activeSection
+  //activeSection
 }) => {
 
   return (
@@ -30,7 +30,7 @@ const Header = ({
               <li>
                 <a
                   href="#"
-                  className={`${activeSection == 1 ? "active-section" : ""}`}
+                  //className={`${activeSection == 1 ? "active-section" : ""}`}
                   onClick={(e) => scrollSection(e, "about-sec")}
                 >
                   About
@@ -39,7 +39,7 @@ const Header = ({
               <li>
                 <a
                   href="#"
-                  className={`${activeSection == 2 ? "active-section" : ""}`}
+                  //className={`${activeSection == 2 ? "active-section" : ""}`}
                   onClick={(e) => scrollSection(e, "works-sec")}
                 >
                   Work
@@ -48,7 +48,7 @@ const Header = ({
               <li>
                 <a
                   href="#"
-                  className={`${activeSection == 3 ? "active-section" : ""}`}
+                  //className={`${activeSection == 3 ? "active-section" : ""}`}
                   onClick={(e) => scrollSection(e, "projects-sec")}
                 >
                   Projects
@@ -58,7 +58,7 @@ const Header = ({
               <li>
                 <a
                   href="#"
-                  className={`${activeSection == 5 ? "active-section" : ""}`}
+                  //className={`${activeSection == 5 ? "active-section" : ""}`}
                   onClick={(e) => scrollSection(e, "contacts-sec")}
                 >
                   Contact
