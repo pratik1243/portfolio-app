@@ -233,7 +233,7 @@ const Projects = ({ setActiveSection }) => {
             <h1 className="project-head-txt">Projects</h1>
           </Col>
 
-          <Col lg={12} md={12} sm={12} xs={12}>
+          {/* <Col lg={12} md={12} sm={12} xs={12}>
             <div className="project-details-sec">
               <Row>
                 <Col lg={12} md={12} sm={12} xs={12}>
@@ -428,7 +428,7 @@ const Projects = ({ setActiveSection }) => {
                               animateTrigger6 ? "heade-txt-anim" : ""
                             }`}
                           >
-                            {/* Form Builder Page */}
+                            
                             Payment Gateway Portal (PG 2.0)
                           </h3>
                           <ul className="description-list">
@@ -451,10 +451,7 @@ const Projects = ({ setActiveSection }) => {
                               rectification across different modules in portal
                             </li>
 
-                            {/* <li>
-                              Worked with testing and back end team to resolve
-                              issues to product front end flow
-                            </li> */}
+                           
                             <li>
                               Developed emailers for admin, merchant, reseller
                               and aggregator portal
@@ -520,7 +517,7 @@ const Projects = ({ setActiveSection }) => {
                 </Col>
               </Row>
             </div>
-          </Col>
+          </Col> */}
 
           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="projects-cards-sec" id="personal-projects-sec">

@@ -47,11 +47,11 @@ const Work = ({ setActiveSection }) => {
               }`}
             >
               <h4>Safexpay (Jr. Frontend Developer)</h4>
-              <span>4 July 2022 - Present · 2 yrs</span>
+              <span>4 July 2022 - Present · 2 yrs 8 mos</span>
 
               <ul className="roles-list">
                 <li>
-                  Worked on structure of next js, redux toolkit and material UI
+                  Worked on react js, next js, redux toolkit and material UI
                 </li>
                 <li>
                   Maintainance and updation of content in safexpay official
@@ -60,6 +60,11 @@ const Work = ({ setActiveSection }) => {
                 <li>
                   Worked on code structure and API integration of modules in PG
                   portal
+                </li>
+                <li>
+                  Developed checkout customization module in which merchants can
+                  customize brand color and theme of aasaan checkout page
+                  integrated in their websites
                 </li>
                 <li>
                   Recurring discussions, review with the product team regarding
@@ -82,20 +87,27 @@ const Work = ({ setActiveSection }) => {
 
               <ul className="roles-list">
                 <li>
-                  Worked on structure of HTML, CSS, Javascript and Bootstrap
+                  Worked on HTML, CSS, Javascript, Bootstrap and bs-dropzone
                 </li>
                 <li>
                   Worked on SASS preprocessor, jquery and responsive design
                   system
                 </li>
-                <li>Learned to build HTML mailers for different products</li>
                 <li>
-                  Worked on front end validations in checkout pages and
-                  developed UI for portals
+                  Learned to build HTML mailers for different products and
+                  marketing campaigns
+                </li>
+                <li>
+                  Worked on UI development and front end validations in checkout
+                  pages (such as AD pay, JS checkout) and PSP portals
                 </li>
                 <li>
                   Developed different landing pages used for onboarding
                   merchants, marketing campaigns, payments, etc
+                </li>
+                <li>
+                  Developed pages for COU and BOU portals in BBPS portal where i
+                  Worked on customization of template and its UI components                 
                 </li>
               </ul>
             </div>
