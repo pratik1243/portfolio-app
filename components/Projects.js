@@ -12,6 +12,7 @@ import adPayImg from "../assets/images/ad-pay-screenshot.jpg";
 import aasaanPortalImg from "../assets/images/aasaan-screenshot.png";
 import timSheetImg from "../assets/images/time-sheet-screenshot.png";
 import businesAssistImg from "../assets/images/business-assist-screenshot.png";
+import breatheMattersImg from "../assets/images/breathe-matters-bg.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Projects = ({ setActiveSection }) => {
@@ -587,7 +588,7 @@ const Projects = ({ setActiveSection }) => {
                 </Col>
                 <Col lg={4} md={4} sm={6} xs={12}>
                   <a
-                    href="https://pratik1243.github.io/heylead-web-app/"
+                    href="https://pratik1243.github.io/breate-matters-website/"
                     target="_blank"
                   >
                     {" "}
@@ -597,10 +598,10 @@ const Projects = ({ setActiveSection }) => {
                       }`}
                     >
                       <Image
-                        src={projectImg5}
+                        src={breatheMattersImg}
                         alt="card-img"
                         objectFit="cover"
-                        style={{ height: "100%", width: "130%" }}
+                        style={{ height: "100%", width: "115%" }}
                       />
                     </div>{" "}
                   </a>
