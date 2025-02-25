@@ -18,7 +18,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const Projects = ({ setActiveSection }) => {
   const [trigger2, setTrigger2] = useState(false);
   const [trigger3, setTrigger3] = useState(false);
-  // const [trigger4, setTrigger4] = useState(false);
+  const [trigger4, setTrigger4] = useState(false);
   // const [trigger5, setTrigger5] = useState(false);
   // const [trigger6, setTrigger6] = useState(false);
   // const [trigger7, setTrigger7] = useState(false);
@@ -42,8 +42,8 @@ const Projects = ({ setActiveSection }) => {
     const elementPosition4 = element4?.getBoundingClientRect().top;
     const element3 = document.getElementById("contacts-sec");
     const elementPosition3 = element3?.getBoundingClientRect().top;
-    // const element5 = document.getElementById("project-detail1");
-    // const elementPosition5 = element5?.getBoundingClientRect().top;
+    const element5 = document.getElementById("project-detail1");
+    const elementPosition5 = element5?.getBoundingClientRect().top;
     // const element6 = document.getElementById("project-detail2");
     // const elementPosition6 = element6?.getBoundingClientRect().top;
     // const element7 = document.getElementById("project-detail3");
@@ -68,9 +68,9 @@ const Projects = ({ setActiveSection }) => {
       setTrigger3(true);
     }
 
-    // if (window.innerHeight - elementPosition5 > 130) {
-    //   setTrigger4(true);
-    // }
+    if (window.innerHeight - elementPosition5 > 130) {
+      setTrigger4(true);
+    }
 
     // if (window.innerHeight - elementPosition6 > 130) {
     //   setTrigger5(true);
@@ -125,19 +125,19 @@ const Projects = ({ setActiveSection }) => {
     };
   }, [trigger3]);
 
-  // useEffect(() => {
-  //   if (trigger4) {
-  //     setAnimateTrigger4(true);
-  //   }
+  useEffect(() => {
+    if (trigger4) {
+      setAnimateTrigger4(true);
+    }
 
-  //   if (typeof window !== "undefined") {
-  //     document.addEventListener("scroll", handleScrollEvent1);
-  //   }
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", handleScrollEvent1);
+    }
 
-  //   return () => {
-  //     document.removeEventListener("scroll", handleScrollEvent1);
-  //   };
-  // }, [trigger4]);
+    return () => {
+      document.removeEventListener("scroll", handleScrollEvent1);
+    };
+  }, [trigger4]);
 
   // useEffect(() => {
   //   if (trigger5) {
