@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/style/main.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const roboto = Roboto({
   weight: "400",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto.className}>
        {children}
+       <SpeedInsights />
       </body>
     </html>
   );
