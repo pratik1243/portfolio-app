@@ -19,20 +19,20 @@ const Projects = ({ setActiveSection }) => {
   const [trigger2, setTrigger2] = useState(false);
   const [trigger3, setTrigger3] = useState(false);
   const [trigger4, setTrigger4] = useState(false);
-  const [trigger5, setTrigger5] = useState(false);
-  const [trigger6, setTrigger6] = useState(false);
-  const [trigger7, setTrigger7] = useState(false);
-  const [trigger8, setTrigger8] = useState(false);
-  const [trigger9, setTrigger9] = useState(false);
+  // const [trigger5, setTrigger5] = useState(false);
+  // const [trigger6, setTrigger6] = useState(false);
+  // const [trigger7, setTrigger7] = useState(false);
+  // const [trigger8, setTrigger8] = useState(false);
+  // const [trigger9, setTrigger9] = useState(false);
   const [trigger10, setTrigger10] = useState(false);
   const [animateTrigger2, setAnimateTrigger2] = useState(false);
   const [animateTrigger3, setAnimateTrigger3] = useState(false);
   const [animateTrigger4, setAnimateTrigger4] = useState(false);
-  const [animateTrigger5, setAnimateTrigger5] = useState(false);
-  const [animateTrigger6, setAnimateTrigger6] = useState(false);
-  const [animateTrigger7, setAnimateTrigger7] = useState(false);
-  const [animateTrigger8, setAnimateTrigger8] = useState(false);
-  const [animateTrigger9, setAnimateTrigger9] = useState(false);
+  // const [animateTrigger5, setAnimateTrigger5] = useState(false);
+  // const [animateTrigger6, setAnimateTrigger6] = useState(false);
+  // const [animateTrigger7, setAnimateTrigger7] = useState(false);
+  // const [animateTrigger8, setAnimateTrigger8] = useState(false);
+  // const [animateTrigger9, setAnimateTrigger9] = useState(false);
   const [animateTrigger10, setAnimateTrigger10] = useState(false);
 
   const handleScrollEvent1 = () => {
@@ -44,14 +44,14 @@ const Projects = ({ setActiveSection }) => {
     const elementPosition3 = element3?.getBoundingClientRect().top;
     const element5 = document.getElementById("project-detail1");
     const elementPosition5 = element5?.getBoundingClientRect().top;
-    const element6 = document.getElementById("project-detail2");
-    const elementPosition6 = element6?.getBoundingClientRect().top;
-    const element7 = document.getElementById("project-detail3");
-    const elementPosition7 = element7?.getBoundingClientRect().top;
-    const element8 = document.getElementById("project-detail4");
-    const elementPosition8 = element8?.getBoundingClientRect().top;
-    const element9 = document.getElementById("project-detail5");
-    const elementPosition9 = element9?.getBoundingClientRect().top;
+    // const element6 = document.getElementById("project-detail2");
+    // const elementPosition6 = element6?.getBoundingClientRect().top;
+    // const element7 = document.getElementById("project-detail3");
+    // const elementPosition7 = element7?.getBoundingClientRect().top;
+    // const element8 = document.getElementById("project-detail4");
+    // const elementPosition8 = element8?.getBoundingClientRect().top;
+    // const element9 = document.getElementById("project-detail5");
+    // const elementPosition9 = element9?.getBoundingClientRect().top;
     const element10 = document.getElementById("project-detail6");
     const elementPosition10 = element10?.getBoundingClientRect().top;
 
@@ -72,25 +72,25 @@ const Projects = ({ setActiveSection }) => {
       setTrigger4(true);
     }
 
-    if (window.innerHeight - elementPosition6 > 130) {
-      setTrigger5(true);
-    }
+    // if (window.innerHeight - elementPosition6 > 130) {
+    //   setTrigger5(true);
+    // }
 
-    if (window.innerHeight - elementPosition7 > 130) {
-      setTrigger6(true);
-    }
+    // if (window.innerHeight - elementPosition7 > 130) {
+    //   setTrigger6(true);
+    // }
 
-    if (window.innerHeight - elementPosition8 > 130) {
-      setTrigger7(true);
-    }
+    // if (window.innerHeight - elementPosition8 > 130) {
+    //   setTrigger7(true);
+    // }
 
-    if (window.innerHeight - elementPosition9 > 130) {
-      setTrigger8(true);
-    }
+    // if (window.innerHeight - elementPosition9 > 130) {
+    //   setTrigger8(true);
+    // }
 
-    if (window.innerHeight - elementPosition10 > 130) {
-      setTrigger9(true);
-    }
+    // if (window.innerHeight - elementPosition10 > 130) {
+    //   setTrigger9(true);
+    // }
 
     if (window.innerHeight - elementPosition10 > 500) {
       setTrigger10(true);
@@ -139,75 +139,75 @@ const Projects = ({ setActiveSection }) => {
     };
   }, [trigger4]);
 
-  useEffect(() => {
-    if (trigger5) {
-      setAnimateTrigger5(true);
-    }
+  // useEffect(() => {
+  //   if (trigger5) {
+  //     setAnimateTrigger5(true);
+  //   }
 
-    if (typeof window !== "undefined") {
-      document.addEventListener("scroll", handleScrollEvent1);
-    }
+  //   if (typeof window !== "undefined") {
+  //     document.addEventListener("scroll", handleScrollEvent1);
+  //   }
 
-    return () => {
-      document.removeEventListener("scroll", handleScrollEvent1);
-    };
-  }, [trigger5]);
+  //   return () => {
+  //     document.removeEventListener("scroll", handleScrollEvent1);
+  //   };
+  // }, [trigger5]);
 
-  useEffect(() => {
-    if (trigger6) {
-      setAnimateTrigger6(true);
-    }
+  // useEffect(() => {
+  //   if (trigger6) {
+  //     setAnimateTrigger6(true);
+  //   }
 
-    if (typeof window !== "undefined") {
-      document.addEventListener("scroll", handleScrollEvent1);
-    }
+  //   if (typeof window !== "undefined") {
+  //     document.addEventListener("scroll", handleScrollEvent1);
+  //   }
 
-    return () => {
-      document.removeEventListener("scroll", handleScrollEvent1);
-    };
-  }, [trigger6]);
+  //   return () => {
+  //     document.removeEventListener("scroll", handleScrollEvent1);
+  //   };
+  // }, [trigger6]);
 
-  useEffect(() => {
-    if (trigger7) {
-      setAnimateTrigger7(true);
-    }
+  // useEffect(() => {
+  //   if (trigger7) {
+  //     setAnimateTrigger7(true);
+  //   }
 
-    if (typeof window !== "undefined") {
-      document.addEventListener("scroll", handleScrollEvent1);
-    }
+  //   if (typeof window !== "undefined") {
+  //     document.addEventListener("scroll", handleScrollEvent1);
+  //   }
 
-    return () => {
-      document.removeEventListener("scroll", handleScrollEvent1);
-    };
-  }, [trigger7]);
+  //   return () => {
+  //     document.removeEventListener("scroll", handleScrollEvent1);
+  //   };
+  // }, [trigger7]);
 
-  useEffect(() => {
-    if (trigger8) {
-      setAnimateTrigger8(true);
-    }
+  // useEffect(() => {
+  //   if (trigger8) {
+  //     setAnimateTrigger8(true);
+  //   }
 
-    if (typeof window !== "undefined") {
-      document.addEventListener("scroll", handleScrollEvent1);
-    }
+  //   if (typeof window !== "undefined") {
+  //     document.addEventListener("scroll", handleScrollEvent1);
+  //   }
 
-    return () => {
-      document.removeEventListener("scroll", handleScrollEvent1);
-    };
-  }, [trigger8]);
+  //   return () => {
+  //     document.removeEventListener("scroll", handleScrollEvent1);
+  //   };
+  // }, [trigger8]);
 
-  useEffect(() => {
-    if (trigger9) {
-      setAnimateTrigger9(true);
-    }
+  // useEffect(() => {
+  //   if (trigger9) {
+  //     setAnimateTrigger9(true);
+  //   }
 
-    if (typeof window !== "undefined") {
-      document.addEventListener("scroll", handleScrollEvent1);
-    }
+  //   if (typeof window !== "undefined") {
+  //     document.addEventListener("scroll", handleScrollEvent1);
+  //   }
 
-    return () => {
-      document.removeEventListener("scroll", handleScrollEvent1);
-    };
-  }, [trigger9]);
+  //   return () => {
+  //     document.removeEventListener("scroll", handleScrollEvent1);
+  //   };
+  // }, [trigger9]);
 
   useEffect(() => {
     if (trigger10) {
