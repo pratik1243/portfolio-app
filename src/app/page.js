@@ -75,15 +75,15 @@ export default function Home() {
         <div className="main-sec">
           <HeaderComp
             navBg={navBg}
-            theme={theme}
-            activeSection={activeSection}
+            // theme={theme}
+            // activeSection={activeSection}
             openSidebar={openSidebar}
             scrollSection={scrollSection}
           />
           <SidebarComp
             open={open}
-            theme={theme}
-            activeSection={activeSection}
+            //theme={theme}
+            //activeSection={activeSection}
             closeSidebar={closeSidebar}
             scrollSection={scrollSection}
           />
